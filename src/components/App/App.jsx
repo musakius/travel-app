@@ -5,19 +5,19 @@ import Footer from '../../components/Footer';
 import Main from '../../pages/Main';
 import Country from '../../pages/Country';
 import Page404 from '../../pages/Page404';
-import listCountries from '../../JSON/listCountries.json';
+import dataCountries from '../../JSON/dataCountries.json';
 
 const App = () => {
   return (
     <>
       <Header />
       <Switch>
-        <Route path="/" exact render={() => <Main listCountries={listCountries} />} />
+        <Route path="/" exact render={() => <Main dataCountries={dataCountries} />} />
         <Route
           path="/:countryName"
           exact
           render={({match}) => (
-            <Country countryName={match.params.countryName} listCountries={listCountries} />
+            <Country countryName={match.params.countryName} dataCountries={dataCountries} />
           )}
         />
         <Route render={() => <Page404 />} />
