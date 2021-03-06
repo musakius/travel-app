@@ -1,11 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './components/App/App';
+import App from './components/App';
+import {Provider} from 'react-redux';
+import {LanguageProvider} from './context';
+import store from './redux/store';
+import {BrowserRouter} from 'react-router-dom';
+import './index.scss';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <LanguageProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </LanguageProvider>
+  </Provider>,
   document.getElementById('root')
 );
+
