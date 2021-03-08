@@ -3,8 +3,11 @@ import TranslatableText from '../../TranslatableText';
 import Clock from './Clock';
 import DateContainer from './DateContainer';
 
-const DateTime = () => {
-    const currentDate = new Date();
+const DateTime = ({ country, language }) => {
+
+    const dateInfo = country.date;
+    const timeZone = dateInfo.timeZone;
+    const locale = `${language.substring(0,2)}-${dateInfo.code}`;
 
     return (
         <div className="card border-info mb-3 weather">
@@ -18,8 +21,8 @@ const DateTime = () => {
                 />
             </h3>
             <div className="card-body">
-                <Clock date={ currentDate } />
-                <DateContainer date={ currentDate } />
+                <Clock locale={ locale } timeZone={timeZone} />
+                <DateContainer />
             </div>            
         </div>
     );

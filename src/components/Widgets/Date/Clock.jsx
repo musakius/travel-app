@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
-const Clock = () => {
+const Clock = ({ locale, timeZone }) => {
     const [time, setTime] = useState(new Date());
-
+    
     const tick = () => {
         setTime(new Date());
     }
@@ -14,7 +14,7 @@ const Clock = () => {
 
     return (
         <h2 className="card-text">
-          {time.toLocaleTimeString()}
+          {time.toLocaleTimeString(locale, { timeZone })}
         </h2>
     );
 }
