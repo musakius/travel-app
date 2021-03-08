@@ -3,6 +3,7 @@ import TranslatableText from '../../components/TranslatableText';
 import classes from './Country.module.scss';
 import {LanguageConsumer} from '../../context';
 import Widgets from '../../components/Widgets/Widgets';
+import Video from '../../components/Video/Video';
 
 const Country = ({dataCountries, countryName}) => {
   const country = dataCountries.find((el) => el.name.en.toLowerCase() === countryName);
@@ -24,7 +25,10 @@ const Country = ({dataCountries, countryName}) => {
           ({language}) => <Widgets country={ country } capital={ country.capital.en } language={ language }/>
           }
         </LanguageConsumer>
-      </div>      
+      </div> 
+      <div className={classes.video}>
+        <Video video={ country.video }/>
+      </div>     
     </main>
   );
 };
