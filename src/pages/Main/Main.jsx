@@ -1,13 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import TranslatableText from '../../components/TranslatableText';
+import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
 
 import classes from './Main.module.scss';
 
-const Main = ({dataCountries}) => {
-  const [data, setData] = useState(dataCountries);
-
-  console.log(data);
+const Main = ({countries}) => {
 
   const renderListCountries = (list) => {
     return list.map((el) => {
@@ -38,9 +36,13 @@ const Main = ({dataCountries}) => {
           }}
         />
       </h1>
-      <ul className={classes['list-countries']}>{renderListCountries(data)}</ul>
+      <ul className={classes['list-countries']}>{renderListCountries(countries)}</ul>
     </main>
   );
 };
 
-export default Main;
+const mapStateToProps = ({countries}) => {
+  return {countries};
+};
+
+export default connect(mapStateToProps)(Main);

@@ -1,8 +1,8 @@
-const test = (value) => {
+const filterCountries = (value) => {
   return {
-    type: 'TEST',
+    type: 'FILTER_COUNTRIES',
     payload: value
   };
 };
 
-export {test};
+export {filterCountries};
