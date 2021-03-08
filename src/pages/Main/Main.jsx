@@ -1,10 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import TranslatableText from '../../components/TranslatableText';
 import {Link} from 'react-router-dom';
 
 import classes from './Main.module.scss';
 
 const Main = ({dataCountries}) => {
+  const [data, setData] = useState(dataCountries);
+
+  console.log(data);
+
   const renderListCountries = (list) => {
     return list.map((el) => {
       return (
@@ -34,7 +38,7 @@ const Main = ({dataCountries}) => {
           }}
         />
       </h1>
-      <ul className={classes['list-countries']}>{renderListCountries(dataCountries)}</ul>
+      <ul className={classes['list-countries']}>{renderListCountries(data)}</ul>
     </main>
   );
 };

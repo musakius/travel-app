@@ -19,3 +19,9 @@ a {
 .main {
   min-height: calc(100vh - 100px);
 }
+
+.center {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
