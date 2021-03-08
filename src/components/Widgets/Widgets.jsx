@@ -4,11 +4,13 @@ import DateTime from './Date/DateTime';
 
 /**Country widgets */
 
-const Widgets = ({ country, capital, language }) => {
+const Widgets = ({ country, language }) => {
+    const capital = country.capital.en;
+
     return (
         <div>
             <Weather country={ country } capital={ capital } language={ language } />
-            <DateTime />
+            <DateTime country={ country } language={ language } />
             
         </div>
     );
