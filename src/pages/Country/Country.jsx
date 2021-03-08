@@ -27,7 +27,7 @@ const Country = ({dataCountries, countryName}) => {
         </LanguageConsumer>
       </div> 
       <div className={classes.video}>
-        <Video video={ country.video}/>
+        <Video video={ country.video }/>
       </div>     
     </main>
   );
