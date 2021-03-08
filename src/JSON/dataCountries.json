@@ -9,18 +9,18 @@
         "id": 1, 
         "name": {"en":"Canada", "ru": "Канада", "be": "Канада"},
         "capital": {"en":"Ottawa", "ru": "Оттава", "be": "Атава"},
-        "video": "https://www.youtube.com/watch?v=hMPMUDydTtQ"
+        "video": "https://www.youtube.com/watch?v=TknrmpS4GOg"
     },
     {
         "id": 2, 
         "name": {"en":"Germany", "ru": "Германия", "be": "Германія"},
         "capital": {"en":"Berlin", "ru": "Берлин", "be": "Берлін"},
-        "video": "https://www.youtube.com/watch?v=D1Q5CkJfNsc"
+        "video": "https://www.youtube.com/watch?v=8IJzZSVRpbU"
     },
     {
         "id": 3, 
         "name": {"en":"France", "ru": "Франция", "be": "Францыя"},
         "capital": {"en":"Paris", "ru": "Париж", "be": "Парыж"},
-        "video": "https://www.youtube.com/watch?v=Hc1xklccMXs"
+        "video": "https://www.youtube.com/watch?v=j9q3NLqUvxI"
     }
 ]
