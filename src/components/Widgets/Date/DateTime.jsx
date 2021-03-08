@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Date = () => {
+const DateTime = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const Date = () => {
     );
 }
 
-export default Date;
+export default DateTime;
