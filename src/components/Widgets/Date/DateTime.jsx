@@ -1,5 +1,4 @@
 import React from 'react';
-import TranslatableText from '../../TranslatableText';
 import Clock from './Clock';
 import DateContainer from './DateContainer';
 
@@ -11,18 +10,11 @@ const DateTime = ({ country, language }) => {
 
     return (
         <div className="card border-info mb-3 weather">
-            <h3 className="card-header">
-                <TranslatableText
-                dictionary={{
-                    russian: 'Дата и время',
-                    belarusian: "Дата і час",
-                    english: 'Date and time'
-                }}
-                />
-            </h3>
+            <div className="card-header">
+                <DateContainer />
+            </div>
             <div className="card-body">
                 <Clock locale={ locale } timeZone={timeZone} />
-                <DateContainer />
             </div>            
         </div>
     );
