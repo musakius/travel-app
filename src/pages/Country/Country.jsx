@@ -1,12 +1,18 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import {connect} from 'react-redux';
+import {setShowSearch} from '../../redux/actions';
 import TranslatableText from '../../components/TranslatableText';
 import classes from './Country.module.scss';
 import {LanguageConsumer} from '../../context';
 import Widgets from '../../components/Widgets/Widgets';
 import Video from '../../components/Video/Video';
 
-const Country = ({dataCountries, countryName}) => {
-  const country = dataCountries.find((el) => el.name.en.toLowerCase() === countryName);
+const Country = ({countries, countryName, setShowSearch}) => {
+  useEffect(() => {
+    setShowSearch(false);
+  }, []);
+
+  const country = countries.find((el) => el.name.en.toLowerCase() === countryName);
 
   return (
     <main className={`${classes['container-country']} main`}>
@@ -21,16 +27,24 @@ const Country = ({dataCountries, countryName}) => {
       </h1>
       <div className={classes.widget}>
         <LanguageConsumer>
-          {
-          ({language}) => <Widgets country={ country } language={ language }/>
-          }
+          {({language}) => (
+            <Widgets country={country} capital={country.capital.en} language={language} />
+          )}
         </LanguageConsumer>
-      </div> 
+      </div>
       <div className={classes.video}>
-        <Video video={ country.video }/>
-      </div>     
+        <Video video={country.video} />
+      </div>
     </main>
   );
 };
 
-export default Country;
+const mapStateToProps = ({countries}) => {
+  return {countries};
+};
+
+const mapDispatchToProps = {
+  setShowSearch
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Country);

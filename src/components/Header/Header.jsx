@@ -1,26 +1,34 @@
 import React from 'react';
+import {connect} from 'react-redux';
+import Search from './Search';
+import Select from './Select';
 import {LanguageConsumer} from '../../context';
 import {Link} from 'react-router-dom';
 
 import classes from './Header.module.scss';
 
-const Header = () => {
+const Header = ({showSearch}) => {
   return (
     <LanguageConsumer>
-      {({updateLanguage}) => (
-        <header className={classes.header}>
-          <Link to="/" className={classes.logo}>
-            Travel app
-          </Link>
-          <select onChange={updateLanguage}>
-            <option value="russian">russian</option>
-            <option value="belarusian">belarusian</option>
-            <option value="english">english</option>
-          </select>
+      {({updateLanguage, language}) => (
+        <header className={`${classes.header} bg-primary`}>
+          <nav className={`${classes.nav} navbar navbar-expand-lg navbar-dark center`}>
+            <Link to="/" className={`${classes.logo} navbar-brand`}>
+              Travel app
+            </Link>
+            <div className={`${classes.panel}`}>
+              {showSearch ? <Search language={language} /> : null}
+              <Select updateLanguage={updateLanguage} language={language} />
+            </div>
+          </nav>
         </header>
       )}
     </LanguageConsumer>
   );
 };
 
-export default Header;
+const mapStateToProps = ({showSearch}) => {
+  return {showSearch};
+};
+
+export default connect(mapStateToProps)(Header);

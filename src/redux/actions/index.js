@@ -1,8 +1,15 @@
-const test = (value) => {
+const filterCountries = (value) => {
   return {
-    type: 'TEST',
+    type: 'FILTER_COUNTRIES',
     payload: value
   };
 };
 
-export {test};
+const setShowSearch = (value) => {
+  return {
+    type: 'SET_SHOW_SEARCH',
+    payload: value
+  };
+};
+
+export {filterCountries, setShowSearch};
