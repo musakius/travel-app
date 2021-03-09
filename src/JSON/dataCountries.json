@@ -2,21 +2,25 @@
     {
         "id": 0, 
         "name": {"en":"Belarus", "ru": "Беларусь", "be": "Беларусь"},
-        "capital": {"en":"Minsk", "ru": "Минск", "be": "Мінск"}
+        "capital": {"en":"Minsk", "ru": "Минск", "be": "Мінск"},
+        "video": "https://www.youtube.com/watch?v=QNdYybI3Pgs"
     },
     {
         "id": 1, 
         "name": {"en":"Canada", "ru": "Канада", "be": "Канада"},
-        "capital": {"en":"Ottawa", "ru": "Оттава", "be": "Атава"}
+        "capital": {"en":"Ottawa", "ru": "Оттава", "be": "Атава"},
+        "video": "https://www.youtube.com/watch?v=TknrmpS4GOg"
     },
     {
         "id": 2, 
         "name": {"en":"Germany", "ru": "Германия", "be": "Германія"},
-        "capital": {"en":"Berlin", "ru": "Берлин", "be": "Берлін"}
+        "capital": {"en":"Berlin", "ru": "Берлин", "be": "Берлін"},
+        "video": "https://www.youtube.com/watch?v=8IJzZSVRpbU"
     },
     {
         "id": 3, 
         "name": {"en":"France", "ru": "Франция", "be": "Францыя"},
-        "capital": {"en":"Paris", "ru": "Париж", "be": "Парыж"}
+        "capital": {"en":"Paris", "ru": "Париж", "be": "Парыж"},
+        "video": "https://www.youtube.com/watch?v=j9q3NLqUvxI"
     }
 ]

@@ -1,26 +1,24 @@
 import React from 'react';
-import HeaderSearch from '../HeaderSearch';
+import {connect} from 'react-redux';
+import Search from './Search';
+import Select from './Select';
 import {LanguageConsumer} from '../../context';
 import {Link} from 'react-router-dom';
 
 import classes from './Header.module.scss';
 
-const Header = () => {
+const Header = ({showSearch}) => {
   return (
     <LanguageConsumer>
-      {({updateLanguage}) => (
+      {({updateLanguage, language}) => (
         <header className={`${classes.header} bg-primary`}>
           <nav className={`${classes.nav} navbar navbar-expand-lg navbar-dark center`}>
-            <Link to="/" className="navbar-brand">
+            <Link to="/" className={`${classes.logo} navbar-brand`}>
               Travel app
             </Link>
-            <div className={`${classes.collapse} collapse navbar-collapse`}>
-              <HeaderSearch />
-              <select className={`${classes.select} form-control ml-5`} onChange={updateLanguage}>
-                <option value="russian">Rus</option>
-                <option value="belarusian">Bel</option>
-                <option value="english">Eng</option>
-              </select>
+            <div className={`${classes.panel}`}>
+              {showSearch ? <Search language={language} /> : null}
+              <Select updateLanguage={updateLanguage} language={language} />
             </div>
           </nav>
         </header>
@@ -29,4 +27,8 @@ const Header = () => {
   );
 };
 
-export default Header;
+const mapStateToProps = ({showSearch}) => {
+  return {showSearch};
+};
+
+export default connect(mapStateToProps)(Header);

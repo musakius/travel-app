@@ -1,11 +1,17 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {connect} from 'react-redux';
+import {setShowSearch} from '../../redux/actions';
 import TranslatableText from '../../components/TranslatableText';
 import classes from './Country.module.scss';
 import {LanguageConsumer} from '../../context';
 import Widgets from '../../components/Widgets/Widgets';
+import Video from '../../components/Video/Video';
 
-const Country = ({countries, countryName}) => {
+const Country = ({countries, countryName, setShowSearch}) => {
+  useEffect(() => {
+    setShowSearch(false);
+  }, []);
+
   const country = countries.find((el) => el.name.en.toLowerCase() === countryName);
 
   return (
@@ -26,6 +32,9 @@ const Country = ({countries, countryName}) => {
           )}
         </LanguageConsumer>
       </div>
+      <div className={classes.video}>
+        <Video video={country.video} />
+      </div>
     </main>
   );
 };
@@ -34,4 +43,8 @@ const mapStateToProps = ({countries}) => {
   return {countries};
 };
 
-export default connect(mapStateToProps)(Country);
+const mapDispatchToProps = {
+  setShowSearch
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Country);
