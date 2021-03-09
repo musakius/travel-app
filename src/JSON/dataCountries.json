@@ -35,56 +35,56 @@
         "id": 4, 
         "name": {"en":"Italy", "ru": "Италия", "be": "Італія"},
         "capital": {"en":"Rome", "ru": "Рим", "be": "Рым"},
-        "video": "https://www.youtube.com/watch?v=j9q3NLqUvxI",
-        "date": {"code": "FR", "timeZone": "Europe/Paris"},
+        "video": "https://www.youtube.com/watch?v=_4PJZovffRs",
+        "date": {"code": "IT", "timeZone": "Europe/Rome"},
         "mainImg": "./img/italy.jpeg"
     },
     {
         "id": 5, 
         "name": {"en":"Australia", "ru": "Австралия", "be": "Аўстралія"},
         "capital": {"en":"Canberra", "ru": "Канберра", "be": "Канбера"},
-        "video": "https://www.youtube.com/watch?v=QNdYybI3Pgs",
-        "date": {"code": "BY", "timeZone": "Europe/Minsk"},
+        "video": "https://www.youtube.com/watch?v=kjsFG7wJ0FQ",
+        "date": {"code": "AU", "timeZone": "Australia/Canberra"},
         "mainImg": "./img/australia.jpg"
     },
     {
         "id": 6, 
         "name": {"en":"Great Britain", "ru": "Великобритания", "be": "Велікабрытанія"},
         "capital": {"en":"London", "ru": "Лондон", "be": "Лондан"},
-        "video": "https://www.youtube.com/watch?v=TknrmpS4GOg",
-        "date": {"code": "CA", "timeZone": "Canada/Eastern"},
+        "video": "https://www.youtube.com/watch?v=PtWeqZsuzpE",
+        "date": {"code": "GB", "timeZone": "Europe/London"},
         "mainImg": "./img/great-britain.jpg"
     },
     {
         "id": 7, 
         "name": {"en":"India", "ru": "Индия", "be": "Індыя"},
         "capital": {"en":"New Delhi", "ru": "Нью-Дели", "be": "Нью-Дэлі"},
-        "video": "https://www.youtube.com/watch?v=8IJzZSVRpbU",
-        "date": {"code": "DE", "timeZone": "Europe/Berlin"},
+        "video": "https://www.youtube.com/watch?v=KLwbm_f28eY",
+        "date": {"code": "IN", "timeZone": "Asia/Kolkata"},
         "mainImg": "./img/india.jpg"
     },
     {
         "id": 8, 
         "name": {"en":"China", "ru": "Китай", "be": "Кітай"},
         "capital": {"en":"Beijing", "ru": "Пекин", "be": "Пекін"},
-        "video": "https://www.youtube.com/watch?v=TknrmpS4GOg",
-        "date": {"code": "CA", "timeZone": "Canada/Eastern"},
+        "video": "https://www.youtube.com/watch?v=paxRy2msloY",
+        "date": {"code": "CN", "timeZone": "Asia/Shanghai"},
         "mainImg": "./img/china.jpg"
     },
     {
         "id": 9, 
         "name": {"en":"Brazil", "ru": "Бразилия", "be": "Бразілія"},
         "capital": {"en":"Brazil", "ru": "Бразилия", "be": "Бразілія"},
-        "video": "https://www.youtube.com/watch?v=8IJzZSVRpbU",
-        "date": {"code": "DE", "timeZone": "Europe/Berlin"},
+        "video": "https://www.youtube.com/watch?v=Q9H2h86umoE&t",
+        "date": {"code": "BR", "timeZone": "Brazil/East"},
         "mainImg": "./img/brazil.jpg"
     },
     {
         "id": 10, 
         "name": {"en":"Egypt", "ru": "Египет", "be": "Егіпет"},
         "capital": {"en":"Cairo", "ru": "Каир", "be": "Каір"},
-        "video": "https://www.youtube.com/watch?v=8IJzZSVRpbU",
-        "date": {"code": "DE", "timeZone": "Europe/Berlin"},
+        "video": "https://www.youtube.com/watch?v=mfxQy5A_tHs",
+        "date": {"code": "EG", "timeZone": "Africa/Cairo"},
         "mainImg": "./img/egypt.jpg"
     }
 ]
