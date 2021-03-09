@@ -3,24 +3,28 @@
         "id": 0, 
         "name": {"en":"Belarus", "ru": "Беларусь", "be": "Беларусь"},
         "capital": {"en":"Minsk", "ru": "Минск", "be": "Мінск"},
-        "video": "https://www.youtube.com/watch?v=QNdYybI3Pgs"
+        "video": "https://www.youtube.com/watch?v=QNdYybI3Pgs",
+        "date": {"code": "BY", "timeZone": "Europe/Minsk"}
     },
     {
         "id": 1, 
         "name": {"en":"Canada", "ru": "Канада", "be": "Канада"},
         "capital": {"en":"Ottawa", "ru": "Оттава", "be": "Атава"},
-        "video": "https://www.youtube.com/watch?v=TknrmpS4GOg"
+        "video": "https://www.youtube.com/watch?v=TknrmpS4GOg",
+        "date": {"code": "CA", "timeZone": "Canada/Eastern"}
     },
     {
         "id": 2, 
         "name": {"en":"Germany", "ru": "Германия", "be": "Германія"},
         "capital": {"en":"Berlin", "ru": "Берлин", "be": "Берлін"},
-        "video": "https://www.youtube.com/watch?v=8IJzZSVRpbU"
+        "video": "https://www.youtube.com/watch?v=8IJzZSVRpbU",
+        "date": {"code": "DE", "timeZone": "Europe/Berlin"}
     },
     {
         "id": 3, 
         "name": {"en":"France", "ru": "Франция", "be": "Францыя"},
         "capital": {"en":"Paris", "ru": "Париж", "be": "Парыж"},
-        "video": "https://www.youtube.com/watch?v=j9q3NLqUvxI"
+        "video": "https://www.youtube.com/watch?v=j9q3NLqUvxI",
+        "date": {"code": "FR", "timeZone": "Europe/Paris"}
     }
 ]
