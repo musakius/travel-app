@@ -22,7 +22,7 @@ const Country = ({dataCountries, countryName}) => {
       <div className={classes.widget}>
         <LanguageConsumer>
           {
-          ({language}) => <Widgets country={ country } capital={ country.capital.en } language={ language }/>
+          ({language}) => <Widgets country={ country } language={ language }/>
           }
         </LanguageConsumer>
       </div> 
