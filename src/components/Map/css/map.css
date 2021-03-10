@@ -1,0 +1,42 @@
+.leaflet-container {  
+  height: 300px;
+  width: 500px;
+  transition: 0.3s;
+}
+
+.map-wrapper {
+  position: relative;
+  transition: 0.3s;
+}
+
+.map-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  width: 30px;
+  height: 30px;
+
+  background-image: url('../img/FullScreen.png');
+  background-size: contain;
+  border: none;
+  outline: none;
+
+  z-index: 1000;
+}
+
+.map-button--full-size {
+  background-image: url('../img/minScreen.png');
+
+  z-index: 1001;
+}
+
+.full-size {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: calc(100vw - 1px);
+  height: calc(100vh - 1px);
+  z-index: 1000;
+}
