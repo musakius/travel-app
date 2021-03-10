@@ -6,11 +6,8 @@ import classes from './Country.module.scss';
 import {LanguageConsumer} from '../../context';
 import Widgets from '../../components/Widgets/Widgets';
 import Video from '../../components/Video/Video';
-<<<<<<< HEAD
 import Map from '../../components/Map/Map';
-=======
 import Gallery from '../../components/Gallery';
->>>>>>> 5b808c77c9e4a283bde68e5717f0b8d3865c574b
 
 const Country = ({countries, countryName, setShowSearch}) => {
   useEffect(() => {
