@@ -5,7 +5,8 @@
         "capital": {"en":"Minsk", "ru": "Минск", "be": "Мінск"},
         "video": "https://www.youtube.com/watch?v=QNdYybI3Pgs",
         "date": {"code": "BY", "timeZone": "Europe/Minsk"},
-        "mainImg": "./img/belarus.jpg"
+        "mainImg": "./img/belarus.jpg",
+        "currency": "BYN"
     },
     {
         "id": 1, 
@@ -13,7 +14,8 @@
         "capital": {"en":"Ottawa", "ru": "Оттава", "be": "Атава"},
         "video": "https://www.youtube.com/watch?v=TknrmpS4GOg",
         "date": {"code": "CA", "timeZone": "Canada/Eastern"},
-        "mainImg": "./img/canada.jpg"
+        "mainImg": "./img/canada.jpg",
+        "currency": "CAD"
     },
     {
         "id": 2, 
@@ -21,7 +23,8 @@
         "capital": {"en":"Berlin", "ru": "Берлин", "be": "Берлін"},
         "video": "https://www.youtube.com/watch?v=8IJzZSVRpbU",
         "date": {"code": "DE", "timeZone": "Europe/Berlin"},
-        "mainImg": "./img/germany.jpg"
+        "mainImg": "./img/germany.jpg",
+        "currency": "EUR"
     },
     {
         "id": 3, 
@@ -29,7 +32,8 @@
         "capital": {"en":"Paris", "ru": "Париж", "be": "Парыж"},
         "video": "https://www.youtube.com/watch?v=j9q3NLqUvxI",
         "date": {"code": "FR", "timeZone": "Europe/Paris"},
-        "mainImg": "./img/france.jpg"
+        "mainImg": "./img/france.jpg",
+        "currency": "EUR"
     },
     {
         "id": 4, 
@@ -37,7 +41,8 @@
         "capital": {"en":"Rome", "ru": "Рим", "be": "Рым"},
         "video": "https://www.youtube.com/watch?v=_4PJZovffRs",
         "date": {"code": "IT", "timeZone": "Europe/Rome"},
-        "mainImg": "./img/italy.jpeg"
+        "mainImg": "./img/italy.jpeg",
+        "currency": "EUR"
     },
     {
         "id": 5, 
@@ -45,7 +50,8 @@
         "capital": {"en":"Canberra", "ru": "Канберра", "be": "Канбера"},
         "video": "https://www.youtube.com/watch?v=kjsFG7wJ0FQ",
         "date": {"code": "AU", "timeZone": "Australia/Canberra"},
-        "mainImg": "./img/australia.jpg"
+        "mainImg": "./img/australia.jpg",
+        "currency": "AUD"
     },
     {
         "id": 6, 
@@ -53,7 +59,8 @@
         "capital": {"en":"London", "ru": "Лондон", "be": "Лондан"},
         "video": "https://www.youtube.com/watch?v=PtWeqZsuzpE",
         "date": {"code": "GB", "timeZone": "Europe/London"},
-        "mainImg": "./img/great-britain.jpg"
+        "mainImg": "./img/great-britain.jpg",
+        "currency": "GBP"
     },
     {
         "id": 7, 
@@ -61,7 +68,8 @@
         "capital": {"en":"New Delhi", "ru": "Нью-Дели", "be": "Нью-Дэлі"},
         "video": "https://www.youtube.com/watch?v=KLwbm_f28eY",
         "date": {"code": "IN", "timeZone": "Asia/Kolkata"},
-        "mainImg": "./img/india.jpg"
+        "mainImg": "./img/india.jpg",
+        "currency": "INR"
     },
     {
         "id": 8, 
@@ -69,7 +77,8 @@
         "capital": {"en":"Beijing", "ru": "Пекин", "be": "Пекін"},
         "video": "https://www.youtube.com/watch?v=paxRy2msloY",
         "date": {"code": "CN", "timeZone": "Asia/Shanghai"},
-        "mainImg": "./img/china.jpg"
+        "mainImg": "./img/china.jpg",
+        "currency": "CNY"
     },
     {
         "id": 9, 
@@ -77,7 +86,8 @@
         "capital": {"en":"Brazil", "ru": "Бразилия", "be": "Бразілія"},
         "video": "https://www.youtube.com/watch?v=Q9H2h86umoE&t",
         "date": {"code": "BR", "timeZone": "Brazil/East"},
-        "mainImg": "./img/brazil.jpg"
+        "mainImg": "./img/brazil.jpg",
+        "currency": "BRL"
     },
     {
         "id": 10, 
@@ -85,6 +95,7 @@
         "capital": {"en":"Cairo", "ru": "Каир", "be": "Каір"},
         "video": "https://www.youtube.com/watch?v=mfxQy5A_tHs",
         "date": {"code": "EG", "timeZone": "Africa/Cairo"},
-        "mainImg": "./img/egypt.jpg"
+        "mainImg": "./img/egypt.jpg",
+        "currency": "EGP"
     }
 ]

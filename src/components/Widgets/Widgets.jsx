@@ -1,6 +1,7 @@
 import React from 'react';
 import Weather from './Weather/Weather';
 import DateTime from './Date/DateTime';
+import Rate from './Rate/Rate';
 
 /**Country widgets */
 
@@ -11,7 +12,7 @@ const Widgets = ({ country, language }) => {
         <div>
             <Weather country={ country } capital={ capital } language={ language } />
             <DateTime country={ country } language={ language } />
-            
+            <Rate />
         </div>
     );
 }

@@ -28,7 +28,7 @@ const Country = ({countries, countryName, setShowSearch}) => {
       <div className={classes.widget}>
         <LanguageConsumer>
           {({language}) => (
-            <Widgets country={country} capital={country.capital.en} language={language} />
+            <Widgets country={country} language={language} />
           )}
         </LanguageConsumer>
       </div>
