@@ -9,10 +9,12 @@ const Widgets = ({ country, language }) => {
     const capital = country.capital.en;
 
     return (
-        <div>
-            <Weather country={ country } capital={ capital } language={ language } />
-            <DateTime country={ country } language={ language } />
-            <Rate />
+        <div className="card mb-3">
+            <div className="card-body">
+                <Weather country={ country } capital={ capital } language={ language } />
+                <DateTime country={ country } language={ language } />
+                <Rate currency={country.currency} />
+            </div>
         </div>
     );
 }

@@ -1,13 +1,18 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import Search from './Search';
-import Select from './Select';
+import Select from '../Select';
 import {LanguageConsumer} from '../../context';
 import {Link} from 'react-router-dom';
 
 import classes from './Header.module.scss';
 
 const Header = ({showSearch}) => {
+  const options = [
+    {"OptValue": "russian", "value": "Rus"},
+    {"OptValue": "belarusian", "value": "Bel"},
+    {"OptValue": "english", "value": "Eng"}
+  ]
   return (
     <LanguageConsumer>
       {({updateLanguage, language}) => (
@@ -18,7 +23,7 @@ const Header = ({showSearch}) => {
             </Link>
             <div className={`${classes.panel}`}>
               {showSearch ? <Search language={language} /> : null}
-              <Select updateLanguage={updateLanguage} language={language} />
+              <Select func={updateLanguage} selected={language} options={options} />
             </div>
           </nav>
         </header>
