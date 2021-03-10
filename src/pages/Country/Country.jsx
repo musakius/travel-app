@@ -6,6 +6,8 @@ import classes from './Country.module.scss';
 import {LanguageConsumer} from '../../context';
 import Widgets from '../../components/Widgets/Widgets';
 import Video from '../../components/Video/Video';
+import Map from '../../components/Map/Map';
+import Gallery from '../../components/Gallery';
 
 const Country = ({countries, countryName, setShowSearch}) => {
   useEffect(() => {
@@ -35,6 +37,10 @@ const Country = ({countries, countryName, setShowSearch}) => {
       <div className={classes.video}>
         <Video video={country.video} />
       </div>
+      <div className={classes.map}>
+        <Map coordinates={country.coordinates} />
+      </div>
+      <Gallery gallery={country.gallery} />
     </main>
   );
 };

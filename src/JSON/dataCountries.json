@@ -1,101 +1,707 @@
 [
-    {
-        "id": 0, 
-        "name": {"en":"Belarus", "ru": "Беларусь", "be": "Беларусь"},
-        "capital": {"en":"Minsk", "ru": "Минск", "be": "Мінск"},
-        "video": "https://www.youtube.com/watch?v=QNdYybI3Pgs",
-        "date": {"code": "BY", "timeZone": "Europe/Minsk"},
-        "mainImg": "./img/belarus.jpg",
-        "currency": "BYN"
-    },
-    {
-        "id": 1, 
-        "name": {"en":"Canada", "ru": "Канада", "be": "Канада"},
-        "capital": {"en":"Ottawa", "ru": "Оттава", "be": "Атава"},
-        "video": "https://www.youtube.com/watch?v=TknrmpS4GOg",
-        "date": {"code": "CA", "timeZone": "Canada/Eastern"},
-        "mainImg": "./img/canada.jpg",
-        "currency": "CAD"
-    },
-    {
-        "id": 2, 
-        "name": {"en":"Germany", "ru": "Германия", "be": "Германія"},
-        "capital": {"en":"Berlin", "ru": "Берлин", "be": "Берлін"},
-        "video": "https://www.youtube.com/watch?v=8IJzZSVRpbU",
-        "date": {"code": "DE", "timeZone": "Europe/Berlin"},
-        "mainImg": "./img/germany.jpg",
-        "currency": "EUR"
-    },
-    {
-        "id": 3, 
-        "name": {"en":"France", "ru": "Франция", "be": "Францыя"},
-        "capital": {"en":"Paris", "ru": "Париж", "be": "Парыж"},
-        "video": "https://www.youtube.com/watch?v=j9q3NLqUvxI",
-        "date": {"code": "FR", "timeZone": "Europe/Paris"},
-        "mainImg": "./img/france.jpg",
-        "currency": "EUR"
-    },
-    {
-        "id": 4, 
-        "name": {"en":"Italy", "ru": "Италия", "be": "Італія"},
-        "capital": {"en":"Rome", "ru": "Рим", "be": "Рым"},
-        "video": "https://www.youtube.com/watch?v=_4PJZovffRs",
-        "date": {"code": "IT", "timeZone": "Europe/Rome"},
-        "mainImg": "./img/italy.jpeg",
-        "currency": "EUR"
-    },
-    {
-        "id": 5, 
-        "name": {"en":"Australia", "ru": "Австралия", "be": "Аўстралія"},
-        "capital": {"en":"Canberra", "ru": "Канберра", "be": "Канбера"},
-        "video": "https://www.youtube.com/watch?v=kjsFG7wJ0FQ",
-        "date": {"code": "AU", "timeZone": "Australia/Canberra"},
-        "mainImg": "./img/australia.jpg",
-        "currency": "AUD"
-    },
-    {
-        "id": 6, 
-        "name": {"en":"Great Britain", "ru": "Великобритания", "be": "Велікабрытанія"},
-        "capital": {"en":"London", "ru": "Лондон", "be": "Лондан"},
-        "video": "https://www.youtube.com/watch?v=PtWeqZsuzpE",
-        "date": {"code": "GB", "timeZone": "Europe/London"},
-        "mainImg": "./img/great-britain.jpg",
-        "currency": "GBP"
-    },
-    {
-        "id": 7, 
-        "name": {"en":"India", "ru": "Индия", "be": "Індыя"},
-        "capital": {"en":"New Delhi", "ru": "Нью-Дели", "be": "Нью-Дэлі"},
-        "video": "https://www.youtube.com/watch?v=KLwbm_f28eY",
-        "date": {"code": "IN", "timeZone": "Asia/Kolkata"},
-        "mainImg": "./img/india.jpg",
-        "currency": "INR"
-    },
-    {
-        "id": 8, 
-        "name": {"en":"China", "ru": "Китай", "be": "Кітай"},
-        "capital": {"en":"Beijing", "ru": "Пекин", "be": "Пекін"},
-        "video": "https://www.youtube.com/watch?v=paxRy2msloY",
-        "date": {"code": "CN", "timeZone": "Asia/Shanghai"},
-        "mainImg": "./img/china.jpg",
-        "currency": "CNY"
-    },
-    {
-        "id": 9, 
-        "name": {"en":"Brazil", "ru": "Бразилия", "be": "Бразілія"},
-        "capital": {"en":"Brazil", "ru": "Бразилия", "be": "Бразілія"},
-        "video": "https://www.youtube.com/watch?v=Q9H2h86umoE&t",
-        "date": {"code": "BR", "timeZone": "Brazil/East"},
-        "mainImg": "./img/brazil.jpg",
-        "currency": "BRL"
-    },
-    {
-        "id": 10, 
-        "name": {"en":"Egypt", "ru": "Египет", "be": "Егіпет"},
-        "capital": {"en":"Cairo", "ru": "Каир", "be": "Каір"},
-        "video": "https://www.youtube.com/watch?v=mfxQy5A_tHs",
-        "date": {"code": "EG", "timeZone": "Africa/Cairo"},
-        "mainImg": "./img/egypt.jpg",
-        "currency": "EGP"
+  {
+    "id": 0,
+    "name": {"en": "Belarus", "ru": "Беларусь", "be": "Беларусь"},
+    "capital": {"en": "Minsk", "ru": "Минск", "be": "Мінск"},
+    "video": "https://www.youtube.com/watch?v=QNdYybI3Pgs",
+    "date": {"code": "BY", "timeZone": "Europe/Minsk"},
+    "mainImg": {"original": "./img/belarus.jpg", "thumbnail": ""},
+    "coordinates": [53.850, 27.52],
+    "currency": "BYN"
+    ,
+    "gallery": {
+      "images": [
+        {
+          "original": "https://picsum.photos/id/1018/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1015/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1015/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1019/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1019/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1018/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1015/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1015/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1019/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1019/250/150/"
+        }
+      ],
+      "descriptions": {
+        "ru": [
+          "достопримечательность1 достопримечательность1 достопримечательность1 достопримечательность1",
+          "достопримечательность2 достопримечательность2 достопримечательность2 достопримечательность2",
+          "достопримечательность3 достопримечательность3 достопримечательность3 достопримечательность3",
+          "достопримечательность4 достопримечательность4 достопримечательность4 достопримечательность4",
+          "достопримечательность5 достопримечательность5 достопримечательность5 достопримечательность5",
+          "достопримечательность6 достопримечательность6 достопримечательность6 достопримечательность6"
+        ],
+        "be":  [
+            "славутасць1 славутасць1 славутасць1 славутасць1",
+            "славутасць2 славутасць2 славутасць2 славутасць2",
+            "славутасць3 славутасць3 славутасць3 славутасць3",
+            "славутасць4 славутасць4 славутасць4 славутасць4",
+            "славутасць5 славутасць5 славутасць5 славутасць5",
+            "славутасць6 славутасць6 славутасць6 славутасць6"
+        ],
+        "en":  [
+            "showplace1 showplace1 showplace1 showplace1",
+            "showplace2 showplace2 showplace2 showplace2",
+            "showplace3 showplace3 showplace3 showplace3",
+            "showplace4 showplace4 showplace4 showplace4",
+            "showplace5 showplace5 showplace5 showplace5",
+            "showplace6 showplace6 showplace6 showplace6"
+        ]
+      }
     }
+  },
+  {
+    "id": 1,
+    "name": {"en": "Canada", "ru": "Канада", "be": "Канада"},
+    "capital": {"en": "Ottawa", "ru": "Оттава", "be": "Атава"},
+    "video": "https://www.youtube.com/watch?v=TknrmpS4GOg",
+    "date": {"code": "CA", "timeZone": "Canada/Eastern"},
+    "mainImg": {"original": "./img/canada.jpg", "thumbnail": ""},
+    "coordinates": [45.41, -75.69],
+    "currency": "CAD",
+    "gallery": {
+      "images": [
+        {
+          "original": "https://picsum.photos/id/1018/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1015/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1015/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1019/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1019/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1018/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1015/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1015/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1019/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1019/250/150/"
+        }
+      ],
+      "descriptions": {
+        "ru": [
+          "достопримечательность1 достопримечательность1 достопримечательность1 достопримечательность1",
+          "достопримечательность2 достопримечательность2 достопримечательность2 достопримечательность2",
+          "достопримечательность3 достопримечательность3 достопримечательность3 достопримечательность3",
+          "достопримечательность4 достопримечательность4 достопримечательность4 достопримечательность4",
+          "достопримечательность5 достопримечательность5 достопримечательность5 достопримечательность5",
+          "достопримечательность6 достопримечательность6 достопримечательность6 достопримечательность6"
+        ],
+        "be":  [
+            "славутасць1 славутасць1 славутасць1 славутасць1",
+            "славутасць2 славутасць2 славутасць2 славутасць2",
+            "славутасць3 славутасць3 славутасць3 славутасць3",
+            "славутасць4 славутасць4 славутасць4 славутасць4",
+            "славутасць5 славутасць5 славутасць5 славутасць5",
+            "славутасць6 славутасць6 славутасць6 славутасць6"
+        ],
+        "en":  [
+            "showplace1 showplace1 showplace1 showplace1",
+            "showplace2 showplace2 showplace2 showplace2",
+            "showplace3 showplace3 showplace3 showplace3",
+            "showplace4 showplace4 showplace4 showplace4",
+            "showplace5 showplace5 showplace5 showplace5",
+            "showplace6 showplace6 showplace6 showplace6"
+        ]
+      }
+    }
+  },
+  {
+    "id": 2,
+    "name": {"en": "Germany", "ru": "Германия", "be": "Германія"},
+    "capital": {"en": "Berlin", "ru": "Берлин", "be": "Берлін"},
+    "video": "https://www.youtube.com/watch?v=8IJzZSVRpbU",
+    "date": {"code": "DE", "timeZone": "Europe/Berlin"},
+    "mainImg": {"original": "./img/germany.jpg", "thumbnail": ""},
+    "coordinates": [52.52, 13.41],
+    "currency": "EUR",
+    "gallery": {
+      "images": [
+        {
+          "original": "https://picsum.photos/id/1018/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1015/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1015/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1019/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1019/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1018/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1015/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1015/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1019/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1019/250/150/"
+        }
+      ],
+      "descriptions": {
+        "ru": [
+          "достопримечательность1 достопримечательность1 достопримечательность1 достопримечательность1",
+          "достопримечательность2 достопримечательность2 достопримечательность2 достопримечательность2",
+          "достопримечательность3 достопримечательность3 достопримечательность3 достопримечательность3",
+          "достопримечательность4 достопримечательность4 достопримечательность4 достопримечательность4",
+          "достопримечательность5 достопримечательность5 достопримечательность5 достопримечательность5",
+          "достопримечательность6 достопримечательность6 достопримечательность6 достопримечательность6"
+        ],
+        "be":  [
+            "славутасць1 славутасць1 славутасць1 славутасць1",
+            "славутасць2 славутасць2 славутасць2 славутасць2",
+            "славутасць3 славутасць3 славутасць3 славутасць3",
+            "славутасць4 славутасць4 славутасць4 славутасць4",
+            "славутасць5 славутасць5 славутасць5 славутасць5",
+            "славутасць6 славутасць6 славутасць6 славутасць6"
+        ],
+        "en":  [
+            "showplace1 showplace1 showplace1 showplace1",
+            "showplace2 showplace2 showplace2 showplace2",
+            "showplace3 showplace3 showplace3 showplace3",
+            "showplace4 showplace4 showplace4 showplace4",
+            "showplace5 showplace5 showplace5 showplace5",
+            "showplace6 showplace6 showplace6 showplace6"
+        ]
+      }
+    }
+  },
+  {
+    "id": 3,
+    "name": {"en": "France", "ru": "Франция", "be": "Францыя"},
+    "capital": {"en": "Paris", "ru": "Париж", "be": "Парыж"},
+    "video": "https://www.youtube.com/watch?v=j9q3NLqUvxI",
+    "date": {"code": "FR", "timeZone": "Europe/Paris"},
+    "mainImg": {"original": "./img/france.jpg", "thumbnail": ""},
+    "coordinates": [48.85, 2.34],
+    "currency": "EUR",
+    "gallery": {
+      "images": [
+        {
+          "original": "https://picsum.photos/id/1018/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1015/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1015/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1019/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1019/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1018/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1015/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1015/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1019/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1019/250/150/"
+        }
+      ],
+      "descriptions": {
+        "ru": [
+          "достопримечательность1 достопримечательность1 достопримечательность1 достопримечательность1",
+          "достопримечательность2 достопримечательность2 достопримечательность2 достопримечательность2",
+          "достопримечательность3 достопримечательность3 достопримечательность3 достопримечательность3",
+          "достопримечательность4 достопримечательность4 достопримечательность4 достопримечательность4",
+          "достопримечательность5 достопримечательность5 достопримечательность5 достопримечательность5",
+          "достопримечательность6 достопримечательность6 достопримечательность6 достопримечательность6"
+        ],
+        "be":  [
+            "славутасць1 славутасць1 славутасць1 славутасць1",
+            "славутасць2 славутасць2 славутасць2 славутасць2",
+            "славутасць3 славутасць3 славутасць3 славутасць3",
+            "славутасць4 славутасць4 славутасць4 славутасць4",
+            "славутасць5 славутасць5 славутасць5 славутасць5",
+            "славутасць6 славутасць6 славутасць6 славутасць6"
+        ],
+        "en":  [
+            "showplace1 showplace1 showplace1 showplace1",
+            "showplace2 showplace2 showplace2 showplace2",
+            "showplace3 showplace3 showplace3 showplace3",
+            "showplace4 showplace4 showplace4 showplace4",
+            "showplace5 showplace5 showplace5 showplace5",
+            "showplace6 showplace6 showplace6 showplace6"
+        ]
+      }
+    }
+  },
+  {
+    "id": 4,
+    "name": {"en": "Italy", "ru": "Италия", "be": "Італія"},
+    "capital": {"en": "Rome", "ru": "Рим", "be": "Рым"},
+    "video": "https://www.youtube.com/watch?v=_4PJZovffRs",
+    "date": {"code": "IT", "timeZone": "Europe/Rome"},
+    "mainImg": {"original": "./img/italy.jpeg", "thumbnail": ""},
+    "coordinates": [41.89, 12.51],
+    "currency": "EUR",
+    "gallery": {
+      "images": [
+        {
+          "original": "https://picsum.photos/id/1018/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1015/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1015/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1019/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1019/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1018/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1015/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1015/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1019/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1019/250/150/"
+        }
+      ],
+      "descriptions": {
+        "ru": [
+          "достопримечательность1 достопримечательность1 достопримечательность1 достопримечательность1",
+          "достопримечательность2 достопримечательность2 достопримечательность2 достопримечательность2",
+          "достопримечательность3 достопримечательность3 достопримечательность3 достопримечательность3",
+          "достопримечательность4 достопримечательность4 достопримечательность4 достопримечательность4",
+          "достопримечательность5 достопримечательность5 достопримечательность5 достопримечательность5",
+          "достопримечательность6 достопримечательность6 достопримечательность6 достопримечательность6"
+        ],
+        "be":  [
+            "славутасць1 славутасць1 славутасць1 славутасць1",
+            "славутасць2 славутасць2 славутасць2 славутасць2",
+            "славутасць3 славутасць3 славутасць3 славутасць3",
+            "славутасць4 славутасць4 славутасць4 славутасць4",
+            "славутасць5 славутасць5 славутасць5 славутасць5",
+            "славутасць6 славутасць6 славутасць6 славутасць6"
+        ],
+        "en":  [
+            "showplace1 showplace1 showplace1 showplace1",
+            "showplace2 showplace2 showplace2 showplace2",
+            "showplace3 showplace3 showplace3 showplace3",
+            "showplace4 showplace4 showplace4 showplace4",
+            "showplace5 showplace5 showplace5 showplace5",
+            "showplace6 showplace6 showplace6 showplace6"
+        ]
+      }
+    }
+  },
+  {
+    "id": 5,
+    "name": {"en": "Australia", "ru": "Австралия", "be": "Аўстралія"},
+    "capital": {"en": "Canberra", "ru": "Канберра", "be": "Канбера"},
+    "video": "https://www.youtube.com/watch?v=kjsFG7wJ0FQ",
+    "date": {"code": "AU", "timeZone": "Australia/Canberra"},
+    "mainImg": {"original": "./img/australia.jpg", "thumbnail": ""},
+    "coordinates": [-35.28, 149.12],
+    "currency": "AUD",
+    "gallery": {
+      "images": [
+        {
+          "original": "https://picsum.photos/id/1018/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1015/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1015/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1019/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1019/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1018/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1015/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1015/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1019/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1019/250/150/"
+        }
+      ],
+      "descriptions": {
+        "ru": [
+          "достопримечательность1 достопримечательность1 достопримечательность1 достопримечательность1",
+          "достопримечательность2 достопримечательность2 достопримечательность2 достопримечательность2",
+          "достопримечательность3 достопримечательность3 достопримечательность3 достопримечательность3",
+          "достопримечательность4 достопримечательность4 достопримечательность4 достопримечательность4",
+          "достопримечательность5 достопримечательность5 достопримечательность5 достопримечательность5",
+          "достопримечательность6 достопримечательность6 достопримечательность6 достопримечательность6"
+        ],
+        "be":  [
+            "славутасць1 славутасць1 славутасць1 славутасць1",
+            "славутасць2 славутасць2 славутасць2 славутасць2",
+            "славутасць3 славутасць3 славутасць3 славутасць3",
+            "славутасць4 славутасць4 славутасць4 славутасць4",
+            "славутасць5 славутасць5 славутасць5 славутасць5",
+            "славутасць6 славутасць6 славутасць6 славутасць6"
+        ],
+        "en":  [
+            "showplace1 showplace1 showplace1 showplace1",
+            "showplace2 showplace2 showplace2 showplace2",
+            "showplace3 showplace3 showplace3 showplace3",
+            "showplace4 showplace4 showplace4 showplace4",
+            "showplace5 showplace5 showplace5 showplace5",
+            "showplace6 showplace6 showplace6 showplace6"
+        ]
+      }
+    }
+  },
+  {
+    "id": 6,
+    "name": {"en": "Great Britain", "ru": "Великобритания", "be": "Велікабрытанія"},
+    "capital": {"en": "London", "ru": "Лондон", "be": "Лондан"},
+    "video": "https://www.youtube.com/watch?v=PtWeqZsuzpE",
+    "date": {"code": "GB", "timeZone": "Europe/London"},
+    "mainImg": {"original": "./img/great-britain.jpg", "thumbnail": ""},
+    "coordinates": [51.505, -0.09],
+    "currency": "GBP",
+    "gallery": {
+      "images": [
+        {
+          "original": "https://picsum.photos/id/1018/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1015/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1015/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1019/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1019/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1018/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1015/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1015/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1019/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1019/250/150/"
+        }
+      ],
+      "descriptions": {
+        "ru": [
+          "достопримечательность1 достопримечательность1 достопримечательность1 достопримечательность1",
+          "достопримечательность2 достопримечательность2 достопримечательность2 достопримечательность2",
+          "достопримечательность3 достопримечательность3 достопримечательность3 достопримечательность3",
+          "достопримечательность4 достопримечательность4 достопримечательность4 достопримечательность4",
+          "достопримечательность5 достопримечательность5 достопримечательность5 достопримечательность5",
+          "достопримечательность6 достопримечательность6 достопримечательность6 достопримечательность6"
+        ],
+        "be":  [
+            "славутасць1 славутасць1 славутасць1 славутасць1",
+            "славутасць2 славутасць2 славутасць2 славутасць2",
+            "славутасць3 славутасць3 славутасць3 славутасць3",
+            "славутасць4 славутасць4 славутасць4 славутасць4",
+            "славутасць5 славутасць5 славутасць5 славутасць5",
+            "славутасць6 славутасць6 славутасць6 славутасць6"
+        ],
+        "en":  [
+            "showplace1 showplace1 showplace1 showplace1",
+            "showplace2 showplace2 showplace2 showplace2",
+            "showplace3 showplace3 showplace3 showplace3",
+            "showplace4 showplace4 showplace4 showplace4",
+            "showplace5 showplace5 showplace5 showplace5",
+            "showplace6 showplace6 showplace6 showplace6"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7,
+    "name": {"en": "India", "ru": "Индия", "be": "Індыя"},
+    "capital": {"en": "New Delhi", "ru": "Нью-Дели", "be": "Нью-Дэлі"},
+    "video": "https://www.youtube.com/watch?v=KLwbm_f28eY",
+    "date": {"code": "IN", "timeZone": "Asia/Kolkata"},
+    "mainImg": {"original": "./img/india.jpg", "thumbnail": ""},
+    "coordinates": [28.63, 77.22],
+    "currency": "INR",
+    "gallery": {
+      "images": [
+        {
+          "original": "https://picsum.photos/id/1018/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1015/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1015/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1019/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1019/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1018/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1015/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1015/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1019/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1019/250/150/"
+        }
+      ],
+      "descriptions": {
+        "ru": [
+          "достопримечательность1 достопримечательность1 достопримечательность1 достопримечательность1",
+          "достопримечательность2 достопримечательность2 достопримечательность2 достопримечательность2",
+          "достопримечательность3 достопримечательность3 достопримечательность3 достопримечательность3",
+          "достопримечательность4 достопримечательность4 достопримечательность4 достопримечательность4",
+          "достопримечательность5 достопримечательность5 достопримечательность5 достопримечательность5",
+          "достопримечательность6 достопримечательность6 достопримечательность6 достопримечательность6"
+        ],
+        "be":  [
+            "славутасць1 славутасць1 славутасць1 славутасць1",
+            "славутасць2 славутасць2 славутасць2 славутасць2",
+            "славутасць3 славутасць3 славутасць3 славутасць3",
+            "славутасць4 славутасць4 славутасць4 славутасць4",
+            "славутасць5 славутасць5 славутасць5 славутасць5",
+            "славутасць6 славутасць6 славутасць6 славутасць6"
+        ],
+        "en":  [
+            "showplace1 showplace1 showplace1 showplace1",
+            "showplace2 showplace2 showplace2 showplace2",
+            "showplace3 showplace3 showplace3 showplace3",
+            "showplace4 showplace4 showplace4 showplace4",
+            "showplace5 showplace5 showplace5 showplace5",
+            "showplace6 showplace6 showplace6 showplace6"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8,
+    "name": {"en": "China", "ru": "Китай", "be": "Кітай"},
+    "capital": {"en": "Beijing", "ru": "Пекин", "be": "Пекін"},
+    "video": "https://www.youtube.com/watch?v=paxRy2msloY",
+    "date": {"code": "CN", "timeZone": "Asia/Shanghai"},
+    "mainImg": {"original": "./img/china.jpg", "thumbnail": ""},
+    "coordinates": [39.90, 116.39],
+    "currency": "CNY",
+    "gallery": {
+      "images": [
+        {
+          "original": "https://picsum.photos/id/1018/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1015/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1015/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1019/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1019/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1018/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1015/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1015/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1019/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1019/250/150/"
+        }
+      ],
+      "descriptions": {
+        "ru": [
+          "достопримечательность1 достопримечательность1 достопримечательность1 достопримечательность1",
+          "достопримечательность2 достопримечательность2 достопримечательность2 достопримечательность2",
+          "достопримечательность3 достопримечательность3 достопримечательность3 достопримечательность3",
+          "достопримечательность4 достопримечательность4 достопримечательность4 достопримечательность4",
+          "достопримечательность5 достопримечательность5 достопримечательность5 достопримечательность5",
+          "достопримечательность6 достопримечательность6 достопримечательность6 достопримечательность6"
+        ],
+        "be":  [
+            "славутасць1 славутасць1 славутасць1 славутасць1",
+            "славутасць2 славутасць2 славутасць2 славутасць2",
+            "славутасць3 славутасць3 славутасць3 славутасць3",
+            "славутасць4 славутасць4 славутасць4 славутасць4",
+            "славутасць5 славутасць5 славутасць5 славутасць5",
+            "славутасць6 славутасць6 славутасць6 славутасць6"
+        ],
+        "en":  [
+            "showplace1 showplace1 showplace1 showplace1",
+            "showplace2 showplace2 showplace2 showplace2",
+            "showplace3 showplace3 showplace3 showplace3",
+            "showplace4 showplace4 showplace4 showplace4",
+            "showplace5 showplace5 showplace5 showplace5",
+            "showplace6 showplace6 showplace6 showplace6"
+        ]
+      }
+    }
+  },
+  {
+    "id": 9,
+    "name": {"en": "Brazil", "ru": "Бразилия", "be": "Бразілія"},
+    "capital": {"en": "Brazil", "ru": "Бразилия", "be": "Бразілія"},
+    "video": "https://www.youtube.com/watch?v=Q9H2h86umoE&t",
+    "date": {"code": "BR", "timeZone": "Brazil/East"},
+    "mainImg": {"original": "./img/brazil.jpg", "thumbnail": ""},
+    "coordinates": [-15.779, -47.929],
+    "currency": "BRL",
+    "gallery": {
+      "images": [
+        {
+          "original": "https://picsum.photos/id/1018/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1015/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1015/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1019/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1019/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1018/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1015/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1015/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1019/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1019/250/150/"
+        }
+      ],
+      "descriptions": {
+        "ru": [
+          "достопримечательность1 достопримечательность1 достопримечательность1 достопримечательность1",
+          "достопримечательность2 достопримечательность2 достопримечательность2 достопримечательность2",
+          "достопримечательность3 достопримечательность3 достопримечательность3 достопримечательность3",
+          "достопримечательность4 достопримечательность4 достопримечательность4 достопримечательность4",
+          "достопримечательность5 достопримечательность5 достопримечательность5 достопримечательность5",
+          "достопримечательность6 достопримечательность6 достопримечательность6 достопримечательность6"
+        ],
+        "be":  [
+            "славутасць1 славутасць1 славутасць1 славутасць1",
+            "славутасць2 славутасць2 славутасць2 славутасць2",
+            "славутасць3 славутасць3 славутасць3 славутасць3",
+            "славутасць4 славутасць4 славутасць4 славутасць4",
+            "славутасць5 славутасць5 славутасць5 славутасць5",
+            "славутасць6 славутасць6 славутасць6 славутасць6"
+        ],
+        "en":  [
+            "showplace1 showplace1 showplace1 showplace1",
+            "showplace2 showplace2 showplace2 showplace2",
+            "showplace3 showplace3 showplace3 showplace3",
+            "showplace4 showplace4 showplace4 showplace4",
+            "showplace5 showplace5 showplace5 showplace5",
+            "showplace6 showplace6 showplace6 showplace6"
+        ]
+      }
+    }
+  },
+  {
+    "id": 10,
+    "name": {"en": "Egypt", "ru": "Египет", "be": "Егіпет"},
+    "capital": {"en": "Cairo", "ru": "Каир", "be": "Каір"},
+    "video": "https://www.youtube.com/watch?v=mfxQy5A_tHs",
+    "date": {"code": "EG", "timeZone": "Africa/Cairo"},
+    "mainImg": {"original": "./img/egypt.jpg", "thumbnail": ""},
+    "coordinates": [30.06, 31.2496],
+    "currency": "EGP",
+    "gallery": {
+      "images": [
+        {
+          "original": "https://picsum.photos/id/1018/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1015/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1015/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1019/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1019/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1018/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1015/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1015/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1019/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1019/250/150/"
+        }
+      ],
+      "descriptions": {
+        "ru": [
+          "достопримечательность1 достопримечательность1 достопримечательность1 достопримечательность1",
+          "достопримечательность2 достопримечательность2 достопримечательность2 достопримечательность2",
+          "достопримечательность3 достопримечательность3 достопримечательность3 достопримечательность3",
+          "достопримечательность4 достопримечательность4 достопримечательность4 достопримечательность4",
+          "достопримечательность5 достопримечательность5 достопримечательность5 достопримечательность5",
+          "достопримечательность6 достопримечательность6 достопримечательность6 достопримечательность6"
+        ],
+        "be":  [
+            "славутасць1 славутасць1 славутасць1 славутасць1",
+            "славутасць2 славутасць2 славутасць2 славутасць2",
+            "славутасць3 славутасць3 славутасць3 славутасць3",
+            "славутасць4 славутасць4 славутасць4 славутасць4",
+            "славутасць5 славутасць5 славутасць5 славутасць5",
+            "славутасць6 славутасць6 славутасць6 славутасць6"
+        ],
+        "en":  [
+            "showplace1 showplace1 showplace1 showplace1",
+            "showplace2 showplace2 showplace2 showplace2",
+            "showplace3 showplace3 showplace3 showplace3",
+            "showplace4 showplace4 showplace4 showplace4",
+            "showplace5 showplace5 showplace5 showplace5",
+            "showplace6 showplace6 showplace6 showplace6"
+        ]
+      }
+    }
+  }
 ]
