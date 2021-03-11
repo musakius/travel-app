@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import classes from './DateTime.module.scss';
 
 const Clock = ({ locale, timeZone }) => {
     const [time, setTime] = useState(new Date());
@@ -13,7 +14,7 @@ const Clock = ({ locale, timeZone }) => {
     }, []);
 
     return (
-        <h2 className="card-text">
+        <h2 className={`${classes['clock']} card-text`}>
           {time.toLocaleTimeString(locale, { timeZone })}
         </h2>
     );

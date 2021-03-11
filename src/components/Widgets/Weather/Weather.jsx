@@ -46,7 +46,7 @@ const Weather = ({ country, capital, language }) => {
             />
             : {errorMessage}
         </div>
-      } if (!isLoaded) {
+    } if (!isLoaded) {
         return <div>
             <TranslatableText
             dictionary={{
@@ -57,7 +57,7 @@ const Weather = ({ country, capital, language }) => {
             />
             ...
         </div>
-      }
+    }
 
     return (
         <div className="card border-info mb-3 weather">

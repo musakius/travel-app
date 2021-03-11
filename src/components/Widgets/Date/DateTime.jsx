@@ -6,10 +6,10 @@ const DateTime = ({ country, language }) => {
 
     const dateInfo = country.date;
     const timeZone = dateInfo.timeZone;
-    const locale = `${language.substring(0,2)}-${dateInfo.code}`;
+    const locale = language ? `${language.substring(0,2)}-${dateInfo.code}` : dateInfo.code;
 
     return (
-        <div className="card border-info mb-3 weather">
+        <div className="card border-info mb-3">
             <div className="card-header">
                 <DateContainer />
             </div>
