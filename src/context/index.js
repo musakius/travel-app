@@ -32,4 +32,4 @@ const LanguageProvider = ({children}) => {
   );
 };
 
-export {LanguageProvider, LanguageConsumer};
+export {LanguageProvider, LanguageConsumer, LanguageContext};

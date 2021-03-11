@@ -28,11 +28,7 @@ const Country = ({countries, countryName, setShowSearch}) => {
         />
       </h1>
       <div className={classes.widget}>
-        <LanguageConsumer>
-          {({language}) => (
-            <Widgets country={country} language={language} />
-          )}
-        </LanguageConsumer>
+        <Widgets country={country} />
       </div>
       <div className={classes.video}>
         <Video video={country.video} />
