@@ -5,29 +5,19 @@ import classes from './Rate.module.scss';
 import config from './config.json';
 
 const Rate = ({ currency }) => {
-    const [selectedCurrency, setSelectedCurrency] = useState("rub");
-    const [currencyValue, setCurrencyValue] = useState(1);
+    
+    let savedCurrency = "rub";
+    if(localStorage.getItem('currency')) {
+        savedCurrency = localStorage.getItem('currency');
+    }
+    const [selectedCurrency, setSelectedCurrency] = useState(savedCurrency);
     const [resultValue, setResultValue] = useState("");
     const [errorMessage, setErrorMessage] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [result, setResult] = useState(null);
     
     const apiID = config.appid;
-    const baseUrl = `https://v6.exchangerate-api.com/v6/${apiID}/latest/`;
-    const [url, setUrl] = useState(baseUrl);
-
-    useEffect(() => {
-        if (localStorage.getItem('currency') === null) {
-            localStorage.setItem('currency', 'rub');
-            setSelectedCurrency('rub');
-        } else {
-            setSelectedCurrency(localStorage.getItem('currency'));
-        }
-        console.log("selectedCurrency",selectedCurrency);
-        setUrl(baseUrl + selectedCurrency);
-    }, []);
-
-    console.log(url);
+    const url = `https://v6.exchangerate-api.com/v6/${apiID}/latest/${currency}`;
 
     const options = [
         {"OptValue": "rub", "value": "RUB"},
@@ -36,9 +26,19 @@ const Rate = ({ currency }) => {
     ]
 
     useEffect(() => {
-        console.log("url", url);
+        if (localStorage.getItem('currency') === null) {
+            localStorage.setItem('currency', 'rub');
+            setSelectedCurrency('rub');
+        } else {
+            setSelectedCurrency(localStorage.getItem('currency'));
+        }
+    }, []);
+
+
+    useEffect(() => {
         let didCancel = false;
         const fetchData = async () => {
+            setErrorMessage(null);
             try{
                 const response = await fetch(url);
                 const data = await response.json();
@@ -47,12 +47,11 @@ const Rate = ({ currency }) => {
                         setErrorMessage(data.message.toUpperCase());
                         return;
                     }else{
+                        const dataObj = data.conversion_rates;
+                        const value = dataObj[selectedCurrency.toUpperCase()].toFixed(3);
+                        setResult(dataObj);
+                        setResultValue(value);
                         setIsLoaded(true);
-                        setResult(data.conversion_rates);
-                        if(result) {
-                            setResultValue(result[currency]);
-                            setErrorMessage(null);
-                        }
                     }
                 }
             } catch (e) {
@@ -67,25 +66,11 @@ const Rate = ({ currency }) => {
         };
     }, [url]);
 
-    useEffect(() => {
-        changeCurValue();
-    }, [currencyValue]);
-
-
     const updateCurrency = (e) => {
-        localStorage.setItem("currency", e.target.value);
-        setSelectedCurrency(e.target.value);
-        setUrl(baseUrl + selectedCurrency);
-    }
-
-    const changeCurValue = () => {
-        if(!result) return;
-        const newResult = (currencyValue > 1) ? currencyValue * resultValue : result[currency];
-        setResultValue(newResult);
-    }
-
-    const handleChange = (e) => {
-        setCurrencyValue(e.target.value);
+        const target = e.target.value;
+        localStorage.setItem("currency", target);
+        setSelectedCurrency(target);
+        setResultValue(result[target.toUpperCase()].toFixed(3));
     }
 
     if (errorMessage) {
@@ -112,8 +97,6 @@ const Rate = ({ currency }) => {
         </div>
     }
 
-    console.log("result", result);
-
     return (
         <div className="card border-info mb-3">
             <h3 className="card-header">
@@ -135,10 +118,7 @@ const Rate = ({ currency }) => {
                 <Select func={updateCurrency} selected={selectedCurrency} options={options} />
             </div>
             <div className="card-body">
-                <form className={classes.currency__form}>
-                    <input type="text" className="form-control" value={currencyValue} onChange={(e) => handleChange(e)} /> 
-                    <input type="text" className="form-control" value={resultValue} readOnly={true} />
-                </form>
+                <input type="text" className="form-control" id="resultValue" value={resultValue} readOnly={true} />
             </div>
 
         </div>
