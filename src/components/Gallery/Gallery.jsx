@@ -26,12 +26,23 @@ const Gallery = ({gallery}) => {
         ref={galleryRef}
         onSlide={() => setCurrentIndex(galleryRef.current.getCurrentIndex())}
       />
-      <div className="card-footer text-muted">
+      <div className="card-body">
+        <h5 className="card-title">
+          <TranslatableText
+            dictionary={{
+              russian: gallery.descriptions.ru[currentIndex].title,
+              belarusian: gallery.descriptions.be[currentIndex].title,
+              english: gallery.descriptions.en[currentIndex].title
+            }}
+          />
+        </h5>
+      </div>
+      <div className={`${classes.description} card-footer text-muted`}>
         <TranslatableText
           dictionary={{
-            russian: gallery.descriptions.ru[currentIndex],
-            belarusian: gallery.descriptions.be[currentIndex],
-            english: gallery.descriptions.en[currentIndex]
+            russian: gallery.descriptions.ru[currentIndex].description,
+            belarusian: gallery.descriptions.be[currentIndex].description,
+            english: gallery.descriptions.en[currentIndex].description
           }}
         />
       </div>
