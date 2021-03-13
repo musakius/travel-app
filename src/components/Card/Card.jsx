@@ -9,7 +9,7 @@ const Card = ({country}) => {
       <Link to={`/${country.name.en.toLowerCase()}`}>
         <img
           className={`${classes.image} d-block user-select-none`}
-          src={country.mainImg.original}
+          src={country.mainImg.card}
           alt={country.name.en}
         />
         <div className="card-body">

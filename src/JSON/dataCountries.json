@@ -1,707 +1,1333 @@
 [
-    {
-      "id": 0,
-      "name": {"en": "Belarus", "ru": "Беларусь", "be": "Беларусь"},
-      "capital": {"en": "Minsk", "ru": "Минск", "be": "Мінск"},
-      "video": "https://www.youtube.com/watch?v=QNdYybI3Pgs",
-      "date": {"code": "BY", "timeZone": "Europe/Minsk"},
-      "mainImg": {"original": "./img/belarus.jpg", "thumbnail": ""},
-      "coordinates": [53.850, 27.52],
-      "currency": "BYN",
-      "gallery": {
-        "images": [
-          {
-            "original": "https://picsum.photos/id/1018/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1018/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1015/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1015/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1019/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1019/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1018/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1018/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1015/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1015/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1019/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1019/250/150/"
-          }
-        ],
-        "descriptions": {
-          "ru": [
-            "достопримечательность1 достопримечательность1 достопримечательность1 достопримечательность1",
-            "достопримечательность2 достопримечательность2 достопримечательность2 достопримечательность2",
-            "достопримечательность3 достопримечательность3 достопримечательность3 достопримечательность3",
-            "достопримечательность4 достопримечательность4 достопримечательность4 достопримечательность4",
-            "достопримечательность5 достопримечательность5 достопримечательность5 достопримечательность5",
-            "достопримечательность6 достопримечательность6 достопримечательность6 достопримечательность6"
-          ],
-          "be":  [
-              "славутасць1 славутасць1 славутасць1 славутасць1",
-              "славутасць2 славутасць2 славутасць2 славутасць2",
-              "славутасць3 славутасць3 славутасць3 славутасць3",
-              "славутасць4 славутасць4 славутасць4 славутасць4",
-              "славутасць5 славутасць5 славутасць5 славутасць5",
-              "славутасць6 славутасць6 славутасць6 славутасць6"
-          ],
-          "en":  [
-              "showplace1 showplace1 showplace1 showplace1",
-              "showplace2 showplace2 showplace2 showplace2",
-              "showplace3 showplace3 showplace3 showplace3",
-              "showplace4 showplace4 showplace4 showplace4",
-              "showplace5 showplace5 showplace5 showplace5",
-              "showplace6 showplace6 showplace6 showplace6"
-          ]
-        }
-      }
+  {
+    "id": 0,
+    "name": {"en": "Belarus", "ru": "Беларусь", "be": "Беларусь"},
+    "capital": {"en": "Minsk", "ru": "Минск", "be": "Мінск"},
+    "video": "https://www.youtube.com/watch?v=QNdYybI3Pgs",
+    "date": {"code": "BY", "timeZone": "Europe/Minsk"},
+    "mainImg": {
+      "original": "./img/country-images/original/belarus.jpg",
+      "card": "./img/country-images/card/belarus.jpg"
     },
-    {
-      "id": 1,
-      "name": {"en": "Canada", "ru": "Канада", "be": "Канада"},
-      "capital": {"en": "Ottawa", "ru": "Оттава", "be": "Атава"},
-      "video": "https://www.youtube.com/watch?v=TknrmpS4GOg",
-      "date": {"code": "CA", "timeZone": "Canada/Eastern"},
-      "mainImg": {"original": "./img/canada.jpg", "thumbnail": ""},
-      "coordinates": [45.41, -75.69],
-      "currency": "CAD",
-      "gallery": {
-        "images": [
+    "coordinates": [53.85, 27.52],
+    "currency": "BYN",
+    "gallery": {
+      "images": [
+        {
+          "original": "./img/gallery/belarus/original/mirskiy-zamok.jpg",
+          "thumbnail": "./img/gallery/belarus/thumbnail/mirskiy-zamok.jpg"
+        },
+        {
+          "original": "./img/gallery/belarus/original/brestskaya-krepost.jpg",
+          "thumbnail": "./img/gallery/belarus/thumbnail/brestskaya-krepost.jpg"
+        },
+        {
+          "original": "./img/gallery/belarus/original/belovezhskaya-pushcha.jpg",
+          "thumbnail": "./img/gallery/belarus/thumbnail/belovezhskaya-pushcha.jpg"
+        },
+        {
+          "original": "./img/gallery/belarus/original/nesvizhskiy-zamok.jpg",
+          "thumbnail": "./img/gallery/belarus/thumbnail/nesvizhskiy-zamok.jpg"
+        },
+        {
+          "original": "./img/gallery/belarus/original/lidskiy-zamok.jpg",
+          "thumbnail": "./img/gallery/belarus/thumbnail/lidskiy-zamok.jpg"
+        },
+        {
+          "original": "./img/gallery/belarus/original/soligorskie_terriconi.jpg",
+          "thumbnail": "./img/gallery/belarus/thumbnail/soligorskie_terriconi.jpg"
+        }
+      ],
+      "descriptions": {
+        "ru": [
           {
-            "original": "https://picsum.photos/id/1018/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1018/250/150/"
+            "title": "Мирский замок",
+            "description": "Мирский замок, заложенный на рубеже XV-XVI столетий, находится в небольшом белорусском городе Мир, в Кореличском районе Гродненской области. Еще полвека назад Мирский замок лежал в руинах, но в конце прошлого столетия он был со вкусом отреставрирован."
           },
           {
-            "original": "https://picsum.photos/id/1015/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1015/250/150/"
+            "title": "Брестская крепость",
+            "description": "Брестская крепость — уникальное фортификационное сооружение в Белоруссии, важнейший памятник Второй мировой войны, символ героического сопротивления и выдающегося мужества её защитников. В 1965 году, во время празднования 20-летия Победы над фашизмом, крепости было присвоено звание «Крепости-героя», а в 1971 году она становится мемориальным комплексом."
           },
           {
-            "original": "https://picsum.photos/id/1019/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1019/250/150/"
+            "title": "Беловежская пуща",
+            "description": "Беловежская пуща — один из сохранившихся девственных лесов Европы, последний остров первобытного леса, покрывавшего когда-то большую часть Европейской равнины. Через Беловежскую пущу проходит государственная граница между Польшей и Беларусью."
           },
           {
-            "original": "https://picsum.photos/id/1018/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1018/250/150/"
+            "title": "Несвижский замок",
+            "description": "Несвижский замок – фортификационный комплекс, располагающийся в Минской области, в городе Несвиж, на холме в окружении живописных озер. Несвижский замок – это уникальный памятник архитектуры, испокон веков принадлежавший величайшему роду правителей Великого княжества Литовского – Радзивиллам."
           },
           {
-            "original": "https://picsum.photos/id/1015/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1015/250/150/"
+            "title": "Лидский замок",
+            "description": "Лидский замок или замок Гедимина – фортификационное сооружение в белорусском городе Лиде. Крепость была построена для защиты от крестоносцев. Это самый старый и самый осаждавшийся из белорусских замков, дошедший до наших дней в изрядно потрепанном состоянии и отреставрированный только к 2010 году."
           },
           {
-            "original": "https://picsum.photos/id/1019/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1019/250/150/"
+            "title": "Солигорские терриконы",
+            "description": "Солигорские терриконы – необычная рукотворная достопримечательность Беларуси. Открывающиеся пейзажи напоминают поверхность Марса: красно-бурые горы со слоями белой соли стоят на растрескавшейся пустынной земле."
           }
         ],
-        "descriptions": {
-          "ru": [
-            "достопримечательность1 достопримечательность1 достопримечательность1 достопримечательность1",
-            "достопримечательность2 достопримечательность2 достопримечательность2 достопримечательность2",
-            "достопримечательность3 достопримечательность3 достопримечательность3 достопримечательность3",
-            "достопримечательность4 достопримечательность4 достопримечательность4 достопримечательность4",
-            "достопримечательность5 достопримечательность5 достопримечательность5 достопримечательность5",
-            "достопримечательность6 достопримечательность6 достопримечательность6 достопримечательность6"
-          ],
-          "be":  [
-              "славутасць1 славутасць1 славутасць1 славутасць1",
-              "славутасць2 славутасць2 славутасць2 славутасць2",
-              "славутасць3 славутасць3 славутасць3 славутасць3",
-              "славутасць4 славутасць4 славутасць4 славутасць4",
-              "славутасць5 славутасць5 славутасць5 славутасць5",
-              "славутасць6 славутасць6 славутасць6 славутасць6"
-          ],
-          "en":  [
-              "showplace1 showplace1 showplace1 showplace1",
-              "showplace2 showplace2 showplace2 showplace2",
-              "showplace3 showplace3 showplace3 showplace3",
-              "showplace4 showplace4 showplace4 showplace4",
-              "showplace5 showplace5 showplace5 showplace5",
-              "showplace6 showplace6 showplace6 showplace6"
-          ]
-        }
-      }
-    },
-    {
-      "id": 2,
-      "name": {"en": "Germany", "ru": "Германия", "be": "Германія"},
-      "capital": {"en": "Berlin", "ru": "Берлин", "be": "Берлін"},
-      "video": "https://www.youtube.com/watch?v=8IJzZSVRpbU",
-      "date": {"code": "DE", "timeZone": "Europe/Berlin"},
-      "mainImg": {"original": "./img/germany.jpg", "thumbnail": ""},
-      "coordinates": [52.52, 13.41],
-      "currency": "EUR",
-      "gallery": {
-        "images": [
+        "be": [
           {
-            "original": "https://picsum.photos/id/1018/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1018/250/150/"
+            "title": "Мірскі замак",
+            "description": "Мірскі замак, размешчаны на рубяжы XV-XVI сталетый, знаходзіцца ў невялікім беларускім горадзе Мір, у Карэліцкім раёне Гродзенскай вобласці. Яшчэ паўвека назад Мірскі замак ляжаў у руінах, але ў канцэрне мінулага сталецця ён быў з густам адрэстаўрыраваны."
           },
           {
-            "original": "https://picsum.photos/id/1015/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1015/250/150/"
+            "title": "Брэсцкая крэпасць",
+            "description": "Брэсцкая крэпасць - унікальнае ўмацаванне суполкі ў Беларусі, важны памятнік Другой сусветнай вайны, сімвал гераічнага супрацьстаяння і выдаючых мужнасці - гэта ахоўнікі. У 1965 годзе, у час святкавання 20-годдзя Пабеды над фашызмам, крэпасці было прысвечана званню «Крепости-героя», а ў 1971 годзе яна стала мемарыяльным комплексам."
           },
           {
-            "original": "https://picsum.photos/id/1019/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1019/250/150/"
+            "title": "Белавежская пушча",
+            "description": "Белавежская пушча - адзін з захаваных дзявочых лесаў Еўропы, апошні астраў першабытнага лесу, пакрыты калі-небудзь большай часткай Еўрапейскай раўніны. Праз Белавежскую пушчу ідзе дзяржаўная граніца паміж Польшчай і Беларуссю."
           },
           {
-            "original": "https://picsum.photos/id/1018/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1018/250/150/"
+            "title": "Нясвіжскі замак",
+            "description": "Нясвіжскі замак - умацавальны комплекс, размешчаны ў Мінскай вобласці, у горадзе Нясвіж, на холме ў акружэнні жывапісных азер. Нясвіжскі замак - гэта ўнікальны архітэктар памятнікаў, выканаў векаў, які належаў вялікаму роду роду правіцеляў Вялікага княства Літоўскага - Радзівілам."
           },
           {
-            "original": "https://picsum.photos/id/1015/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1015/250/150/"
+            "title": "Лідскі замок",
+            "description": "Лідскі замок альбо замок Гедыміна - умацаванне сааўтварэння ў беларускім горадзе Лідзе. Крэпасць была пабудавана для абароны ад крэстаносцаў. Гэта самы стары і найлепшы асаджаўся з бела-рускіх замкоў, дайшоўшы да нашых дзён у зрэдна па- трэбным стане і адрэстаўраваны толькі да 2010 года."
           },
           {
-            "original": "https://picsum.photos/id/1019/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1019/250/150/"
+            "title": "Салігорскія тэрыконы",
+            "description": "Салігорскія тэрыконы - незвычайная рукотворная славутасць Беларусі. Адкрываюцца пейзажы нагадваюць паверхню Марса: чырвона-карычневыя горы з пластамі белай солі стаяць на парэпаліся пустыннай зямлі."
           }
         ],
-        "descriptions": {
-          "ru": [
-            "достопримечательность1 достопримечательность1 достопримечательность1 достопримечательность1",
-            "достопримечательность2 достопримечательность2 достопримечательность2 достопримечательность2",
-            "достопримечательность3 достопримечательность3 достопримечательность3 достопримечательность3",
-            "достопримечательность4 достопримечательность4 достопримечательность4 достопримечательность4",
-            "достопримечательность5 достопримечательность5 достопримечательность5 достопримечательность5",
-            "достопримечательность6 достопримечательность6 достопримечательность6 достопримечательность6"
-          ],
-          "be":  [
-              "славутасць1 славутасць1 славутасць1 славутасць1",
-              "славутасць2 славутасць2 славутасць2 славутасць2",
-              "славутасць3 славутасць3 славутасць3 славутасць3",
-              "славутасць4 славутасць4 славутасць4 славутасць4",
-              "славутасць5 славутасць5 славутасць5 славутасць5",
-              "славутасць6 славутасць6 славутасць6 славутасць6"
-          ],
-          "en":  [
-              "showplace1 showplace1 showplace1 showplace1",
-              "showplace2 showplace2 showplace2 showplace2",
-              "showplace3 showplace3 showplace3 showplace3",
-              "showplace4 showplace4 showplace4 showplace4",
-              "showplace5 showplace5 showplace5 showplace5",
-              "showplace6 showplace6 showplace6 showplace6"
-          ]
-        }
-      }
-    },
-    {
-      "id": 3,
-      "name": {"en": "France", "ru": "Франция", "be": "Францыя"},
-      "capital": {"en": "Paris", "ru": "Париж", "be": "Парыж"},
-      "video": "https://www.youtube.com/watch?v=j9q3NLqUvxI",
-      "date": {"code": "FR", "timeZone": "Europe/Paris"},
-      "mainImg": {"original": "./img/france.jpg", "thumbnail": ""},
-      "coordinates": [48.85, 2.34],
-      "currency": "EUR",
-      "gallery": {
-        "images": [
+        "en": [
           {
-            "original": "https://picsum.photos/id/1018/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1018/250/150/"
+            "title": "Mir Castle Complex",
+            "description": "Mir Castle, founded at the turn of the XV-XVI centuries, is located in the small Belarusian town of Mir, in the Korelichi district of the Grodno region. Half a century ago, Mir Castle lay in ruins, but at the end of the last century it was tastefully restored."
           },
           {
-            "original": "https://picsum.photos/id/1015/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1015/250/150/"
+            "title": "Brest Fortress",
+            "description": "Brest Fortress is a unique fortification in Belarus, an important monument of the Second World War, a symbol of heroic resistance and outstanding courage of its defenders. In 1965, during the celebration of the 20th anniversary of the Victory over fascism, the fortress was awarded the title of «Hero Fortress», and in 1971 it became a memorial complex."
           },
           {
-            "original": "https://picsum.photos/id/1019/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1019/250/150/"
+            "title": "Belovezhskaya Pushcha National Park",
+            "description": "Belovezhskaya Pushcha is one of the surviving virgin forests of Europe, the last island of the primeval forest that once covered most of the European plain. The state border between Poland and Belarus passes through Belovezhskaya Pushcha."
           },
           {
-            "original": "https://picsum.photos/id/1018/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1018/250/150/"
+            "title": "Nesvizh Castle",
+            "description": "Nesvizh Castle is a fortification complex located in the Minsk region, in the town of Nesvizh, on a hill surrounded by picturesque lakes. Nesvizh Castle is a unique architectural monument, which for centuries belonged to the greatest family of rulers of the Grand Duchy of Lithuania - Radziwill."
           },
           {
-            "original": "https://picsum.photos/id/1015/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1015/250/150/"
+            "title": "Lida Castle",
+            "description": "Lida Castle or Gediminas Castle is a fortification in the Belarusian city of Lida. The fortress was built to protect against the Crusaders. This is the oldest and most besieged of the Belarusian castles, which has survived to this day in a rather dilapidated condition and restored only by 2010."
           },
           {
-            "original": "https://picsum.photos/id/1019/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1019/250/150/"
+            "title": "Soligorsk heaps",
+            "description": "Soligorsk heaps are an unusual man-made landmark of Belarus. The opening landscapes resemble the surface of Mars: reddish-brown mountains with layers of white salt stand on the cracked desert earth."
           }
-        ],
-        "descriptions": {
-          "ru": [
-            "достопримечательность1 достопримечательность1 достопримечательность1 достопримечательность1",
-            "достопримечательность2 достопримечательность2 достопримечательность2 достопримечательность2",
-            "достопримечательность3 достопримечательность3 достопримечательность3 достопримечательность3",
-            "достопримечательность4 достопримечательность4 достопримечательность4 достопримечательность4",
-            "достопримечательность5 достопримечательность5 достопримечательность5 достопримечательность5",
-            "достопримечательность6 достопримечательность6 достопримечательность6 достопримечательность6"
-          ],
-          "be":  [
-              "славутасць1 славутасць1 славутасць1 славутасць1",
-              "славутасць2 славутасць2 славутасць2 славутасць2",
-              "славутасць3 славутасць3 славутасць3 славутасць3",
-              "славутасць4 славутасць4 славутасць4 славутасць4",
-              "славутасць5 славутасць5 славутасць5 славутасць5",
-              "славутасць6 славутасць6 славутасць6 славутасць6"
-          ],
-          "en":  [
-              "showplace1 showplace1 showplace1 showplace1",
-              "showplace2 showplace2 showplace2 showplace2",
-              "showplace3 showplace3 showplace3 showplace3",
-              "showplace4 showplace4 showplace4 showplace4",
-              "showplace5 showplace5 showplace5 showplace5",
-              "showplace6 showplace6 showplace6 showplace6"
-          ]
-        }
-      }
-    },
-    {
-      "id": 4,
-      "name": {"en": "Italy", "ru": "Италия", "be": "Італія"},
-      "capital": {"en": "Rome", "ru": "Рим", "be": "Рым"},
-      "video": "https://www.youtube.com/watch?v=_4PJZovffRs",
-      "date": {"code": "IT", "timeZone": "Europe/Rome"},
-      "mainImg": {"original": "./img/italy.jpeg", "thumbnail": ""},
-      "coordinates": [41.89, 12.51],
-      "currency": "EUR",
-      "gallery": {
-        "images": [
-          {
-            "original": "https://picsum.photos/id/1018/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1018/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1015/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1015/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1019/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1019/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1018/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1018/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1015/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1015/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1019/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1019/250/150/"
-          }
-        ],
-        "descriptions": {
-          "ru": [
-            "достопримечательность1 достопримечательность1 достопримечательность1 достопримечательность1",
-            "достопримечательность2 достопримечательность2 достопримечательность2 достопримечательность2",
-            "достопримечательность3 достопримечательность3 достопримечательность3 достопримечательность3",
-            "достопримечательность4 достопримечательность4 достопримечательность4 достопримечательность4",
-            "достопримечательность5 достопримечательность5 достопримечательность5 достопримечательность5",
-            "достопримечательность6 достопримечательность6 достопримечательность6 достопримечательность6"
-          ],
-          "be":  [
-              "славутасць1 славутасць1 славутасць1 славутасць1",
-              "славутасць2 славутасць2 славутасць2 славутасць2",
-              "славутасць3 славутасць3 славутасць3 славутасць3",
-              "славутасць4 славутасць4 славутасць4 славутасць4",
-              "славутасць5 славутасць5 славутасць5 славутасць5",
-              "славутасць6 славутасць6 славутасць6 славутасць6"
-          ],
-          "en":  [
-              "showplace1 showplace1 showplace1 showplace1",
-              "showplace2 showplace2 showplace2 showplace2",
-              "showplace3 showplace3 showplace3 showplace3",
-              "showplace4 showplace4 showplace4 showplace4",
-              "showplace5 showplace5 showplace5 showplace5",
-              "showplace6 showplace6 showplace6 showplace6"
-          ]
-        }
-      }
-    },
-    {
-      "id": 5,
-      "name": {"en": "Australia", "ru": "Австралия", "be": "Аўстралія"},
-      "capital": {"en": "Canberra", "ru": "Канберра", "be": "Канбера"},
-      "video": "https://www.youtube.com/watch?v=kjsFG7wJ0FQ",
-      "date": {"code": "AU", "timeZone": "Australia/Canberra"},
-      "mainImg": {"original": "./img/australia.jpg", "thumbnail": ""},
-      "coordinates": [-35.28, 149.12],
-      "currency": "AUD",
-      "gallery": {
-        "images": [
-          {
-            "original": "https://picsum.photos/id/1018/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1018/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1015/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1015/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1019/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1019/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1018/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1018/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1015/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1015/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1019/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1019/250/150/"
-          }
-        ],
-        "descriptions": {
-          "ru": [
-            "достопримечательность1 достопримечательность1 достопримечательность1 достопримечательность1",
-            "достопримечательность2 достопримечательность2 достопримечательность2 достопримечательность2",
-            "достопримечательность3 достопримечательность3 достопримечательность3 достопримечательность3",
-            "достопримечательность4 достопримечательность4 достопримечательность4 достопримечательность4",
-            "достопримечательность5 достопримечательность5 достопримечательность5 достопримечательность5",
-            "достопримечательность6 достопримечательность6 достопримечательность6 достопримечательность6"
-          ],
-          "be":  [
-              "славутасць1 славутасць1 славутасць1 славутасць1",
-              "славутасць2 славутасць2 славутасць2 славутасць2",
-              "славутасць3 славутасць3 славутасць3 славутасць3",
-              "славутасць4 славутасць4 славутасць4 славутасць4",
-              "славутасць5 славутасць5 славутасць5 славутасць5",
-              "славутасць6 славутасць6 славутасць6 славутасць6"
-          ],
-          "en":  [
-              "showplace1 showplace1 showplace1 showplace1",
-              "showplace2 showplace2 showplace2 showplace2",
-              "showplace3 showplace3 showplace3 showplace3",
-              "showplace4 showplace4 showplace4 showplace4",
-              "showplace5 showplace5 showplace5 showplace5",
-              "showplace6 showplace6 showplace6 showplace6"
-          ]
-        }
-      }
-    },
-    {
-      "id": 6,
-      "name": {"en": "Great Britain", "ru": "Великобритания", "be": "Велікабрытанія"},
-      "capital": {"en": "London", "ru": "Лондон", "be": "Лондан"},
-      "video": "https://www.youtube.com/watch?v=PtWeqZsuzpE",
-      "date": {"code": "GB", "timeZone": "Europe/London"},
-      "mainImg": {"original": "./img/great-britain.jpg", "thumbnail": ""},
-      "coordinates": [51.505, -0.09],
-      "currency": "GBP",
-      "gallery": {
-        "images": [
-          {
-            "original": "https://picsum.photos/id/1018/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1018/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1015/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1015/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1019/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1019/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1018/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1018/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1015/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1015/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1019/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1019/250/150/"
-          }
-        ],
-        "descriptions": {
-          "ru": [
-            "достопримечательность1 достопримечательность1 достопримечательность1 достопримечательность1",
-            "достопримечательность2 достопримечательность2 достопримечательность2 достопримечательность2",
-            "достопримечательность3 достопримечательность3 достопримечательность3 достопримечательность3",
-            "достопримечательность4 достопримечательность4 достопримечательность4 достопримечательность4",
-            "достопримечательность5 достопримечательность5 достопримечательность5 достопримечательность5",
-            "достопримечательность6 достопримечательность6 достопримечательность6 достопримечательность6"
-          ],
-          "be":  [
-              "славутасць1 славутасць1 славутасць1 славутасць1",
-              "славутасць2 славутасць2 славутасць2 славутасць2",
-              "славутасць3 славутасць3 славутасць3 славутасць3",
-              "славутасць4 славутасць4 славутасць4 славутасць4",
-              "славутасць5 славутасць5 славутасць5 славутасць5",
-              "славутасць6 славутасць6 славутасць6 славутасць6"
-          ],
-          "en":  [
-              "showplace1 showplace1 showplace1 showplace1",
-              "showplace2 showplace2 showplace2 showplace2",
-              "showplace3 showplace3 showplace3 showplace3",
-              "showplace4 showplace4 showplace4 showplace4",
-              "showplace5 showplace5 showplace5 showplace5",
-              "showplace6 showplace6 showplace6 showplace6"
-          ]
-        }
-      }
-    },
-    {
-      "id": 7,
-      "name": {"en": "India", "ru": "Индия", "be": "Індыя"},
-      "capital": {"en": "New Delhi", "ru": "Нью-Дели", "be": "Нью-Дэлі"},
-      "video": "https://www.youtube.com/watch?v=KLwbm_f28eY",
-      "date": {"code": "IN", "timeZone": "Asia/Kolkata"},
-      "mainImg": {"original": "./img/india.jpg", "thumbnail": ""},
-      "coordinates": [28.63, 77.22],
-      "currency": "INR",
-      "gallery": {
-        "images": [
-          {
-            "original": "https://picsum.photos/id/1018/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1018/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1015/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1015/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1019/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1019/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1018/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1018/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1015/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1015/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1019/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1019/250/150/"
-          }
-        ],
-        "descriptions": {
-          "ru": [
-            "достопримечательность1 достопримечательность1 достопримечательность1 достопримечательность1",
-            "достопримечательность2 достопримечательность2 достопримечательность2 достопримечательность2",
-            "достопримечательность3 достопримечательность3 достопримечательность3 достопримечательность3",
-            "достопримечательность4 достопримечательность4 достопримечательность4 достопримечательность4",
-            "достопримечательность5 достопримечательность5 достопримечательность5 достопримечательность5",
-            "достопримечательность6 достопримечательность6 достопримечательность6 достопримечательность6"
-          ],
-          "be":  [
-              "славутасць1 славутасць1 славутасць1 славутасць1",
-              "славутасць2 славутасць2 славутасць2 славутасць2",
-              "славутасць3 славутасць3 славутасць3 славутасць3",
-              "славутасць4 славутасць4 славутасць4 славутасць4",
-              "славутасць5 славутасць5 славутасць5 славутасць5",
-              "славутасць6 славутасць6 славутасць6 славутасць6"
-          ],
-          "en":  [
-              "showplace1 showplace1 showplace1 showplace1",
-              "showplace2 showplace2 showplace2 showplace2",
-              "showplace3 showplace3 showplace3 showplace3",
-              "showplace4 showplace4 showplace4 showplace4",
-              "showplace5 showplace5 showplace5 showplace5",
-              "showplace6 showplace6 showplace6 showplace6"
-          ]
-        }
-      }
-    },
-    {
-      "id": 8,
-      "name": {"en": "China", "ru": "Китай", "be": "Кітай"},
-      "capital": {"en": "Beijing", "ru": "Пекин", "be": "Пекін"},
-      "video": "https://www.youtube.com/watch?v=paxRy2msloY",
-      "date": {"code": "CN", "timeZone": "Asia/Shanghai"},
-      "mainImg": {"original": "./img/china.jpg", "thumbnail": ""},
-      "coordinates": [39.90, 116.39],
-      "currency": "CNY",
-      "gallery": {
-        "images": [
-          {
-            "original": "https://picsum.photos/id/1018/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1018/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1015/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1015/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1019/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1019/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1018/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1018/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1015/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1015/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1019/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1019/250/150/"
-          }
-        ],
-        "descriptions": {
-          "ru": [
-            "достопримечательность1 достопримечательность1 достопримечательность1 достопримечательность1",
-            "достопримечательность2 достопримечательность2 достопримечательность2 достопримечательность2",
-            "достопримечательность3 достопримечательность3 достопримечательность3 достопримечательность3",
-            "достопримечательность4 достопримечательность4 достопримечательность4 достопримечательность4",
-            "достопримечательность5 достопримечательность5 достопримечательность5 достопримечательность5",
-            "достопримечательность6 достопримечательность6 достопримечательность6 достопримечательность6"
-          ],
-          "be":  [
-              "славутасць1 славутасць1 славутасць1 славутасць1",
-              "славутасць2 славутасць2 славутасць2 славутасць2",
-              "славутасць3 славутасць3 славутасць3 славутасць3",
-              "славутасць4 славутасць4 славутасць4 славутасць4",
-              "славутасць5 славутасць5 славутасць5 славутасць5",
-              "славутасць6 славутасць6 славутасць6 славутасць6"
-          ],
-          "en":  [
-              "showplace1 showplace1 showplace1 showplace1",
-              "showplace2 showplace2 showplace2 showplace2",
-              "showplace3 showplace3 showplace3 showplace3",
-              "showplace4 showplace4 showplace4 showplace4",
-              "showplace5 showplace5 showplace5 showplace5",
-              "showplace6 showplace6 showplace6 showplace6"
-          ]
-        }
-      }
-    },
-    {
-      "id": 9,
-      "name": {"en": "Brazil", "ru": "Бразилия", "be": "Бразілія"},
-      "capital": {"en": "Brazil", "ru": "Бразилия", "be": "Бразілія"},
-      "video": "https://www.youtube.com/watch?v=Q9H2h86umoE&t",
-      "date": {"code": "BR", "timeZone": "Brazil/East"},
-      "mainImg": {"original": "./img/brazil.jpg", "thumbnail": ""},
-      "coordinates": [-15.779, -47.929],
-      "currency": "BRL",
-      "gallery": {
-        "images": [
-          {
-            "original": "https://picsum.photos/id/1018/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1018/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1015/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1015/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1019/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1019/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1018/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1018/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1015/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1015/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1019/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1019/250/150/"
-          }
-        ],
-        "descriptions": {
-          "ru": [
-            "достопримечательность1 достопримечательность1 достопримечательность1 достопримечательность1",
-            "достопримечательность2 достопримечательность2 достопримечательность2 достопримечательность2",
-            "достопримечательность3 достопримечательность3 достопримечательность3 достопримечательность3",
-            "достопримечательность4 достопримечательность4 достопримечательность4 достопримечательность4",
-            "достопримечательность5 достопримечательность5 достопримечательность5 достопримечательность5",
-            "достопримечательность6 достопримечательность6 достопримечательность6 достопримечательность6"
-          ],
-          "be":  [
-              "славутасць1 славутасць1 славутасць1 славутасць1",
-              "славутасць2 славутасць2 славутасць2 славутасць2",
-              "славутасць3 славутасць3 славутасць3 славутасць3",
-              "славутасць4 славутасць4 славутасць4 славутасць4",
-              "славутасць5 славутасць5 славутасць5 славутасць5",
-              "славутасць6 славутасць6 славутасць6 славутасць6"
-          ],
-          "en":  [
-              "showplace1 showplace1 showplace1 showplace1",
-              "showplace2 showplace2 showplace2 showplace2",
-              "showplace3 showplace3 showplace3 showplace3",
-              "showplace4 showplace4 showplace4 showplace4",
-              "showplace5 showplace5 showplace5 showplace5",
-              "showplace6 showplace6 showplace6 showplace6"
-          ]
-        }
-      }
-    },
-    {
-      "id": 10,
-      "name": {"en": "Egypt", "ru": "Египет", "be": "Егіпет"},
-      "capital": {"en": "Cairo", "ru": "Каир", "be": "Каір"},
-      "video": "https://www.youtube.com/watch?v=mfxQy5A_tHs",
-      "date": {"code": "EG", "timeZone": "Africa/Cairo"},
-      "mainImg": {"original": "./img/egypt.jpg", "thumbnail": ""},
-      "coordinates": [30.06, 31.2496],
-      "currency": "EGP",
-      "gallery": {
-        "images": [
-          {
-            "original": "https://picsum.photos/id/1018/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1018/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1015/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1015/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1019/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1019/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1018/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1018/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1015/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1015/250/150/"
-          },
-          {
-            "original": "https://picsum.photos/id/1019/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1019/250/150/"
-          }
-        ],
-        "descriptions": {
-          "ru": [
-            "достопримечательность1 достопримечательность1 достопримечательность1 достопримечательность1",
-            "достопримечательность2 достопримечательность2 достопримечательность2 достопримечательность2",
-            "достопримечательность3 достопримечательность3 достопримечательность3 достопримечательность3",
-            "достопримечательность4 достопримечательность4 достопримечательность4 достопримечательность4",
-            "достопримечательность5 достопримечательность5 достопримечательность5 достопримечательность5",
-            "достопримечательность6 достопримечательность6 достопримечательность6 достопримечательность6"
-          ],
-          "be":  [
-              "славутасць1 славутасць1 славутасць1 славутасць1",
-              "славутасць2 славутасць2 славутасць2 славутасць2",
-              "славутасць3 славутасць3 славутасць3 славутасць3",
-              "славутасць4 славутасць4 славутасць4 славутасць4",
-              "славутасць5 славутасць5 славутасць5 славутасць5",
-              "славутасць6 славутасць6 славутасць6 славутасць6"
-          ],
-          "en":  [
-              "showplace1 showplace1 showplace1 showplace1",
-              "showplace2 showplace2 showplace2 showplace2",
-              "showplace3 showplace3 showplace3 showplace3",
-              "showplace4 showplace4 showplace4 showplace4",
-              "showplace5 showplace5 showplace5 showplace5",
-              "showplace6 showplace6 showplace6 showplace6"
-          ]
-        }
+        ]
       }
     }
-  ]
-  
+  },
+  {
+    "id": 1,
+    "name": {"en": "Canada", "ru": "Канада", "be": "Канада"},
+    "capital": {"en": "Ottawa", "ru": "Оттава", "be": "Атава"},
+    "video": "https://www.youtube.com/watch?v=TknrmpS4GOg",
+    "date": {"code": "CA", "timeZone": "Canada/Eastern"},
+    "mainImg": {
+      "original": "./img/country-images/original/canada.jpg",
+      "card": "./img/country-images/card/canada.jpg"
+    },
+    "coordinates": [45.41, -75.69],
+    "currency": "CAD",
+    "gallery": {
+      "images": [
+        {
+          "original": "./img/gallery/canada/original/niagarskiy-vodopad.jpg",
+          "thumbnail": "./img/gallery/canada/thumbnail/niagarskiy-vodopad.jpg"
+        },
+        {
+          "original": "./img/gallery/canada/original/velikie-ozera.jpg",
+          "thumbnail": "./img/gallery/canada/thumbnail/velikie-ozera.jpg"
+        },
+        {
+          "original": "./img/gallery/canada/original/si-en-tauer.jpg",
+          "thumbnail": "./img/gallery/canada/thumbnail/si-en-tauer.jpg"
+        },
+        {
+          "original": "./img/gallery/canada/original/ostrov-vankuver.jpg",
+          "thumbnail": "./img/gallery/canada/thumbnail/ostrov-vankuver.jpg"
+        },
+        {
+          "original": "./img/gallery/canada/original/kordilery-severnoy-ameriki.jpg",
+          "thumbnail": "./img/gallery/canada/thumbnail/kordilery-severnoy-ameriki.jpg"
+        },
+        {
+          "original": "./img/gallery/canada/original/zaliv-fandi.jpg",
+          "thumbnail": "./img/gallery/canada/thumbnail/zaliv-fandi.jpg"
+        }
+      ],
+      "descriptions": {
+        "ru": [
+          {
+            "title": "Ниагарский водопад",
+            "description": "Ниагарский водопад — каскад водопадов на границе Америки и Канады, между штатом Нью-Йорк и провинцией Онтарио. Пожалуй, Ниагарский водопад можно назвать самым эффектным естественным разломом земной коры. Река Ниагара, соединяющая озера Эри и Онтарио, падает с высоты 50-метрового обрыва шириной более 1000 м."
+          },
+          {
+            "title": "Великие озёра",
+            "description": "Великие озёра — система пресноводных озёр в Северной Америке, на территории США и Канады. Пять Великих озер в Северной Америке составляют самую большую группу пресноводных озер на Земле, они известны огромным значением для экологии Земли, а также красотой и разнообразием."
+          },
+          {
+            "title": "Си-Эн Тауэр",
+            "description": "Элегантная, несмотря на свои гигантские размеры, Си-Эн Тауэр является самым высоким свободно стоящим сооружением в мире. Задуманная как передающая сигнал телебашня, она поднимается на высоту 553,33 м и часто упоминается как «Канадское чудо света»."
+          },
+          {
+            "title": "Остров Ванкувер",
+            "description": "Остров Ванкувер, издавна известный как настоящий рай для художников, район поразительно красивого побережья, отделен от запада материковой части Британской Колумбии проливом Джоджиа."
+          },
+          {
+            "title": "Кордильеры Северной Америки",
+            "description": "Кордильеры Северной Америки — часть горной системы Кордильер, простирающаяся в пределах Мексики, США (в том числе штата Аляски) и Канады. Общая длина более 7 тыс. км (от 19° с. ш. до 69° с. ш.). Ширина горного пояса на Аляске достигает 1100-1200 км, в Канаде — до 800 км, на территории США — около 1600 км, в Мексике — до 1000 км."
+          },
+          {
+            "title": "Залив Фанди",
+            "description": "Залив Фанди — глубоко вдающийся в сушу залив, лежит между Нью-Брансуиком и Новой Шотландией, к нему прилегает и территория американского штата Мэн. Залив славится самой большой в мире амплитудой приливов и отливов."
+          }
+        ],
+        "be": [
+          {
+            "title": "Ніягарскі вадаспад",
+            "description": "Ніягарскі вадаспад - каскад вадападаў на мяжы Амерыкі і Канады, паміж штатам Нью-Ёрк і правінцыяй Антарыё. Пажалуй, Ніягарскі вадапад можна назваць свайму эфектнаму натуральнаму развіццю зямной коры. Рэка Ніагара, якая злучае азеру Эры і Антарыё, падае з вышынёй 50-метровага абрыву шырынёй больш за 1000 м."
+          },
+          {
+            "title": "Вялікія азёры",
+            "description": "Вялікія азёры - сістэма прэводных азёр у Паўночнай Амерыцы, на тэрыторыі ЗША і Канады. Пяць Вялікіх азераў у Паўночнай Амерыцы ўяўляе саму вялікую групу праводных азераў на Земле, яны вядомыя велізарным значэннем для экалогіі Землі, а таксама прыгажосцю і разнастайнасцю."
+          },
+          {
+            "title": "Сі-Эн Тауэр",
+            "description": "Элегантная, нягледзячы на ​​свае гіганцкія памеры, Сі-Эн Тауэр з'яўляецца самым высокім свабодна стаяць збудаваннем у свеце. Задуманая як якая перадае сігнал тэлевежа, яна падымаецца на вышыню 553,33 м і часта згадваецца як «Канадскае цуд свету»."
+          },
+          {
+            "title": "Востраў Ванкувер",
+            "description": "Востраў Ванкувер, здаўна вядомы як сапраўдны рай для мастакоў, раён дзіўна прыгожага ўзбярэжжа, аддзелены ад захаду мацерыковай часткі Брытанскай Калумбіі пралівам Джоджиа."
+          },
+          {
+            "title": "Кардыльеры Паўночнай Амерыкі",
+            "description": "Кардыльеры Паўночнай Амерыкі - частка горнай сістэмы Кардыльераў, працяглая ў межах Мексікі, ЗША (у тым ліку штата Аляскі) і Канады. Агульная даўжыня больш за 7 тыс. Км (ад 19 ° п. Ш. Да 69 ° з. Ш.). Шырыня горнага пояса на Алясцы дасягае 1100-1200 км, у Канадзе - да 800 км, на тэрыторыі ЗША - каля 1600 км, у Мексіцы - да 1000 км."
+          },
+          {
+            "title": "Заліў Фандо",
+            "description": "Заліў Фандо - глыбока вдающийся ў сушу заліў, ляжыць паміж Нью-Брансўік і Новай Шатландыяй, да яго прылягае і тэрыторыя амерыканскага штата Мэн. Заліў славіцца самай вялікай у свеце амплітудай прыліваў і адліваў."
+          }
+        ],
+        "en": [
+          {
+            "title": "Niagara Falls",
+            "description": "Niagara Falls is a cascade of waterfalls on the border of America and Canada, between the state of New York and the province of Ontario. Niagara Falls is perhaps the most spectacular natural fault in the earth's crust. The Niagara River, which connects Lakes Erie and Ontario, falls from a 50-meter cliff more than 1,000 meters wide."
+          },
+          {
+            "title": "Great Lakes",
+            "description": "The Great Lakes are a system of freshwater lakes in North America, in the United States and Canada. The five Great Lakes in North America make up the largest group of freshwater lakes on Earth and are known for their immense importance to the Earth's ecology, as well as their beauty and diversity."
+          },
+          {
+            "title": "CN Tower",
+            "description": "Elegant despite its gigantic size, the CN Tower is the tallest free-standing structure in the world. Conceived as a signal transmission tower, it rises to a height of 553.33 m and is often referred to as the Canadian Wonder of the World."
+          },
+          {
+            "title": "Vancouver Island",
+            "description": "Long known as an artist's paradise, Vancouver Island is a region of strikingly beautiful coastline, separated from the west of British Columbia mainland by the Jojia Strait."
+          },
+          {
+            "title": "North American Cordillera",
+            "description": "The Cordillera of North America are part of the Cordillera mountain range, extending within Mexico, the United States (including the state of Alaska) and Canada. The total length is more than 7 thousand km (from 19 ° N to 69 ° N). The width of the mountain belt in Alaska reaches 1100-1200 km, in Canada - up to 800 km, in the United States - about 1600 km, in Mexico - up to 1000 km."
+          },
+          {
+            "title": "Bay of Fundy",
+            "description": "The Bay of Fundy is a deep inland bay that lies between New Brunswick and Nova Scotia, and the territory of the American state of Maine is adjacent to it. The bay is famous for the largest amplitude of the ebb and flow in the world."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 2,
+    "name": {"en": "Germany", "ru": "Германия", "be": "Германія"},
+    "capital": {"en": "Berlin", "ru": "Берлин", "be": "Берлін"},
+    "video": "https://www.youtube.com/watch?v=8IJzZSVRpbU",
+    "date": {"code": "DE", "timeZone": "Europe/Berlin"},
+    "mainImg": {
+      "original": "./img/country-images/original/germany.jpg",
+      "card": "./img/country-images/card/germany.jpg"
+    },
+    "coordinates": [52.52, 13.41],
+    "currency": "EUR",
+    "gallery": {
+      "images": [
+        {
+          "original": "./img/gallery/germany/original/reykhstag.jpg",
+          "thumbnail": "./img/gallery/germany/thumbnail/reykhstag.jpg"
+        },
+        {
+          "original": "./img/gallery/germany/original/zamok-noyshvanshtayn.jpg",
+          "thumbnail": "./img/gallery/germany/thumbnail/zamok-noyshvanshtayn.jpg"
+        },
+        {
+          "original": "./img/gallery/germany/original/brandenburgskie-vorota.jpg",
+          "thumbnail": "./img/gallery/germany/thumbnail/brandenburgskie-vorota.jpg"
+        },
+        {
+          "original": "./img/gallery/germany/original/kelnskiy-sobor.jpg",
+          "thumbnail": "./img/gallery/germany/thumbnail/kelnskiy-sobor.jpg"
+        },
+        {
+          "original": "./img/gallery/germany/original/berlinskaya_stena.jpg",
+          "thumbnail": "./img/gallery/germany/thumbnail/berlinskaya_stena.jpg"
+        },
+        {
+          "original": "./img/gallery/germany/original/saksonskaya_sweizaria.jpg",
+          "thumbnail": "./img/gallery/germany/thumbnail/saksonskaya_sweizaria.jpg"
+        }
+      ],
+      "descriptions": {
+        "ru": [
+          {
+            "title": "Рейхстаг",
+            "description": "Рейхстаг – здание немецкого парламента в Берлине; здесь с 1894 по 1933 год проходили заседания одноименного государственного института. В 1999 году строение переименовано в Бундестаг."
+          },
+          {
+            "title": "Замок Нойшванштайн",
+            "description": "Замок Нойшванштайн построен в Баварских Альпах, на скале высотой 92 метра. Это один из самых известных замков Людвига II Баварского, которого иногда именуют Людвигом Безумным."
+          },
+          {
+            "title": "Бранденбургские ворота",
+            "description": "Бранденбургские ворота – знаменитый архитектурный памятник, который расположен в центре Берлина, в восточной части Парижской площади (Паризер-платц). Бранденбургские ворота давно стали визитной карточной Берлина, символом объединенной Германии и одной из главных достопримечательностей немецкой столицы."
+          },
+          {
+            "title": "Кельнский собор",
+            "description": "Кельнский собор — это символ Кельна, и весь город как бы подчинен ему, подобно каменному стражу, этот третий в мире по величине готический кафедральный собор является сердцем города."
+          },
+          {
+            "title": "Берлинская стена",
+            "description": "Берлинская стена является одной из самых знаменитых достопримечательностей столицы Германии. Сейчас от остался лишь небольшой участок длиной в 1,3 км."
+          },
+          {
+            "title": "Саксонская Швейцария",
+            "description": "Саксонская Швейцария – живописный ландшафтный регион на территории Германии, расположенный в пойме Эльбы, по обоим берегам реки."
+          }
+        ],
+        "be": [
+          {
+            "title": "Рэйхстаг",
+            "description": "Рэйхстаг - будынак нямецкага парламента ў Берліне; тут з 1894 па 1933 год праходзілі паседжанні аднайменнага дзяржаўнага інстытута. У 1999 годзе будынак перайменавана ў Бундэстаг."
+          },
+          {
+            "title": "Замак Нойшванштайн",
+            "description": "Замак Нойшванштайн пабудаваны ў Баварскіх Альпах, на скале вышынёй 92 метры. Гэта адзін з самых вядомых замкаў Людвіга II Баварскага, якога часам называюць Людвігам Вар'ятам."
+          },
+          {
+            "title": "Брадэнбургскіх вароты",
+            "description": "Брандэнбургскія вароты - знакаміты архітэктурны помнік, размешчаны ў цэнтры Берліны, на ўсходняй частцы Парыжскай плошчы (Парыж-платформа). Брандэнбургскія вароты сталі сталі візітнай карткавай Берлінай, сімвалам аб'яднанай Германіі і адной з галоўных прыналежнасцей нямецкай сталіцы."
+          },
+          {
+            "title": "Кёльнскі сабор",
+            "description": "Кёльнскі сабор - гэта сімвал Кёльна, і ўвесь горад як бы падпарадкаваны яму, быццам каменная варту, гэты трэці ў свеце па велічыні гатычны кафедральны сабор з'яўляецца сэрцам горада."
+          },
+          {
+            "title": "Берлінская сцяна",
+            "description": "Берлінская сцяна - адна з самых вядомых годнасцей гісторыі Германіі. Час застаўся толькі невялікі ўчастак працяглай у 1,3 км."
+          },
+          {
+            "title": "Саксонская Швейцарыя",
+            "description": "Саксонская Швейцарыя - маляўнічы ландшафтны рэгіён на тэрыторыі Германіі, размешчаны ў пойме Эльбы, па абодвух берагах ракі."
+          }
+        ],
+        "en": [
+          {
+            "title": "Reichstag building",
+            "description": "Reichstag - the building of the German parliament in Berlin; here from 1894 to 1933 the meetings of the state institute of the same name were held. In 1999, the building was renamed the Bundestag."
+          },
+          {
+            "title": "Neuschwanstein Castle",
+            "description": "Neuschwanstein Castle was built in the Bavarian Alps, on a rock 92 meters high. This is one of the most famous castles of Ludwig II of Bavaria, which is sometimes referred to as Ludwig the Mad."
+          },
+          {
+            "title": "Brandenburg Gate",
+            "description": "The Brandenburg Gate is a famous architectural monument located in the center of Berlin, in the eastern part of Paris Square (Pariser Platz). The Brandenburg Gate has long been a hallmark of Berlin, a symbol of a united Germany and one of the main attractions of the German capital."
+          },
+          {
+            "title": "Cologne Cathedral",
+            "description": "Cologne Cathedral is a symbol of Cologne, and the whole city is subordinate to it, like a stone guard, this third largest Gothic cathedral in the world is the heart of the city."
+          },
+          {
+            "title": "Berlin Wall",
+            "description": "The Berlin Wall is one of the most famous sights of the German capital. Now only a small section 1.3 km long remains."
+          },
+          {
+            "title": "Saxon Switzerland",
+            "description": "Saxon Switzerland is a picturesque landscape region in Germany, located in the Elbe floodplain, on both banks of the river."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 3,
+    "name": {"en": "France", "ru": "Франция", "be": "Францыя"},
+    "capital": {"en": "Paris", "ru": "Париж", "be": "Парыж"},
+    "video": "https://www.youtube.com/watch?v=j9q3NLqUvxI",
+    "date": {"code": "FR", "timeZone": "Europe/Paris"},
+    "mainImg": {
+      "original": "./img/country-images/original/france.jpg",
+      "card": "./img/country-images/card/france.jpg"
+    },
+    "coordinates": [48.85, 2.34],
+    "currency": "EUR",
+    "gallery": {
+      "images": [
+        {
+          "original": "./img/gallery/franch/original/eyfeleva-bashnya.jpg",
+          "thumbnail": "./img/gallery/franch/thumbnail/eyfeleva-bashnya.jpg"
+        },
+        {
+          "original": "./img/gallery/franch/original/provans.jpeg",
+          "thumbnail": "./img/gallery/franch/thumbnail/provans.jpeg"
+        },
+        {
+          "original": "./img/gallery/franch/original/fort-boyard.jpg",
+          "thumbnail": "./img/gallery/franch/thumbnail/fort-boyard.jpg"
+        },
+        {
+          "original": "./img/gallery/franch/original/notr-dam-de-pari.jpg",
+          "thumbnail": "./img/gallery/franch/thumbnail/notr-dam-de-pari.jpg"
+        },
+        {
+          "original": "./img/gallery/franch/original/lazurnyy_bereg.jpg",
+          "thumbnail": "./img/gallery/franch/thumbnail/lazurnyy_bereg.jpg"
+        },
+        {
+          "original": "./img/gallery/franch/original/disneylend-v-parizhe.jpg",
+          "thumbnail": "./img/gallery/franch/thumbnail/disneylend-v-parizhe.jpg"
+        }
+      ],
+      "descriptions": {
+        "ru": [
+          {
+            "title": "Эйфелева башня",
+            "description": "Эйфелева башня — самая узнаваемая достопримечательность Парижа, названная в честь своего создателя и принимающая более 6 миллионов посетителей ежегодно. Башня находится в 7-м округе французской столицы, в северо-западной части Марсова поля."
+          },
+          {
+            "title": "Прованс",
+            "description": "Прованс – историческая область Франции, занимающая юго-восточную часть страны. Само название Прованс восходит к эпохе римского завоевания Галлии. Оказавшиеся в их владении южные земли за Альпами римляне называли «Provincia Nostra» – «наша провинция»"
+          },
+          {
+            "title": "Форт Боярд",
+            "description": "Форт Боярд (Fort Boyard) – каменная крепость, расположенная на отмели пролива Антиош около берегов Франции в Атлантическом океане. Строение находится между островами Олерон и Иль-д’Экс. Это укрепление получило название отмели, на которой выстроено."
+          },
+          {
+            "title": "Собор Парижской Богоматери",
+            "description": "Собор Парижской Богоматери (фр. Notre-Dame de Paris) – величественный католический храм на острове Сите в центре Парижа. Этот выдающийся памятник архитектуры воспет в искусстве и является одним из самых известных культовых сооружений мира."
+          },
+          {
+            "title": "Лазурный берег",
+            "description": "Лазурный берег – средиземноморский курорт на юго-восточном побережье Франции, простирающийся к востоку от Тулона, включающий в себя территорию княжества Монако и образующий с ней единую пляжную зону протяженностью около 300 км."
+          },
+          {
+            "title": "Диснейленд в Париже",
+            "description": "Диснейленд в Париже — парк развлечений во Франции, попасть в который мечтают дети со всего мира. Он расположен в пригороде столицы, в городе Марн-ля-Вале."
+          }
+        ],
+        "be": [
+          {
+            "title": "Эйфелева вежа",
+            "description": "Эйфелева вежа - самая вядомая славутасць Парыжа, названая ў гонар свайго стваральніка i прымаючы больш за 6 мільёнаў наведвальнікаў штогод. Вежа знаходзіцца ў 7-м акрузе французскай сталіцы, у паўночна-заходняй частцы Марсавым поля."
+          },
+          {
+            "title": "Праванс",
+            "description": "Праванс - гістарычная вобласць Францыі, якая займае паўднёва-ўсходнюю частку краіны. Сама назва Праванс ўзыходзіць да эпохі рымскага заваёвы Галіі. Якія апынуліся ў іх валоданні паўднёвыя землі за Альпамі рымляне называлі «Provincia Nostra» - «наша правінцыя»"
+          },
+          {
+            "title": "Форт Боярд",
+            "description": "Форт Боярд (Fort Boyard) - каменная крэпасць, размешчаная на водмелі праліва Антиош каля берагоў Францыі ў Атлантычным акіяне. Будынак знаходзіцца паміж выспамі Олерон і Іль-д'Экс. Гэта ўмацаванне атрымала назву водмелі, на якой пабудавана."
+          },
+          {
+            "title": "Сабор Парыжскай Божай Маці",
+            "description": "Сабор Парыжскай Божай Маці (фр. Notre-Dame de Paris) - велічны каталіцкі храм на востраве сіце ў цэнтры Парыжа. Гэты выдатны помнік архітэктуры апеты ў мастацтве і з'яўляецца адным з самых вядомых культавых збудаванняў свету."
+          },
+          {
+            "title": "Блакітны бераг",
+            "description": "Блакітны бераг - міжземнаморскі курорт на паўднёва-ўсходнім узбярэжжы Францыі, які распасціраецца на ўсход ад Тулон, які ўключае ў сябе тэрыторыю княства Манака і утваральны з ёй адзіную пляжную зону працягласцю каля 300 км."
+          },
+          {
+            "title": "Дыснэйлэнд ў Парыжы",
+            "description": "Дыснэйлэнд ў Парыжы - парк забаў ў Францыі, патрапіць у які мараць дзеці з усяго свету. Ён размешчаны ў прыгарадзе сталіцы, у горадзе Марн-ля-Вале."
+          }
+        ],
+        "en": [
+          {
+            "title": "Tour Eiffel",
+            "description": "The Eiffel Tower is the most recognizable landmark in Paris, named after its creator and receiving over 6 million visitors annually. The tower is located in the 7th arrondissement of the French capital, in the northwestern part of the Champ de Mars."
+          },
+          {
+            "title": "Provence",
+            "description": "Provence is a historical region of France that occupies the southeastern part of the country. The very name Provence dates back to the era of the Roman conquest of Gaul. The Romans called the southern lands in their possession beyond the Alps Provincia Nostra - our province."
+          },
+          {
+            "title": "Fort Boyard",
+            "description": "Fort Boyard is a stone fortress located on the shallows of the Antioch Strait near the coast of France in the Atlantic Ocean. The building is located between the islands of Oleron and Ile d'Ex. This fortification received the name of the shoal on which it was built."
+          },
+          {
+            "title": "Notre-Dame de Paris",
+            "description": "Notre-Dame de Paris (French Notre-Dame de Paris) is a majestic Catholic church on the Ile de la Cité in the center of Paris. This outstanding architectural monument is celebrated in art and is one of the most famous places of worship in the world."
+          },
+          {
+            "title": "Cote d'Azur",
+            "description": "Cote d'Azur is a Mediterranean resort on the southeastern coast of France, stretching east of Toulon, which includes the territory of the Principality of Monaco and forms with it a single beach area about 300 km long."
+          },
+          {
+            "title": "Disneyland Paris",
+            "description": "Disneyland in Paris is an amusement park in France, which children from all over the world dream of getting into. It is located in the suburbs of the capital, in the city of Marne-la-Valais."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 4,
+    "name": {"en": "Italy", "ru": "Италия", "be": "Італія"},
+    "capital": {"en": "Rome", "ru": "Рим", "be": "Рым"},
+    "video": "https://www.youtube.com/watch?v=_4PJZovffRs",
+    "date": {"code": "IT", "timeZone": "Europe/Rome"},
+    "mainImg": {
+      "original": "./img/country-images/original/italy.jpeg",
+      "card": "./img/country-images/card/italy.jpeg"
+    },
+    "coordinates": [41.89, 12.51],
+    "currency": "EUR",
+    "gallery": {
+      "images": [
+        {
+          "original": "./img/gallery/italy/original/kolizey.jpg",
+          "thumbnail": "./img/gallery/italy/thumbnail/kolizey.jpg"
+        },
+        {
+          "original": "./img/gallery/italy/original/pizanskaya-bashnya.jpg",
+          "thumbnail": "./img/gallery/italy/thumbnail/pizanskaya-bashnya.jpg"
+        },
+        {
+          "original": "./img/gallery/italy/original/vulkan-vezuviy.jpg",
+          "thumbnail": "./img/gallery/italy/thumbnail/vulkan-vezuviy.jpg"
+        },
+        {
+          "original": "./img/gallery/italy/original/pompei.jpg",
+          "thumbnail": "./img/gallery/italy/thumbnail/pompei.jpg"
+        },
+        {
+          "original": "./img/gallery/italy/original/panteon-v-rime.jpg",
+          "thumbnail": "./img/gallery/italy/thumbnail/panteon-v-rime.jpg"
+        },
+        {
+          "original": "./img/gallery/italy/original/sardinia.jpg",
+          "thumbnail": "./img/gallery/italy/thumbnail/sardinia.jpg"
+        }
+      ],
+      "descriptions": {
+        "ru": [
+          {
+            "title": "Колизей",
+            "description": "Колизей – один из самых узнаваемых архитектурных памятников как в Италии, так и во всём мире. Почти две тысячи лет величественный амфитеатр, расположенный в самом центре Рима, собирает вокруг себя миллионы посетителей, желающих своими глазами увидеть это культовое сооружение."
+          },
+          {
+            "title": "Пизанская башня",
+            "description": "Пизанская башня относится к числу самых знаменитых и популярных достопримечательностей Италии. Больше того, это один из наиболее узнаваемых символов страны, её визитная карточка. Пизанская башня находится в городе Пиза, в регионе Тоскана, который раскинулся всего в 10 км от теплого и ласкового Лигурийского моря."
+          },
+          {
+            "title": "Везувий",
+            "description": "Везувий – грозный, мощный, навевающий страх, трепет и одновременно благоговейное уважение – относится к числу самых известных на Земле вулканов. Его высота составляет 1281 м."
+          },
+          {
+            "title": "Помпеи",
+            "description": "Помпеи — город, застывший во времени. Он был уничтожен извержением Везувия в 79 году. Извержение продолжалось уже два дня, когда из-за внезапной перемены ветра на город обрушилось гигантское облако горящего пепла, причем это случилось совершенно неожиданно - большая часть жителей была застигнута врасплох."
+          },
+          {
+            "title": "Пантеон в Риме",
+            "description": "Пантеон в Риме служит напоминанием о могуществе и силе некогда царствовавшей империи. Этот храм считался одним из монументальных в городе: до VII века здесь возносили молитвы язычники, после – христиане."
+          },
+          {
+            "title": "Остров Сардиния",
+            "description": "Сардиния – островная часть Итальянской Республики. Остров расположен в центре западной части Средиземного моря, на примерно равном удалении от берегов Европы и Африки."
+          }
+        ],
+        "be": [
+          {
+            "title": "Калізей",
+            "description": "Калізей - адзін з самых вядомых архітэктурных помнікаў як у Італіі, так і ва ўсім свеце. Амаль дзве тысячы гадоў велічны амфітэатр, размешчаны ў самым цэнтры Рыма, збірае вакол сябе мільёны наведвальнікаў, якія жадаюць на свае вочы ўбачыць гэта культавы будынак."
+          },
+          {
+            "title": "Пізанская вежа",
+            "description": "Пізанская вежа адносіцца да ліку самых знакамітых і папулярных славутасцяў Італіі. Больш таго, гэта адзін з найбольш вядомых сімвалаў краіны, яе візітная картка. Пізанская вежа знаходзіцца ў горадзе Піза, у рэгіёне Таскана, які раскінуўся за ўсё ў 10 км ад цёплага і ласкавага Лігурыйскае мора."
+          },
+          {
+            "title": "Везувій",
+            "description": "Везувій - грозны, магутны, наводзячы страх, трапятанне і адначасова поўнае глыбокай пашаны павага - адносіцца да ліку самых вядомых на Зямлі вулканаў. Яго вышыня складае 1281 м."
+          },
+          {
+            "title": "Пампеі",
+            "description": "Пампеі - горад, застылы ў часе. Ён быў знішчаны вывяржэннем Везувія ў 79 годзе. Вывяржэнне доўжылася ўжо два дні, калі з-за раптоўнай перамены ветру на горад абрынулася гіганцкае воблака палаючага попелу, прычым гэта здарылася зусім нечакана - вялікая частка жыхароў была якую заспела знянацку."
+          },
+          {
+            "title": "Пантэон ў Рыме",
+            "description": "Пантэон ў Рыме служыць напамінам пра моц і сіле некалі панавала імперыі. Гэты храм лічыўся адным з манументальных ў горадзе: да VII стагоддзя тут ўзносілі малітвы язычнікі, пасля - хрысціяне."
+          },
+          {
+            "title": "Востраў Сардзінія",
+            "description": "Сардзінія - астраўная частка Італьянскай Рэспублікі. Востраў размешчаны ў цэнтры заходняй частцы Міжземнага мора, на прыкладна роўным выдаленні ад берагоў Еўропы і Афрыкі."
+          }
+        ],
+        "en": [
+          {
+            "title": "Colosseum",
+            "description": "The Colosseum is one of the most recognizable architectural monuments in Italy and around the world. For almost two thousand years, the majestic amphitheater, located in the very center of Rome, has gathered around it millions of visitors who want to see this religious building with their own eyes."
+          },
+          {
+            "title": "Leaning Tower of Pisa",
+            "description": "The Leaning Tower of Pisa is one of the most famous and popular landmarks in Italy. Moreover, it is one of the most recognizable symbols of the country, its visiting card. The Leaning Tower of Pisa is located in the city of Pisa, in the Tuscany region, which stretches just 10 km from the warm and gentle Ligurian Sea."
+          },
+          {
+            "title": "Vesuvius",
+            "description": "Vesuvius - formidable, powerful, evoking fear, awe and at the same time reverent respect - is one of the most famous volcanoes on Earth. Its height is 1281 m."
+          },
+          {
+            "title": "Pompeii",
+            "description": "Pompeii is a city frozen in time. It was destroyed by the eruption of Vesuvius in 79 AD. The eruption had been going on for two days, when, due to a sudden change in the wind, a gigantic cloud of burning ash fell on the city, and this happened quite unexpectedly - most of the inhabitants were taken by surprise."
+          },
+          {
+            "title": "Pantheon",
+            "description": "The Pantheon in Rome serves as a reminder of the power and strength of the once reigning empire. This temple was considered one of the most monumental in the city: until the 7th century, pagans offered prayers here, afterwards - Christians."
+          },
+          {
+            "title": "Sardinia",
+            "description": "Sardinia is an insular part of the Italian Republic. The island is located in the center of the western Mediterranean Sea, approximately equidistant from the shores of Europe and Africa."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 5,
+    "name": {"en": "Australia", "ru": "Австралия", "be": "Аўстралія"},
+    "capital": {"en": "Canberra", "ru": "Канберра", "be": "Канбера"},
+    "video": "https://www.youtube.com/watch?v=kjsFG7wJ0FQ",
+    "date": {"code": "AU", "timeZone": "Australia/Canberra"},
+    "mainImg": {
+      "original": "./img/country-images/original/australia.jpg",
+      "card": "./img/country-images/card/australia.jpg"
+    },
+    "coordinates": [-35.28, 149.12],
+    "currency": "AUD",
+    "gallery": {
+      "images": [
+        {
+          "original": "./img/gallery/australia/original/rozovoe-ozero-hiller.jpg",
+          "thumbnail": "./img/gallery/australia/thumbnail/rozovoe-ozero-hiller.jpg"
+        },
+        {
+          "original": "./img/gallery/australia/original/sidneyskiy-opernyy-teatr.jpg",
+          "thumbnail": "./img/gallery/australia/thumbnail/sidneyskiy-opernyy-teatr.jpg"
+        },
+        {
+          "original": "./img/gallery/australia/original/gora-uluru.jpg",
+          "thumbnail": "./img/gallery/australia/thumbnail/gora-uluru.jpg"
+        },
+        {
+          "original": "./img/gallery/australia/original/bolshoy-barernyy-rif.jpg",
+          "thumbnail": "./img/gallery/australia/thumbnail/bolshoy-barernyy-rif.jpg"
+        },
+        {
+          "original": "./img/gallery/australia/original/gora-olga-kata-tyuta.jpg",
+          "thumbnail": "./img/gallery/australia/thumbnail/gora-olga-kata-tyuta.jpg"
+        },
+        {
+          "original": "./img/gallery/australia/original/dvenadtsat-apostolov.jpg",
+          "thumbnail": "./img/gallery/australia/thumbnail/dvenadtsat-apostolov.jpg"
+        }
+      ],
+      "descriptions": {
+        "ru": [
+          {
+            "title": "Розовое озеро Хиллер",
+            "description": "Хиллер – самое необычное озеро в Австралии и, возможно, самое удивительное в мире. Его главной особенностью является розовый цвет воды. Озеро расположено на юго-западе Австралии, на острове Средний."
+          },
+          {
+            "title": "Сиднейский Оперный Театр",
+            "description": "Сиднейский оперный театр – одна из самых узнаваемых построек ХХ в. Это выдающееся многофункциональное сооружение можно считать визитной карточкой города: именно его чаще всего фотографируют туристы."
+          },
+          {
+            "title": "Улуру",
+            "description": "Улуру, также известный как Айерс-рок, – монолит красного камня, возвышающийся на севере Австралии. Он почитается аборигенами как святое место и торчит на плоской равнине подобно спинному плавнику огромного красного кита."
+          },
+          {
+            "title": "Большой Барьерный риф",
+            "description": "Большой Барьерный риф — самый крупный коралловый риф в мире. Он находится у северо-восточного побережья Австралии, протянувшись в длину вдоль материковой отмели почти на 2300 км. Ширина рифа в северной части составляет 2 км, а в южной - около 150 км."
+          },
+          {
+            "title": "Гора Ольга",
+            "description": "Гора Ольга (Ката-Тьюта) находится в Национальном парке Австралии Улуру-Ката-Тьюта и состоит из 36 массивных округлых скал, множества ущелий и долин. Её второе название - Ката-Тьюта (Kata Tjuta), на языке аборигенов означает “много голов”."
+          },
+          {
+            "title": "Двенадцать апостолов",
+            "description": "Двенадцать апостолов — группа известняковых скал у побережья Национального парка Порт-Кэмпбелл. Скалы являются одной из главных достопримечательностей Великой океанской дороги."
+          }
+        ],
+        "be": [
+          {
+            "title": "Ружовае возера Хілер",
+            "description": "Хілер - самае незвычайнае возера ў Аўстраліі і, магчыма, самае дзіўнае ў свеце. Яго галоўнай асаблівасцю з'яўляецца ружовы колер вады. Возера размешчана на паўднёвым захадзе Аўстраліі, на востраве Сярэдні."
+          },
+          {
+            "title": "Сіднэйскі оперны тэатр",
+            "description": "Сіднэйскі оперны тэатр - адна з самых вядомых пабудоў ХХ ст. Гэта выбітны шматфункцыянальны будынак можна лічыць візітнай карткай горада: менавіта яго часцей за ўсё фатаграфуюць турысты."
+          },
+          {
+            "title": "Улуру",
+            "description": "Улуру, таксама вядомы як Айерс-рок, - маналіт чырвонага каменя, які ўзвышаецца на поўначы Аўстраліі. Ён шануецца першабытнікамі як святое месца і тырчыць на плоскай раўніне падобна спіннога плаўніка вялізнага чырвонага кіта."
+          },
+          {
+            "title": "Вялікі Бар'ерны рыф",
+            "description": "Вялікі Бар'ерны рыф - самы буйны каралавы рыф у свеце. Ён знаходзіцца ў паўночна-усходняга ўзбярэжжа Аўстраліі, які працягнуўся ў даўжыню ўздоўж мацерыковай водмелі амаль на 2300 км. Шырыня рыфа ў паўночнай часткі складае 2 км, а ў паўднёвай - каля 150 км."
+          },
+          {
+            "title": "Гара Вольга",
+            "description": "Гара Вольга (Ката-Цьюта) знаходзіцца ў Нацыянальным парку Аўстраліі Улуру-Ката-Цьюта і складаецца з 36 масіўных круглявых скал, мноства цяснін і далін. Яе другая назва - Ката-Цьюта (Kata Tjuta), на мове абарыгенаў азначае шмат галоў."
+          },
+          {
+            "title": "Дванаццаць апосталаў",
+            "description": "Дванаццаць апосталаў - група вапняковых скал ля ўзбярэжжа Нацыянальнага парка Порт-Кэмпбэл. Скалы з'яўляюцца адной з галоўных славутасцяў Вялікай акіянскай дарогі."
+          }
+        ],
+        "en": [
+          {
+            "title": "Lake Hillier Pink",
+            "description": "Hillier is the most unusual lake in Australia and arguably the most amazing in the world. Its main feature is the pink color of the water. The lake is located in southwestern Australia, on Sredny Island."
+          },
+          {
+            "title": "Sydney Opera House",
+            "description": "The Sydney Opera House is one of the most recognizable buildings of the 20th century. This outstanding multifunctional building can be considered the hallmark of the city: it is it that is most often photographed by tourists."
+          },
+          {
+            "title": "Uluru",
+            "description": "Uluru, also known as Ayers Rock, is a redstone monolith that dominates northern Australia. It is revered by the aborigines as a holy place and sticks out on the flat plain like the dorsal fin of a huge red whale."
+          },
+          {
+            "title": "Great Barrier Reef",
+            "description": "The Great Barrier Reef is the largest coral reef in the world. It is located off the northeastern coast of Australia, stretching in length along the continental shelf for almost 2,300 km. The width of the reef in the northern part is 2 km, and in the southern part it is about 150 km."
+          },
+          {
+            "title": "Mount Olga",
+            "description": "Mount Olga (Kata-Tjuta) is located in the Uluru-Kata-Tjuta National Park of Australia and consists of 36 massive rounded rocks, many gorges and valleys. Its second name is Kata Tjuta, which means “many heads” in the Aboriginal language."
+          },
+          {
+            "title": "The Twelve Apostles",
+            "description": "The Twelve Apostles are a group of limestone rocks off the coast of Port Campbell National Park. The rocks are one of the main attractions of the Great Ocean Road."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 6,
+    "name": {"en": "Great Britain", "ru": "Великобритания", "be": "Велікабрытанія"},
+    "capital": {"en": "London", "ru": "Лондон", "be": "Лондан"},
+    "video": "https://www.youtube.com/watch?v=PtWeqZsuzpE",
+    "date": {"code": "GB", "timeZone": "Europe/London"},
+    "mainImg": {
+      "original": "./img/country-images/original/great-britain.jpg",
+      "card": "./img/country-images/card/great-britain.jpg"
+    },
+    "coordinates": [51.505, -0.09],
+    "currency": "GBP",
+    "gallery": {
+      "images": [
+        {
+          "original": "./img/gallery/great-britain/original/big-ben.jpg",
+          "thumbnail": "./img/gallery/great-britain/thumbnail/big-ben.jpg"
+        },
+        {
+          "original": "./img/gallery/great-britain/original/stounkhendzh.jpg",
+          "thumbnail": "./img/gallery/great-britain/thumbnail/stounkhendzh.jpg"
+        },
+        {
+          "original": "./img/gallery/great-britain/original/bukingemskiy-dvorets.jpg",
+          "thumbnail": "./img/gallery/great-britain/thumbnail/bukingemskiy-dvorets.jpg"
+        },
+        {
+          "original": "./img/gallery/great-britain/original/tauerskiy-most.jpg",
+          "thumbnail": "./img/gallery/great-britain/thumbnail/tauerskiy-most.jpg"
+        },
+        {
+          "original": "./img/gallery/great-britain/original/vestminsterskoe-abbatstvo.jpg",
+          "thumbnail": "./img/gallery/great-britain/thumbnail/vestminsterskoe-abbatstvo.jpg"
+        },
+        {
+          "original": "./img/gallery/great-britain/original/shotlandia.jpg",
+          "thumbnail": "./img/gallery/great-britain/thumbnail/shotlandia.jpg"
+        }
+      ],
+      "descriptions": {
+        "ru": [
+          {
+            "title": "Биг-Бен",
+            "description": "Биг-Бен относится к числу самых популярных достопримечательностей столицы Великобритании и является одной из визитных карточек Лондона. Именно под этим названием во всем мире знают одну из трех башен Вестминстерского дворца"
+          },
+          {
+            "title": "Стоунхендж",
+            "description": "Стоунхендж — одно из самых известных культовых сооружений в мире, его древним мегалитам посвящено огромное количество легенд и мифов. Находится в центре солсберийской равнины на юге Англии."
+          },
+          {
+            "title": "Букингемский дворец",
+            "description": "Букингемский дворец – резиденция британских монархов в Лондоне. Сегодня там живет и работает Елизавета II. Во дворце кипит жизнь: проходят приемы и мероприятия государственного значения. Покой королевской семьи охраняют гвардейцы – их ярко-красные наряды видны издалека."
+          },
+          {
+            "title": "Тауэрский мост",
+            "description": "Тауэрский мост – разводная переправа через реку Темзу в центре Лондона, неподалеку от Тауэрской башни. Это одна из наиболее популярных достопримечательностей Лондона, которую легко узнают даже те, кто никогда не бывал в столице Соединенного Королевства."
+          },
+          {
+            "title": "Вестминстерское Аббатство",
+            "description": "Вестминстерское Аббатство — не только самая большая церковь в Лондоне, но и средоточие государственной жизни страны, Здесь были коронованы 38 монархов, начиная с Вильгельма Завоевателя, ставшего английским королем в день Рождества 1666 г., т.е. все монархи, кроме Эдуарда V, убитого в 1483 г., и Эдуарда VIII, отрекшегося от престола в 1936 г."
+          },
+          {
+            "title": "Шотландия",
+            "description": "Шотландия является одной из административно-политических единиц Соединенного королевства Великобритании и Северной Ирландии, а по сути – историко-географической областью, которая до начала XVIII века была самостоятельным государством – Королевством Шотландия."
+          }
+        ],
+        "be": [
+          {
+            "title": "Біг-Бэн",
+            "description": "Біг-Бэн адносіцца да ліку самых папулярных славутасцяў сталіцы Вялікабрытаніі і з'яўляецца адной з візітных картак Лондана. Менавіта пад гэтай назвай ва ўсім свеце ведаюць адну з трох вежаў Вестмінстэрскага палаца"
+          },
+          {
+            "title": "Стоўнхэндж",
+            "description": "Стоўнхэндж - адно з самых вядомых культавых збудаванняў у свеце, яго старажытным мегалітам прысвечана вялікая колькасць легенд і міфаў. Знаходзіцца ў цэнтры солсберийской раўніны на поўдні Англіі."
+          },
+          {
+            "title": "Букінгемскі палац",
+            "description": "Букінгемскі палац - рэзідэнцыя брытанскіх манархаў у Лондане. Сёння там жыве і працуе Лізавета II. У палацы кіпіць жыццё: праходзяць прыёмы і мерапрыемствы дзяржаўнага значэння. Супакой каралеўскай сям'і ахоўваюць гвардзейцы - іх ярка-чырвоныя ўборы бачныя здалёк."
+          },
+          {
+            "title": "Таўэрскі мост",
+            "description": "Таўэрскі мост - разводная пераправа праз раку Тэмзу ў цэнтры Лондана, непадалёк ад Тауэрского вежы. Гэта адна з найбольш папулярных славутасцяў Лондана, якую лёгка пазнаюць нават тыя, хто ніколі не бываў у сталіцы Злучанага Каралеўства."
+          },
+          {
+            "title": "Вестмінстэрскае Абацтва",
+            "description": "Вестмінстэрскае Абацтва - не толькі самая вялікая царква ў Лондане, але і аснову дзяржаўнага жыцця краіны, Тут былі каранаваны 38 манархаў, пачынаючы з Вільгельма Заваёўніка, які стаў ангельскай каралём у дзень Раства 1666 г. зн усе манархі, акрамя Эдуарда V, забітага ў 1483 г., і Эдуарда VIII, отрекшегося ад пасаду ў 1936 г."
+          },
+          {
+            "title": "Шатландыя",
+            "description": "Шатландыя з'яўляецца адной з адміністрацыйна-палітычных адзінак Злучанага каралеўства Вялікабрытаніі і Паўночнай Ірландыі, а па сутнасці - гісторыка-геаграфічнай вобласцю, якая да пачатку XVIII стагоддзя была самастойнай дзяржавай - Каралеўствам Шатландыя."
+          }
+        ],
+        "en": [
+          {
+            "title": "Big Ben",
+            "description": "Big Ben is one of the most popular attractions in the capital of Great Britain and is one of the hallmarks of London. It is under this name that one of the three towers of Westminster Palace is known all over the world"
+          },
+          {
+            "title": "Stonehenge",
+            "description": "Stonehenge is one of the most famous places of worship in the world; a huge number of legends and myths are dedicated to its ancient megaliths. Located in the center of the Salisbury Plains in the south of England."
+          },
+          {
+            "title": "Buckingham Palace",
+            "description": "Buckingham Palace is the residence of British monarchs in London. Today Elizabeth II lives and works there. Life is in full swing in the palace: receptions and events of national importance are held. The peace of the royal family is guarded by guardsmen - their bright red outfits are visible from afar."
+          },
+          {
+            "title": "Tower Bridge",
+            "description": "Tower Bridge is a drawbridge across the River Thames in central London, near Tower Tower. This is one of the most popular attractions in London, easily recognizable even by those who have never been to the capital of the United Kingdom."
+          },
+          {
+            "title": "Westminster Abbey",
+            "description": "Westminster Abbey is not only the largest church in London, but also the focus of state life in the country. 38 monarchs were crowned here, starting with William the Conqueror, who became king of England on Christmas Day 1666, i.e. all monarchs except Edward V, who was assassinated in 1483, and Edward VIII, who abdicated in 1936"
+          },
+          {
+            "title": "Scotland",
+            "description": "Scotland is one of the administrative and political units of the United Kingdom of Great Britain and Northern Ireland, and in fact is a historical and geographical region, which until the beginning of the 18th century was an independent state - the Kingdom of Scotland."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 7,
+    "name": {"en": "India", "ru": "Индия", "be": "Індыя"},
+    "capital": {"en": "New Delhi", "ru": "Нью-Дели", "be": "Нью-Дэлі"},
+    "video": "https://www.youtube.com/watch?v=KLwbm_f28eY",
+    "date": {"code": "IN", "timeZone": "Asia/Kolkata"},
+    "mainImg": {
+      "original": "./img/country-images/original/india.jpg",
+      "card": "./img/country-images/card/india.jpg"
+    },
+    "coordinates": [28.63, 77.22],
+    "currency": "INR",
+    "gallery": {
+      "images": [
+        {
+          "original": "./img/gallery/india/original/tadzh-makhal.jpg",
+          "thumbnail": "./img/gallery/india/thumbnail/tadzh-makhal.jpg"
+        },
+        {
+          "original": "./img/gallery/india/original/gimalai.jpg",
+          "thumbnail": "./img/gallery/india/thumbnail/gimalai.jpg"
+        },
+        {
+          "original": "./img/gallery/india/original/dvorets-vetrov-khava-makhal.jpg",
+          "thumbnail": "./img/gallery/india/thumbnail/dvorets-vetrov-khava-makhal.jpg"
+        },
+        {
+          "original": "./img/gallery/india/original/kadzhurakho.jpg",
+          "thumbnail": "./img/gallery/india/thumbnail/kadzhurakho.jpg"
+        },
+        {
+          "original": "./img/gallery/india/original/pamir.jpg",
+          "thumbnail": "./img/gallery/india/thumbnail/pamir.jpg"
+        },
+        {
+          "original": "./img/gallery/india/original/ozero-dal.jpg",
+          "thumbnail": "./img/gallery/india/thumbnail/ozero-dal.jpg"
+        }
+      ],
+      "descriptions": {
+        "ru": [
+          {
+            "title": "Тадж-Махал",
+            "description": "Тадж-Махал — мавзолей-мечеть в Агре, является одним из шедевров мировой архитектуры, находится на севере индийского штата Уттар-Прадеш. Шах Джахан, правитель этих мест, приказал соорудить Тадж-Махал в честь своей супруги Мумтаз-Махал, отмечая таким образом 18 лет счастливого брака и ее кончину при рождении их четырнадцатого ребенка."
+          },
+          {
+            "title": "Гималаи",
+            "description": "Гималаи — высочайшая горная система Земли, расположенная между Тибетским нагорьем на севере и Индо-Гангской равниной на юге. Это самые высокие и недоступные горы планеты. Гималаи раскинулись на территории Индии, Непала, Китая, Пакистана и Бутана."
+          },
+          {
+            "title": "Хава Махал",
+            "description": "Хава Махал, также известный как Дворец Ветров — главная достопримечательность Джайпура. Свое второе название дворец получил за счет того, что благодаря продуманной системе окон, в помещениях здания создается естественная вентиляция."
+          },
+          {
+            "title": "Каджурахо",
+            "description": "Каджурахо — древнее селение в Индии, известное эротическими скульптурами, украшающими местные средневековые индуистские храмы. Сооружения из песчаника являют собой чудеса гармонии, но истинная красота и грация заключены в чувственности их скульптур."
+          },
+          {
+            "title": "Горы Памир",
+            "description": "Памир — горная система на севере Центральной Азии, на территории Таджикистана, Китая, Афганистана и Индии. Памир находится на соединении отрогов других мощных горных систем Центральной Азии — Гиндукуша, Каракорума, Куньлуня и Тянь-Шаня."
+          },
+          {
+            "title": "Озеро Дал",
+            "description": "Дал — озеро в Сринагаре, «Драгоценный камень в короне Кашмира» или «Сринагарское сокровище, как его часто называют. Озеро является не только туристической достопримечательностью, но и источником доходов для рыбаков и собирателей водных растений."
+          }
+        ],
+        "be": [
+          {
+            "title": "Тадж-Махал",
+            "description": "Тадж-Махал - маўзалей-мячэць у Агре, з'яўляецца адным з шэдэўраў сусветнай архітэктуры, знаходзіцца на поўначы індыйскага штата Утар-Прадэш. Шах Джахан, кіраўнік гэтых месцаў, загадаў збудаваць Тадж-Махал у гонар сваёй жонкі Мумтаз-Махал, адзначаючы такім чынам 18 гадоў шчаслівага шлюбу і яе скон пры нараджэнні іх чатырнаццатага дзіцяці."
+          },
+          {
+            "title": "Гімалаі",
+            "description": "Гімалаі - найвышэйшая горная сістэма Зямлі, размешчаная паміж Тыбецкім сугор'ем на поўначы і Інда-Ганскай раўнінай на поўдні. Гэта самыя высокія і недаступныя горы планеты. Гімалаі раскінуліся на тэрыторыі Індыі, Непала, Кітая, Пакістана і Бутану."
+          },
+          {
+            "title": "Хава Махал",
+            "description": "Хава Махал, таксама вядомы як Палац Ветраў - галоўная славутасць Джайпура. Сваё другая назва палац атрымаў за кошт таго, што дзякуючы прадуманай сістэме вокнаў, у памяшканнях будынка ствараецца натуральная вентыляцыя."
+          },
+          {
+            "title": "Каджурахо",
+            "description": "Каджурахо - старажытнае паселішча ў Індыі, вядомае эратычнымі скульптурамі, што ўпрыгожваюць мясцовыя сярэднявечныя індуісцкія храмы. Збудаванні з пяшчаніку ўяўляюць сабой цуды гармоніі, але сапраўдная прыгажосць і грацыя заключаны ў пачуццёвасці іх скульптур."
+          },
+          {
+            "title": "Горы Памір",
+            "description": "Памір - горная сістэма на поўначы Цэнтральнай Азіі, на тэрыторыі Таджыкістана, Кітая, Афганістана і Індыі. Памір знаходзіцца на злучэнні адгор'яў іншых магутных горных сістэм Цэнтральнай Азіі - Гіндукуша, Каракорума, Куньлунь і Цянь-Шаня."
+          },
+          {
+            "title": "Возера Даў",
+            "description": "Даў - возера ў Сринагаре, «Каштоўны камень у кароне Кашміра» або «Сринагарское скарб, як яго часта называюць. Возера з'яўляецца не толькі турыстычнай славутасцю, але і крыніцай даходаў для рыбакоў і збіральнікаў водных раслін."
+          }
+        ],
+        "en": [
+          {
+            "title": "Taj Mahal",
+            "description": "Taj Mahal - a mausoleum-mosque in Agra, is one of the masterpieces of world architecture, located in the north of the Indian state of Uttar Pradesh. Shah Jahan, the ruler of these places, ordered the construction of the Taj Mahal in honor of his wife Mumtaz Mahal, thus marking 18 years of a happy marriage and her passing away at the birth of their fourteenth child."
+          },
+          {
+            "title": "Himalayas",
+            "description": "The Himalayas are the highest mountain system on Earth, located between the Tibetan Plateau in the north and the Indo-Gangetic Plain in the south. These are the highest and most inaccessible mountains on the planet. The Himalayas are spread across India, Nepal, China, Pakistan and Bhutan."
+          },
+          {
+            "title": "Hawa Mahal",
+            "description": "Hawa Mahal, also known as the Palace of the Winds, is the main attraction in Jaipur. The palace received its second name due to the fact that thanks to a well-thought-out system of windows, natural ventilation is created in the premises of the building."
+          },
+          {
+            "title": "Khajuraho",
+            "description": "Khajuraho is an ancient village in India famous for erotic sculptures that adorn local medieval Hindu temples. The sandstone structures are wonders of harmony, but the true beauty and grace lies in the sensuality of their sculptures."
+          },
+          {
+            "title": "Pamir Mountains",
+            "description": "The Pamir is a mountain system in the north of Central Asia, on the territory of Tajikistan, China, Afghanistan and India. The Pamirs are located at the junction of the spurs of other powerful mountain systems of Central Asia - the Hindu Kush, Karakorum, Kunlun and Tien Shan."
+          },
+          {
+            "title": "Dal Lake",
+            "description": "Dal is a lake in Srinagar, “Gem in the crown of Kashmir” or “Srinagar treasure, as it is often called. The lake is not only a tourist attraction, but also a source of income for fishermen and aquatic plant collectors."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 8,
+    "name": {"en": "China", "ru": "Китай", "be": "Кітай"},
+    "capital": {"en": "Beijing", "ru": "Пекин", "be": "Пекін"},
+    "video": "https://www.youtube.com/watch?v=paxRy2msloY",
+    "date": {"code": "CN", "timeZone": "Asia/Shanghai"},
+    "mainImg": {
+      "original": "./img/country-images/original/china.jpg",
+      "card": "./img/country-images/card/china.jpg"
+    },
+    "coordinates": [39.9, 116.39],
+    "currency": "CNY",
+    "gallery": {
+      "images": [
+        {
+          "original": "./img/gallery/china/original/velikaya-kitayskaya-stena.jpg",
+          "thumbnail": "./img/gallery/china/thumbnail/velikaya-kitayskaya-stena.jpg"
+        },
+        {
+          "original": "./img/gallery/china/original/gora-everest.jpg",
+          "thumbnail": "./img/gallery/china/thumbnail/gora-everest.jpg"
+        },
+        {
+          "original": "./img/gallery/china/original/tibet.jpg",
+          "thumbnail": "./img/gallery/china/thumbnail/tibet.jpg"
+        },
+        {
+          "original": "./img/gallery/china/original/zapretnyy-gorod.jpg",
+          "thumbnail": "./img/gallery/china/thumbnail/zapretnyy-gorod.jpg"
+        },
+        {
+          "original": "./img/gallery/china/original/ostrov-khaynan.jpg",
+          "thumbnail": "./img/gallery/china/thumbnail/ostrov-khaynan.jpg"
+        },
+        {
+          "original": "./img/gallery/china/original/khram-neba.jpg",
+          "thumbnail": "./img/gallery/china/thumbnail/khram-neba.jpg"
+        }
+      ],
+      "descriptions": {
+        "ru": [
+          {
+            "title": "Великая Китайская стена",
+            "description": "Великая Китайская стена пролегает через северные регионы современного Китая и относится к крупнейшим архитектурным памятникам не только Поднебесной, но и всего мира. Больше того: это самое масштабное сооружение из всех когда-либо возведенных человеком. Общая протяженность Великой Китайской стены с учетом всех ее ответвлений составляет 8851,9 км."
+          },
+          {
+            "title": "Эверест",
+            "description": "Эверест, известный также как Джомолунгма, является самой высокой точкой нашей планеты. Его называют, и вполне справедливо, «крышей мира», «божественной» и даже «горой смерти»."
+          },
+          {
+            "title": "Тибет",
+            "description": "Тибет – горный регион Центральной Азии, расположенный в юго-западной части Китая и занимающий восьмую часть площади этого государства. Формально Тибетом считается автономный район со столицей Лхаса"
+          },
+          {
+            "title": "Запретный город",
+            "description": "Запретный город — крупнейший ансамбль классической китайской архитектуры относится к самым импозантным дворцовым комплексам мира. Конструкция, краски, орнаменты, расположения и названия связывают эту резиденцию со всей вселенной и свидетельствуют о том, каким именно образом конфуцианский Китай понимал свою роль как ее властелина."
+          },
+          {
+            "title": "Остров Хайнань",
+            "description": "Остров Хайнань – самая южная провинция Китая, которую благодаря уникальному расположению и погодным условиям в среде туристов часто называют «Восточными Гавайями». И действительно, сочетание буйной флоры, теплой погоды и морских вод притягивает сюда путешественников круглый год."
+          },
+          {
+            "title": "Храм Неба",
+            "description": "Храм Неба — древний храмовый комплекс в Пекине. Имеет важное значение как в архитектурном, так и в культурном отношении. Храм Неба, как никакое другое императорское сооружение, насыщен различными символами."
+          }
+        ],
+        "be": [
+          {
+            "title": "Вялікая Кітайская сцяна",
+            "description": "Вялікая Кітайская сцяна пралягае праз паўночныя рэгіёны сучаснага Кітая і адносіцца да найбуйнейшым архітэктурным помнікам не толькі Паднябеснай, але і ўсяго свету. Больш за тое: гэта самае маштабнае збудаванне з усіх калі-небудзь збудаваных чалавекам. Агульная працягласць Вялікай Кітайскай сцяны з улікам усіх яе адгалінаванняў складае 8851,9 км."
+          },
+          {
+            "title": "Эверэст",
+            "description": "Эверэст, вядомы таксама як Эвэрэст, з'яўляецца самай высокай кропкай нашай планеты. Яго называюць, і гэта справядліва, «дахам свету», «чароўнай» і нават «гарой смерці»."
+          },
+          {
+            "title": "Тыбет",
+            "description": "Тыбет - горны рэгіён Цэнтральнай Азіі, размешчаны ў паўднёва-заходняй частцы Кітая і які займае восьмую частку пляца гэтай дзяржавы. Фармальна Тыбэтам лічыцца аўтаномны раён са сталіцай Лхаса."
+          },
+          {
+            "title": "Забаронены горад",
+            "description": "Забаронены горад - найбуйнейшы ансамбль класічнай кітайскай архітэктуры належыць да самых імпазантным палацавым комплексам свету. Канструкцыя, фарбы, арнаменты, размяшчэння і назвы звязваюць гэтую рэзідэнцыю з усёй сусвету і сведчаць пра тое, якім менавіта чынам канфуцыянскага Кітай разумеў сваю ролю як яе ўладара."
+          },
+          {
+            "title": "Востраў Хайнань",
+            "description": "Востраў Хайнань - самая паўднёвая правінцыя Кітая, якую дзякуючы ўнікальнаму размяшчэнню і ўмовах надвор'я ў асяроддзі турыстаў часта называюць «Усходнімі Гаваях». І сапраўды, спалучэнне буянай флоры, цёплага надвор'я і марскіх вод прыцягвае сюды падарожнікаў круглы год."
+          },
+          {
+            "title": "Храм Неба",
+            "description": "Храм Неба - старажытны храмавы комплекс у Пекіне. Мае важнае значэнне як у архітэктурным, так і ў культурных адносінах. Храм Неба, як ніякае іншае імператарскае збудаванне, насычаны рознымі знакамі."
+          }
+        ],
+        "en": [
+          {
+            "title": "Great Wall of China",
+            "description": "The Great Wall of China runs through the northern regions of modern China and is one of the largest architectural monuments not only in the Middle Kingdom, but throughout the world. Moreover, it is the largest structure ever built by man. The total length of the Great Wall of China, including all its branches, is 8,851.9 km."
+          },
+          {
+            "title": "Everest",
+            "description": "Everest, also known as Chomolungma, is the highest point on our planet. It is called, and quite rightly, “the roof of the world”, “divine” and even “the mountain of death”."
+          },
+          {
+            "title": "Tibet",
+            "description": "Tibet is a mountainous region of Central Asia, located in the southwestern part of China and occupying an eighth of the area of ​​this state. Formally, Tibet is considered an autonomous region with the capital Lhasa."
+          },
+          {
+            "title": "Forbidden City",
+            "description": "The Forbidden City, the largest ensemble of classical Chinese architecture, is one of the most imposing palace complexes in the world. The design, colors, ornaments, locations and names link this residence to the entire universe and show how Confucian China understood its role as its master."
+          },
+          {
+            "title": "Hainan Island",
+            "description": "Hainan Island is the southernmost province of China, which is often called Eastern Hawaii due to its unique location and weather conditions among tourists. Indeed, the combination of lush flora, warm weather and sea waters attracts travelers here all year round."
+          },
+          {
+            "title": "Temple of Heaven",
+            "description": "The Temple of Heaven is an ancient temple complex in Beijing. It is important both architecturally and culturally. The Temple of Heaven, like no other imperial structure, is full of various symbols."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 9,
+    "name": {"en": "Brazil", "ru": "Бразилия", "be": "Бразілія"},
+    "capital": {"en": "Brazil", "ru": "Бразилия", "be": "Бразілія"},
+    "video": "https://www.youtube.com/watch?v=Q9H2h86umoE&t",
+    "date": {"code": "BR", "timeZone": "Brazil/East"},
+    "mainImg": {
+      "original": "./img/country-images/original/brazil.jpg",
+      "card": "./img/country-images/card/brazil.jpg"
+    },
+    "coordinates": [-15.779, -47.929],
+    "currency": "BRL",
+    "gallery": {
+      "images": [
+        {
+          "original": "./img/gallery/brazil/original/statuya-khrista-iskupitelya.jpg",
+          "thumbnail": "./img/gallery/brazil/thumbnail/statuya-khrista-iskupitelya.jpg"
+        },
+        {
+          "original": "./img/gallery/brazil/original/vodopad-iguasu.jpg",
+          "thumbnail": "./img/gallery/brazil/thumbnail/vodopad-iguasu.jpg"
+        },
+        {
+          "original": "./img/gallery/brazil/original/bonito.jpg",
+          "thumbnail": "./img/gallery/brazil/thumbnail/bonito.jpg"
+        },
+        {
+          "original": "./img/gallery/brazil/original/gora-rorayma.jpg",
+          "thumbnail": "./img/gallery/brazil/thumbnail/gora-rorayma.jpg"
+        },
+        {
+          "original": "./img/gallery/brazil/original/basseyn-amazonki.jpg",
+          "thumbnail": "./img/gallery/brazil/thumbnail/basseyn-amazonki.jpg"
+        },
+        {
+          "original": "./img/gallery/brazil/original/san-migel-das-misoyns.jpg",
+          "thumbnail": "./img/gallery/brazil/thumbnail/san-migel-das-misoyns.jpg"
+        }
+      ],
+      "descriptions": {
+        "ru": [
+          {
+            "title": "Статуя Христа-Искупителя",
+            "description": "Статуя Христа-Искупителя – известная скульптура Иисуса с распростертыми руками, которая установлена на вершине горы Корковаду в столице Бразилии Рио-де-Жанейро. Она считается символом города и всей страны, а также входит в список современных семи чудес света."
+          },
+          {
+            "title": "Водопад Игуасу",
+            "description": "«Бедная Ниагара!» - воскликнула Элеонора Рузвельт, едва бросив взгляд на водопады Игуасу. Это захватывающее дух зрелище природы расположено на границе Бразилии и Аргентины."
+          },
+          {
+            "title": "Бонито",
+            "description": "Бонито – уникальное по красоте место, расположенное в Бразилии. Существует более 30 доступных туров по территории района, большинство из которых базируется на изучении экологии и природной среды области."
+          },
+          {
+            "title": "Рорайма",
+            "description": "Рорайма – столовая гора и одна из главных достопримечательностей латиноамериканского континента. «Рорайма» переводится как «большая сине-зелёная гора». Плоская вершина тепуи поднимается высоко над облаками."
+          },
+          {
+            "title": "Бассейн амазонки",
+            "description": "Бассейн амазонки представляет собой огромную низину, покрытую дождевыми джунглями, занимающими практически весь север Южной Америки. Ее площадь равна 6,5 млн кв. км, что составляет 5% от всей поверхности земной суши."
+          },
+          {
+            "title": "Сан-Мигел-дас-Мисойнс",
+            "description": "Сан-Мигел-дас-Мисойнс – это древние руины, расположенные в Бразилии. В переводе с португальского название означает «Миссия святого Михаила». Развалины Сан-Мигел-дас-Мисойнс находятся в провинции Риу-Гранди-ду-Сул и включены в список Всемирного наследия ЮНЕСКО."
+          }
+        ],
+        "be": [
+          {
+            "title": "Статуя Хрыста-Збавіцеля",
+            "description": "Статуя Хрыста-Збавіцеля - вядомая скульптура Ісуса, раскінуўшы рукі, якая ўсталяваная на вяршыні гары Корковадо ў сталіцы Бразіліі Рыа-дэ-Жанейра. Яна лічыцца сімвалам горада і ўсёй краіны, а таксама ўваходзіць у спіс сучасных сямі цудаў свету."
+          },
+          {
+            "title": "Вадаспад Ігуасу",
+            "description": "«Бедная Ніагара!» - Усклікнула Элеанора Рузвельт, ледзь кінуўшы погляд на вадаспады Ігуасу. Гэта захапляльнае дух відовішча прыроды размешчана на мяжы Бразіліі і Аргенціны."
+          },
+          {
+            "title": "Баніта",
+            "description": "Баніта - унікальнае па прыгажосці месца, якое размешчана ў Бразіліі. Існуе больш за 30 даступных тураў па тэрыторыі раёна, большасць з якіх грунтуецца на вывучэнні экалогіі і прыроднага асяроддзя вобласці."
+          },
+          {
+            "title": "Рорайма",
+            "description": "Рорайма - сталовая гара і адна з галоўных славутасцяў лацінаамерыканскага кантынента. «Рорайма» перакладаецца як «вялікая сіне-зялёная гара». Плоская вяршыня тепуи падымаецца высока над аблокамі."
+          },
+          {
+            "title": "Басейн амазонкі",
+            "description": "Басейн амазонкі ўяўляе сабой вялізную нізіну, пакрытую дажджавымі джунглямі, якія займаюць практычна ўвесь поўнач Паўднёвай Амерыкі. Яе плошча роўная 6,5 млн кв. км, што складае 5% ад усёй паверхні зямной сушы."
+          },
+          {
+            "title": "Сан-Мігел-дас-Мисойнс",
+            "description": "Сан-Мігел-дас-Мисойнс - гэта старажытныя руіны, размешчаныя ў Бразіліі. У перакладзе з партугальскай назва азначае «Місія святога Міхаіла». Разваліны Сан-Мігел-дас-Мисойнс знаходзяцца ў правінцыі Рыу-Грандзі-ду-Сул і ўключаны ў спіс Сусветнай спадчыны ЮНЕСКА."
+          }
+        ],
+        "en": [
+          {
+            "title": "Cristo Redentor",
+            "description": "The statue of Christ the Redeemer is a famous sculpture of Jesus with outstretched arms, which is installed on the top of Mount Corcovado in the capital of Brazil, Rio de Janeiro. It is considered a symbol of the city and the whole country, and is also included in the list of the modern seven wonders of the world."
+          },
+          {
+            "title": "Iguazu Falls",
+            "description": "Poor Niagara! - Eleanor Roosevelt exclaimed, barely glancing at the Iguazu Falls. This breathtaking sight of nature is located on the border of Brazil and Argentina."
+          },
+          {
+            "title": "Bonito",
+            "description": "Bonito is a unique beauty place located in Brazil. There are more than 30 available tours around the area, most of which are based on the study of the ecology and natural environment of the area."
+          },
+          {
+            "title": "Roraima",
+            "description": "Roraima is a table mountain and one of the main attractions of the Latin American continent. Roraima translates as big blue-green mountain. The flat top of the tepui rises high above the clouds."
+          },
+          {
+            "title": "Amazon Basin",
+            "description": "The Amazon Basin is a huge lowland covered with rain jungle that occupies almost the entire north of South America. Its area is 6.5 million square meters. km, which is 5% of the entire surface of the earth's land."
+          },
+          {
+            "title": "San Miguel das Misoins ",
+            "description": "San Miguel das Misoins is an ancient ruin located in Brazil. Translated from Portuguese, the name means Mission of St. Michael. The ruins of San Miguel das Misois are located in the province of Rio Grande do Sul and are included in the UNESCO World Heritage List."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 10,
+    "name": {"en": "Egypt", "ru": "Египет", "be": "Егіпет"},
+    "capital": {"en": "Cairo", "ru": "Каир", "be": "Каір"},
+    "video": "https://www.youtube.com/watch?v=mfxQy5A_tHs",
+    "date": {"code": "EG", "timeZone": "Africa/Cairo"},
+    "mainImg": {
+      "original": "./img/country-images/original/egypt.jpg",
+      "card": "./img/country-images/card/egypt.jpg"
+    },
+    "coordinates": [30.06, 31.2496],
+    "currency": "EGP",
+    "gallery": {
+      "images": [
+        {
+          "original": "./img/gallery/egypt/original/egipetskie-piramidy.jpg",
+          "thumbnail": "./img/gallery/egypt/thumbnail/egipetskie-piramidy.jpg"
+        },
+        {
+          "original": "./img/gallery/egypt/original/sfinks.jpg",
+          "thumbnail": "./img/gallery/egypt/thumbnail/sfinks.jpg"
+        },
+        {
+          "original": "./img/gallery/egypt/original/sakhara.jpg",
+          "thumbnail": "./img/gallery/egypt/thumbnail/sakhara.jpg"
+        },
+        {
+          "original": "./img/gallery/egypt/original/reka-nil.jpg",
+          "thumbnail": "./img/gallery/egypt/thumbnail/reka-nil.jpg"
+        },
+        {
+          "original": "./img/gallery/egypt/original/khram-gora-v-edfu.jpg",
+          "thumbnail": "./img/gallery/egypt/thumbnail/khram-gora-v-edfu.jpg"
+        },
+        {
+          "original": "./img/gallery/egypt/original/dolina-tsarey-v-luksore.jpg",
+          "thumbnail": "./img/gallery/egypt/thumbnail/dolina-tsarey-v-luksore.jpg"
+        }
+      ],
+      "descriptions": {
+        "ru": [
+          {
+            "title": "Египетские пирамиды",
+            "description": "Египетские пирамиды, расположенные недалеко от города Каир, где плодородная долина Нила граничит с раскаленными песками Ливийской пустыни, представляют собой величайшие архитектурные памятники античности. Эти гигантские каменные строения не перестают удивлять своей внушающей благоговение монументальностью."
+          },
+          {
+            "title": "Сфинкс",
+            "description": "Сфинкс — одна из самых величайших загадок человечества покоится на древнейших землях Египта. Архаический монумент гигантских размеров распростёрся на западном берегу Нила, на протяжении веков охраняя эпохальные пирамиды."
+          },
+          {
+            "title": "Сахара",
+            "description": "Сахара — крупнейшая пустыня, расположенная в Северной Африке. Она является самой большой пустыней Земли! Площадь Сахары составляет 8,6 млн км² или примерно 30% Африки."
+          },
+          {
+            "title": "Нил",
+            "description": "Река Нил является одной из крупнейших водных артерий на нашей планете. Длина реки составляет более 6700 км, долгое время её считали самой длинной в мире. Затем было установлено, что расстояние между истоком и устьем Амазонки больше."
+          },
+          {
+            "title": "Храм Гора в Эдфу",
+            "description": "Храм в Эдфу — один из наиболее хорошо сохранившихся храмов Египта, и он же считается вторым по величине храмом после Карнакского комплекса. Он был построен в эпоху правления Птолемеев и посвящен Гору, богу с головой сокола. Строительство шло в 237-57 годах до н.э."
+          },
+          {
+            "title": "Долина царей в Луксоре",
+            "description": "Долина царей находится в выжженной солнцем пустыне, окруженной скалистыми неприступными утесами, на западном берегу Нила, напротив города Фивы, политической и религиозной столицы Нового царства."
+          }
+        ],
+        "be": [
+          {
+            "title": "Егіпецкія піраміды",
+            "description": "Егіпецкія піраміды, размешчаныя недалёка ад горада Каір, дзе ўрадлівая даліна Ніла мяжуе з распаленымі пяскамі Лівійскай пустыні, ўяўляюць сабой найвялікшыя архітэктурныя помнікі антычнасці. Гэтыя гіганцкія каменныя будынкі не перастаюць здзіўляць сваёй якая выклікае глыбокая павага манументальнасцю."
+          },
+          {
+            "title": "Сфінкс",
+            "description": "Сфінкс - адна з самых найвялікшых загадак чалавецтва спачывае на старажытных землях Егіпта. Архаічны манумент гіганцкіх памераў распасцёр на заходнім беразе Ніла, на працягу стагоддзяў ахоўваючы эпахальныя піраміды."
+          },
+          {
+            "title": "Сахара",
+            "description": "Сахара - найбуйнейшая пустыня, размешчаная ў Паўночнай Афрыцы. Яна з'яўляецца самай вялікай пустыняй Зямлі! Плошчу Сахары складае 8,6 млн км або прыкладна 30% Афрыкі."
+          },
+          {
+            "title": "Ніл",
+            "description": "Рака Ніл з'яўляецца адной з найбуйнейшых водных артэрый на нашай планеце. Даўжыня ракі складае больш за 6700 км, доўгі час яе лічылі самай доўгай у свеце. Затым было ўстаноўлена, што адлегласць паміж вытокам і вусцем Амазонкі больш."
+          },
+          {
+            "title": "Храм Гара ў Эдфу",
+            "description": "Храм у Эдфу - адзін з найбольш добра захаваліся храмаў Егіпта, і ён жа лічыцца другім па велічыні храмам пасля Карнакского комплексу. Ён быў пабудаваны ў эпоху кіравання Птолемеев і прысвечаны Гару, богу з галавой сокала. Будаўніцтва ішло ў 237-57 гадах да н.э."
+          },
+          {
+            "title": "Даліна цароў ў Луксоре",
+            "description": "Даліна цароў знаходзіцца ў выпаленай сонцам пустыні, акружанай скалістымі непрыступнымі ўцёсамі, на заходнім беразе Ніла, насупраць горада Фівы, палітычнай і рэлігійнай сталіцы Новага царства."
+          }
+        ],
+        "en": [
+          {
+            "title": "Egyptian pyramids",
+            "description": "The Egyptian pyramids, located near the city of Cairo, where the fertile Nile Valley is bordered by the hot sands of the Libyan Desert, are the greatest architectural monuments of antiquity. These gigantic stone structures never cease to amaze with their awe-inspiring monumentality."
+          },
+          {
+            "title": "Sphinx",
+            "description": "The Sphinx, one of the greatest mysteries of mankind, rests in the most ancient lands of Egypt. An archaic monument of gigantic proportions spreads on the western bank of the Nile, guarding the epochal pyramids for centuries."
+          },
+          {
+            "title": "Sahara",
+            "description": "The Sahara is the largest desert located in North Africa. It is the largest desert on Earth! The Sahara area is 8.6 million km², or approximately 30% of Africa."
+          },
+          {
+            "title": "Nile",
+            "description": "The Nile River is one of the largest waterways on our planet. The length of the river is more than 6700 km, for a long time it was considered the longest in the world. Then it was found that the distance between the source and the mouth of the Amazon is greater."
+          },
+          {
+            "title": "Temple of Horus in Edfu",
+            "description": "The Edfu Temple is one of the best-preserved temples in Egypt, and it is also considered the second largest temple after the Karnak complex. It was built during the reign of the Ptolemies and is dedicated to Horus, the god with the head of a falcon. Construction took place in 237-57 BC."
+          },
+          {
+            "title": "Valley of the Kings in Luxor",
+            "description": "The Valley of the Kings is located in a sun-scorched desert surrounded by rocky inaccessible cliffs, on the western bank of the Nile, opposite the city of Thebes, the political and religious capital of the New Kingdom."
+          }
+        ]
+      }
+    }
+  }
+]
