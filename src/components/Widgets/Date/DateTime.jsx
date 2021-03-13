@@ -6,7 +6,10 @@ const DateTime = ({ country, language }) => {
 
     const dateInfo = country.date;
     const timeZone = dateInfo.timeZone;
-    const locale = language ? `${language.substring(0,2)}-${dateInfo.code}` : dateInfo.code;
+    if(!language) {
+        language = localStorage.getItem('language' || 'russian');
+    }
+    const locale = `${language.substring(0,2)}-${dateInfo.code}`;
 
     return (
         <div className="card border-info mb-3">
