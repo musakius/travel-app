@@ -14,7 +14,7 @@ const DateTime = ({ country, language }) => {
     return (
         <div className="card border-info mb-3">
             <div className="card-header">
-                <DateContainer />
+                <DateContainer offset={ dateInfo.offset } />
             </div>
             <div className="card-body">
                 <Clock locale={ locale } timeZone={timeZone} />

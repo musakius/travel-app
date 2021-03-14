@@ -4,13 +4,13 @@
     "name": {"en": "Belarus", "ru": "Беларусь", "be": "Беларусь"},
     "capital": {"en": "Minsk", "ru": "Минск", "be": "Мінск"},
     "video": "https://www.youtube.com/watch?v=QNdYybI3Pgs",
-    "date": {"code": "BY", "timeZone": "Europe/Minsk"},
+    "date": {"code": "BY", "timeZone": "Europe/Minsk", "offset": "+3"},
     "mainImg": {
       "original": "./img/country-images/original/belarus.jpg",
       "card": "./img/country-images/card/belarus.jpg"
     },
     "coordinates": [53.85, 27.52],
-    "currency": "BYN",
+    "currency": {"en": "Belarusian Ruble", "ru": "Белорусский рубль", "be": "Беларускі рубель", "value": "BYN"},
     "gallery": {
       "images": [
         {
@@ -125,13 +125,13 @@
     "name": {"en": "Canada", "ru": "Канада", "be": "Канада"},
     "capital": {"en": "Ottawa", "ru": "Оттава", "be": "Атава"},
     "video": "https://www.youtube.com/watch?v=TknrmpS4GOg",
-    "date": {"code": "CA", "timeZone": "Canada/Eastern"},
+    "date": {"code": "CA", "timeZone": "Canada/Eastern", "offset": "-5"},
     "mainImg": {
       "original": "./img/country-images/original/canada.jpg",
       "card": "./img/country-images/card/canada.jpg"
     },
     "coordinates": [45.41, -75.69],
-    "currency": "CAD",
+    "currency": {"en": "Canadian Dollar", "ru": "Канадский доллар", "be": "Канадскі долар", "value": "CAD"},
     "gallery": {
       "images": [
         {
@@ -246,13 +246,13 @@
     "name": {"en": "Germany", "ru": "Германия", "be": "Германія"},
     "capital": {"en": "Berlin", "ru": "Берлин", "be": "Берлін"},
     "video": "https://www.youtube.com/watch?v=8IJzZSVRpbU",
-    "date": {"code": "DE", "timeZone": "Europe/Berlin"},
+    "date": {"code": "DE", "timeZone": "Europe/Berlin", "offset": "+1"},
     "mainImg": {
       "original": "./img/country-images/original/germany.jpg",
       "card": "./img/country-images/card/germany.jpg"
     },
     "coordinates": [52.52, 13.41],
-    "currency": "EUR",
+    "currency": {"en": "Euro", "ru": "Евро", "be": "Еўра", "value": "EUR"},
     "gallery": {
       "images": [
         {
@@ -367,13 +367,13 @@
     "name": {"en": "France", "ru": "Франция", "be": "Францыя"},
     "capital": {"en": "Paris", "ru": "Париж", "be": "Парыж"},
     "video": "https://www.youtube.com/watch?v=j9q3NLqUvxI",
-    "date": {"code": "FR", "timeZone": "Europe/Paris"},
+    "date": {"code": "FR", "timeZone": "Europe/Paris", "offset": "+1"},
     "mainImg": {
       "original": "./img/country-images/original/france.jpg",
       "card": "./img/country-images/card/france.jpg"
     },
     "coordinates": [48.85, 2.34],
-    "currency": "EUR",
+    "currency": {"en": "Euro", "ru": "Евро", "be": "Еўра", "value": "EUR"},
     "gallery": {
       "images": [
         {
@@ -488,13 +488,13 @@
     "name": {"en": "Italy", "ru": "Италия", "be": "Італія"},
     "capital": {"en": "Rome", "ru": "Рим", "be": "Рым"},
     "video": "https://www.youtube.com/watch?v=_4PJZovffRs",
-    "date": {"code": "IT", "timeZone": "Europe/Rome"},
+    "date": {"code": "IT", "timeZone": "Europe/Rome", "offset": "+1"},
     "mainImg": {
       "original": "./img/country-images/original/italy.jpeg",
       "card": "./img/country-images/card/italy.jpeg"
     },
     "coordinates": [41.89, 12.51],
-    "currency": "EUR",
+    "currency": {"en": "Euro", "ru": "Евро", "be": "Еўра", "value": "EUR"},
     "gallery": {
       "images": [
         {
@@ -609,13 +609,13 @@
     "name": {"en": "Australia", "ru": "Австралия", "be": "Аўстралія"},
     "capital": {"en": "Canberra", "ru": "Канберра", "be": "Канбера"},
     "video": "https://www.youtube.com/watch?v=kjsFG7wJ0FQ",
-    "date": {"code": "AU", "timeZone": "Australia/Canberra"},
+    "date": {"code": "AU", "timeZone": "Australia/Canberra", "offset": "+10"},
     "mainImg": {
       "original": "./img/country-images/original/australia.jpg",
       "card": "./img/country-images/card/australia.jpg"
     },
     "coordinates": [-35.28, 149.12],
-    "currency": "AUD",
+    "currency": {"en": "Australian Dollar", "ru": "Австралийский доллар", "be": "Аўстралійскі долар", "value": "AUD"},
     "gallery": {
       "images": [
         {
@@ -730,13 +730,13 @@
     "name": {"en": "Great Britain", "ru": "Великобритания", "be": "Велікабрытанія"},
     "capital": {"en": "London", "ru": "Лондон", "be": "Лондан"},
     "video": "https://www.youtube.com/watch?v=PtWeqZsuzpE",
-    "date": {"code": "GB", "timeZone": "Europe/London"},
+    "date": {"code": "GB", "timeZone": "Europe/London", "offset": "+0"},
     "mainImg": {
       "original": "./img/country-images/original/great-britain.jpg",
       "card": "./img/country-images/card/great-britain.jpg"
     },
     "coordinates": [51.505, -0.09],
-    "currency": "GBP",
+    "currency": {"en": "British Pound", "ru": "Фунт стерлингов", "be": "Фунт стэрлінгаў", "value": "GBP"},
     "gallery": {
       "images": [
         {
@@ -851,13 +851,13 @@
     "name": {"en": "India", "ru": "Индия", "be": "Індыя"},
     "capital": {"en": "New Delhi", "ru": "Нью-Дели", "be": "Нью-Дэлі"},
     "video": "https://www.youtube.com/watch?v=KLwbm_f28eY",
-    "date": {"code": "IN", "timeZone": "Asia/Kolkata"},
+    "date": {"code": "IN", "timeZone": "Asia/Kolkata", "offset": "+5.5"},
     "mainImg": {
       "original": "./img/country-images/original/india.jpg",
       "card": "./img/country-images/card/india.jpg"
     },
     "coordinates": [28.63, 77.22],
-    "currency": "INR",
+    "currency": {"en": "Indian Rupee", "ru": "Индийская рупия", "be": "Iндыйская рупія", "value": "INR"},
     "gallery": {
       "images": [
         {
@@ -972,13 +972,13 @@
     "name": {"en": "China", "ru": "Китай", "be": "Кітай"},
     "capital": {"en": "Beijing", "ru": "Пекин", "be": "Пекін"},
     "video": "https://www.youtube.com/watch?v=paxRy2msloY",
-    "date": {"code": "CN", "timeZone": "Asia/Shanghai"},
+    "date": {"code": "CN", "timeZone": "Asia/Shanghai", "offset": "+0"},
     "mainImg": {
       "original": "./img/country-images/original/china.jpg",
       "card": "./img/country-images/card/china.jpg"
     },
     "coordinates": [39.9, 116.39],
-    "currency": "CNY",
+    "currency": {"en": "Chinese Yuan Renminbi", "ru": "Китайский юань", "be": "Кітайскі юань", "value": "CNY"},
     "gallery": {
       "images": [
         {
@@ -1093,13 +1093,13 @@
     "name": {"en": "Brazil", "ru": "Бразилия", "be": "Бразілія"},
     "capital": {"en": "Brazil", "ru": "Бразилия", "be": "Бразілія"},
     "video": "https://www.youtube.com/watch?v=Q9H2h86umoE&t",
-    "date": {"code": "BR", "timeZone": "Brazil/East"},
+    "date": {"code": "BR", "timeZone": "Brazil/East", "offset": "-3"},
     "mainImg": {
       "original": "./img/country-images/original/brazil.jpg",
       "card": "./img/country-images/card/brazil.jpg"
     },
     "coordinates": [-15.779, -47.929],
-    "currency": "BRL",
+    "currency": {"en": "Brazilian Real", "ru": "Бразильский реал", "be": "Бразільскі рэал", "value": "BRL"},
     "gallery": {
       "images": [
         {
@@ -1214,13 +1214,13 @@
     "name": {"en": "Egypt", "ru": "Египет", "be": "Егіпет"},
     "capital": {"en": "Cairo", "ru": "Каир", "be": "Каір"},
     "video": "https://www.youtube.com/watch?v=mfxQy5A_tHs",
-    "date": {"code": "EG", "timeZone": "Africa/Cairo"},
+    "date": {"code": "EG", "timeZone": "Africa/Cairo", "offset": "+2"},
     "mainImg": {
       "original": "./img/country-images/original/egypt.jpg",
       "card": "./img/country-images/card/egypt.jpg"
     },
     "coordinates": [30.06, 31.2496],
-    "currency": "EGP",
+    "currency": {"en": "Egyptian Pound", "ru": "Египетский фунт", "be": "Егіпецкі фунт", "value": "EGP"},
     "gallery": {
       "images": [
         {
