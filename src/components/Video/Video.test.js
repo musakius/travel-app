@@ -35,7 +35,7 @@ describe("verification video components", () => {
     expect(wrapper.length).toBe(1);
   })
 
-  it('should video contain title', () => {
+  it('should video contain video Reactplayer', () => {
     const wrapper = component.find('ReactPlayer');
     expect(wrapper.length).toBe(1);
   })
