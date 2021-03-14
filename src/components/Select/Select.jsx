@@ -10,7 +10,12 @@ const Select = ({ func, selected, options }) => {
       onChange={(e) => func(e)}
     >
       {
-        options.map((option, index) => <option key={index} value={option.OptValue}>{option.value}</option>)
+        options.map((option, index) => 
+        <option key={index} value={option.OptValue}>
+          {
+            `${option.value} ${option.name}`
+          }
+        </option>)
       }
     </select>
   );
