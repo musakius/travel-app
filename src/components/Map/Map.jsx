@@ -3,7 +3,6 @@ import './css/map.css';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import TranslatableText from '../TranslatableText/TranslatableText';
 
-
 const Map = ({coordinates}) => {
   const position = coordinates;
  
