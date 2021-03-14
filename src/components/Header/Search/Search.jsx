@@ -30,6 +30,12 @@ const Search = ({filterCountries, language}) => {
     filterCountries({value: '', language});
   };
 
+  const setPlaceholder = (language) => {
+    if (language === 'russian') return 'Поиск';
+    if (language === 'belarusian') return 'Пошук';
+    if (language === 'english') return 'Search';
+  };
+
   return (
     <div className={`${classes['block-search']} form-inline`}>
       <input
@@ -40,7 +46,7 @@ const Search = ({filterCountries, language}) => {
         autoComplete="off"
         value={valueSearch}
         onChange={(e) => setValueSearch(e.target.value)}
-        placeholder="Search"
+        placeholder={setPlaceholder(language)}
       />
       <span className={classes.close} onClick={clearFieldSearch}>
         &#10006;
@@ -50,7 +56,7 @@ const Search = ({filterCountries, language}) => {
         type="button"
         onClick={() => filterCountries({value: valueSearch, language})}
       >
-        Search
+        {setPlaceholder(language)}
       </button>
     </div>
   );
