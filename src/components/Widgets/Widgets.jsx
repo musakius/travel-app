@@ -16,7 +16,7 @@ const Widgets = ({ country }) => {
                 <div className="card-body">
                     <Weather country={ country } capital={ capital } language={ language } />
                     <DateTime country={ country } language={ language } />
-                    <Rate currency={country.currency} />
+                    <Rate currency={country.currency} language={ language } />
                 </div>
             </div>
         )}
