@@ -1,17 +1,24 @@
 .container-country {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background-color: azure;
-}
+  .content {
+    display: flex;
+    justify-content: space-between;
 
-.widget {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.video {
+    .components {
+      display: flex;
+      flex-wrap: wrap;
+      .gallery {
+      }
+      .video-and-map {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+    }
+    .widget {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
 }
