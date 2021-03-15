@@ -2,9 +2,11 @@ import React from 'react';
 import TranslatableText from '../../TranslatableText/TranslatableText';
 import days from './JSON/days.json';
 import months from './JSON/months.json';
+import formatDate from './utils/formatDate';
 
-const DateContainer = () => {
-    const date = new Date();
+const DateContainer = ({ offset }) => {
+
+    const date = formatDate(Number.parseInt(offset));
     const current = date.getDate();
     const day = date.getDay();
     const month = date.getMonth();

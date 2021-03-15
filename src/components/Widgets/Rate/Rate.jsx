@@ -3,12 +3,17 @@ import Select from '../../Select';
 import TranslatableText from '../../TranslatableText';
 import classes from './Rate.module.scss';
 import config from './config.json';
+import defOptions from './utils/options';
 
-const Rate = ({ currency }) => {
+const Rate = ({ currency, language }) => {
     
     let savedCurrency = "rub";
+    let savedLanguage = "russian";
     if(localStorage.getItem('currency')) {
         savedCurrency = localStorage.getItem('currency');
+    }
+    if(localStorage.getItem('language')) {
+        savedLanguage = localStorage.getItem('language');
     }
     const [selectedCurrency, setSelectedCurrency] = useState(savedCurrency);
     const [resultValue, setResultValue] = useState("");
@@ -17,13 +22,11 @@ const Rate = ({ currency }) => {
     const [result, setResult] = useState(null);
     
     const apiID = config.appid;
-    const url = `https://v6.exchangerate-api.com/v6/${apiID}/latest/${currency}`;
-
-    const options = [
-        {"OptValue": "rub", "value": "RUB"},
-        {"OptValue": "usd", "value": "USD"},
-        {"OptValue": "eur", "value": "EUR"}
-    ]
+    const url = `https://v6.exchangerate-api.com/v6/${apiID}/latest/${currency.value}`;
+    
+    const resultOptions = defOptions(language);
+    const options = resultOptions.options;
+    const text = resultOptions.text;
 
     useEffect(() => {
         if (localStorage.getItem('currency') === null) {
@@ -48,7 +51,10 @@ const Rate = ({ currency }) => {
                         return;
                     }else{
                         const dataObj = data.conversion_rates;
-                        const value = dataObj[selectedCurrency.toUpperCase()].toFixed(3);
+                        let value = "";
+                        if(dataObj) {
+                            value = dataObj[selectedCurrency.toUpperCase()];
+                        }
                         setResult(dataObj);
                         setResultValue(value);
                         setIsLoaded(true);
@@ -70,7 +76,9 @@ const Rate = ({ currency }) => {
         const target = e.target.value;
         localStorage.setItem("currency", target);
         setSelectedCurrency(target);
-        setResultValue(result[target.toUpperCase()].toFixed(3));
+        if(result) {
+            setResultValue(result[target.toUpperCase()]);
+        }
     }
 
     if (errorMessage) {
@@ -98,7 +106,7 @@ const Rate = ({ currency }) => {
     }
 
     return (
-        <div className="card border-info mb-3">
+        <div className="card  border-info mb-3">
             <h3 className="card-header">
                 <TranslatableText
                 dictionary={{
@@ -108,19 +116,37 @@ const Rate = ({ currency }) => {
                 }}
                 />
             </h3>
-            <div className={`${classes['currency__form']} card-body` }>
-                <input 
-                    type="text" 
-                    className="form-control" 
-                    readOnly={true}
-                    value={currency}
-                />
-                <Select func={updateCurrency} selected={selectedCurrency} options={options} />
-            </div>
             <div className="card-body">
-                <input type="text" className="form-control" id="resultValue" value={resultValue} readOnly={true} />
-            </div>
-
+                <form>
+                    <fieldset>
+                        <div className="form-group">
+                            <p className="form-text text-muted">{text.value}</p>
+                            <input 
+                                type="text" 
+                                className="form-control" 
+                                readOnly={true}
+                                value={currency.value}
+                            />
+                            <small className="form-text text-muted">
+                                <TranslatableText
+                                    dictionary={{
+                                        russian: currency.ru,
+                                        belarusian: currency.be,
+                                        english: currency.en
+                                    }}
+                                />
+                            </small>
+                        </div>
+                        <div className="form-group">
+                            <p className="form-text text-muted">{text.WantValue}</p>
+                            <Select func={updateCurrency} selected={selectedCurrency} options={options} />
+                        </div>
+                            <div className="form-group">
+                            <input type="text" className="form-control" id="resultValue" value={resultValue} readOnly={true} />
+                        </div>
+                    </fieldset>
+                </form>
+            </div>            
         </div>
     );
 }

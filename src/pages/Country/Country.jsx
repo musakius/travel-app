@@ -3,7 +3,6 @@ import {connect} from 'react-redux';
 import {setShowSearch} from '../../redux/actions';
 import TranslatableText from '../../components/TranslatableText';
 import classes from './Country.module.scss';
-import {LanguageConsumer} from '../../context';
 import Widgets from '../../components/Widgets/Widgets';
 import Video from '../../components/Video/Video';
 import Map from '../../components/Map/Map';
@@ -69,9 +68,7 @@ const Country = ({countries, countryName, setShowSearch}) => {
           </div>
           <div className={classes['block-widget']}>
             <div className={classes.widget}>
-              <LanguageConsumer>
-                {({language}) => <Widgets country={country} language={language} />}
-              </LanguageConsumer>
+              <Widgets country={country} />
             </div>
           </div>
         </div>
