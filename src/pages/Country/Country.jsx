@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useRef} from 'react';
 import {connect} from 'react-redux';
 import {setShowSearch} from '../../redux/actions';
 import TranslatableText from '../../components/TranslatableText';
@@ -10,9 +10,11 @@ import Map from '../../components/Map/Map';
 import Gallery from '../../components/Gallery';
 
 const Country = ({countries, countryName, setShowSearch}) => {
+  const ref = useRef(null);
+
   useEffect(() => {
     setShowSearch(false);
-    window.scrollTo({top: 50, behavior: 'smooth'});
+    window.scrollTo({top: ref.current.offsetTop, behavior: 'smooth'});
   }, []);
 
   const country = countries.find((el) => el.name.en.toLowerCase() === countryName);
@@ -55,7 +57,7 @@ const Country = ({countries, countryName, setShowSearch}) => {
                 />
               </p>
             </div>
-            <div className={classes.components}>
+            <div className={classes.components} ref={ref}>
               <div className={classes.gallery}>
                 <Gallery gallery={country.gallery} />
               </div>
@@ -65,10 +67,12 @@ const Country = ({countries, countryName, setShowSearch}) => {
               </div>
             </div>
           </div>
-          <div className={classes.widget}>
-            <LanguageConsumer>
-              {({language}) => <Widgets country={country} language={language} />}
-            </LanguageConsumer>
+          <div className={classes['block-widget']}>
+            <div className={classes.widget}>
+              <LanguageConsumer>
+                {({language}) => <Widgets country={country} language={language} />}
+              </LanguageConsumer>
+            </div>
           </div>
         </div>
       </div>
