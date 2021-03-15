@@ -14,9 +14,9 @@ const Clock = ({ locale, timeZone }) => {
     }, []);
 
     return (
-        <h2 className={`${classes['clock']} card-text`}>
+        <h4 className={`${classes['clock']} card-text`}>
           {time.toLocaleTimeString(locale, { timeZone })}
-        </h2>
+        </h4>
     );
 }
 

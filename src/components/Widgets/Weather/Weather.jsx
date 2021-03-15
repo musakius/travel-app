@@ -60,8 +60,8 @@ const Weather = ({ country, capital, language }) => {
     }
 
     return (
-        <div className="card border-info mb-3 weather">
-            <h3 className="card-header">
+        <div className="card mb-3 weather">
+            <h6 className="card-header">
                 <TranslatableText
                 dictionary={{
                     russian: 'Погода',
@@ -69,13 +69,11 @@ const Weather = ({ country, capital, language }) => {
                     english: 'Weather'
                 }}
                 />
-            </h3>
-            <div className="card-body">
-                    { result
-                        ? <WeatherContainer data={ result } country={ country } />
-                        : null
-                    }
-            </div>
+            </h6>
+            { result
+                ? <WeatherContainer data={ result } country={ country } />
+                : null
+            }
         </div>
     );
 }
