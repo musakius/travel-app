@@ -9,9 +9,9 @@ import classes from './Header.module.scss';
 
 const Header = ({showSearch}) => {
   const options = [
-    {"OptValue": "russian", "value": "Rus"},
-    {"OptValue": "belarusian", "value": "Bel"},
-    {"OptValue": "english", "value": "Eng"}
+    {"OptValue": "russian", "name": "", "value": "Rus"},
+    {"OptValue": "belarusian", "name": "", "value": "Bel"},
+    {"OptValue": "english", "name": "", "value": "Eng"}
   ]
   return (
     <LanguageConsumer>
