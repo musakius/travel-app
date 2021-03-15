@@ -4,7 +4,7 @@ import classes from './Footer.module.scss';
 const Footer = () => {
   return (
     <footer className={classes.footer}>
-      <div className={`${classes.content} center`}>
+      <div className={`${classes.content} container-center`}>
         <span className={classes.year}>&#169; 2021</span>
         <div className={classes['block-github']}>
           <Developer name="musakius" />

@@ -17,7 +17,7 @@ const Header = ({showSearch}) => {
     <LanguageConsumer>
       {({updateLanguage, language}) => (
         <header className={`${classes.header} bg-primary`}>
-          <nav className={`${classes.nav} navbar navbar-expand-lg navbar-dark center`}>
+          <nav className={`${classes.nav} navbar navbar-expand-lg navbar-dark container-center`}>
             <Link to="/" className={`${classes.logo} navbar-brand`}>
               Travel app
             </Link>

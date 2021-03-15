@@ -18,7 +18,7 @@ const Main = ({countries, setShowSearch}) => {
 
   return (
     <main className={`${classes['container-main']} main`}>
-      <div className="center">
+      <div className="container-center">
         <ul className={classes['list-countries']}>{renderListCountries(countries)}</ul>
       </div>
     </main>

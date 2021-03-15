@@ -19,24 +19,50 @@ const Country = ({countries, countryName, setShowSearch}) => {
 
   return (
     <main className={`${classes['container-country']} main`}>
-      <div className="center">
-        <h1 className={classes.title}>
-          <TranslatableText
-            dictionary={{
-              russian: country.name.ru,
-              belarusian: country.name.be,
-              english: country.name.en
-            }}
-          />
-        </h1>
-        <div className={classes.content}>
-          <div className={classes.components}>
-            <div className={classes.gallery}>
-              <Gallery gallery={country.gallery} />
+      <div className="container-center">
+        <div className={classes.wrapper}>
+          <div className={classes.content}>
+            <div className={classes.head} style={{backgroundImage: `url(${country.img.original})`}}>
+              <div className={classes['block-text']}>
+                <h1 className={classes.title}>
+                  <TranslatableText
+                    dictionary={{
+                      russian: country.name.ru,
+                      belarusian: country.name.be,
+                      english: country.name.en
+                    }}
+                  />
+                </h1>
+                <span className={classes.capital}>
+                  <TranslatableText
+                    dictionary={{
+                      russian: `столица: ${country.capital.ru}`,
+                      belarusian: `сталіца: ${country.capital.be}`,
+                      english: `capital: ${country.capital.en}`
+                    }}
+                  />
+                </span>
+              </div>
             </div>
-            <div className={classes['video-and-map']}>
-              <Video video={country.video} />
-              <Map coordinates={country.coordinates} />
+            <div className={classes['block-description']}>
+              <p className={classes.description}>
+                <TranslatableText
+                  dictionary={{
+                    russian: country.description.ru,
+                    belarusian: country.description.be,
+                    english: country.description.en
+                  }}
+                />
+              </p>
+            </div>
+            <div className={classes.components}>
+              <div className={classes.gallery}>
+                <Gallery gallery={country.gallery} />
+              </div>
+              <div className={classes['video-and-map']}>
+                <Video video={country.video} />
+                <Map coordinates={country.coordinates} />
+              </div>
             </div>
           </div>
           <div className={classes.widget}>

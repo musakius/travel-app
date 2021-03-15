@@ -2,12 +2,17 @@
   {
     "id": 0,
     "name": {"en": "Belarus", "ru": "Беларусь", "be": "Беларусь"},
-    "capital": {"en": "Minsk", "ru": "Минск", "be": "Мінск"},
+    "capital": {"en": "Minsk", "ru": "Минск", "be": "Менск"},
     "video": "https://www.youtube.com/watch?v=QNdYybI3Pgs",
     "date": {"code": "BY", "timeZone": "Europe/Minsk"},
     "img": {
       "original": "./img/country-images/original/belarus.jpg",
       "card": "./img/country-images/card/belarus.jpg"
+    },
+    "description": {
+      "en": "Belarus is an Eastern European state with land borders with countries such as Russia, Ukraine, Poland, Latvia and Lithuania. In terms of tourism, Belarus is considered a tasty morsel both for hunters for cultural values, and for nature lovers who dream of walking in the fabulous Polesie, and for food bloggers looking for new tastes. Well, if you desperately wanted a European flavor, then the country of cornflowers and white storks will in no way yield to its western neighbors. Medieval castles with ghosts and dark biographies of owners, ruins of once impregnable bastions, Catholic churches and Orthodox churches - even in the most out-of-the-ordinary city of Belarus there is at least one building whose history is worthy of at least a story, or even a real romantic saga.",
+      "ru": "Беларусь – восточноевропейское государство, имеющее сухопутные границы с такими странами, как Россия, Украина, Польша, Латвия и Литва. В туристическом отношении Беларусь считается лакомым кусочком и для охотников за культурными ценностями, и для природоманов, грезящих о прогулках по сказочному Полесью, и для фуд-блогеров, ищущих новые вкусы. Ну а если отчаянно захотелось европейского колорита, то «страна васильков и белых аистов» и тут ни в чем не уступит западным соседям. Средневековые замки с привидениями и темными биографиями владельцев, руины некогда неприступных бастионов, католические костелы и православные храмы – даже в самом заштатном городе Беларуси найдется хотя бы одно сооружение, чья история достойна как минимум повести, а то и настоящей романтической саги.",
+      "be": "Беларусь - ўсходнееўрапейская дзяржава, якая мае сухапутныя мяжы з такімі краінамі, як Расія, Украіна, Польшча, Латвія і Літва. У турыстычным дачыненні Беларусь лічыцца прывабным кавалачкам і для паляўнічых за культурнымі каштоўнасцямі, і для природоманов, якія мараць аб шпацырах па казачным Палессі, і для фуд-блогераў, якія шукаюць новыя густы. Ну а калі адчайна захацелася еўрапейскага каларыту, то «краіна васількоў і белых буслоў» і тут ні ў чым не саступіць заходнім суседзям. Сярэднявечныя замкі з прывідамі і цёмнымі біяграфіямі уладальнікаў, руіны некалі непрыступных бастыёнаў, каталіцкія касцёлы і праваслаўныя храмы - нават у самым заштатным горадзе Беларусі знойдзецца хоць бы адно збудаванне, чыя гісторыя вартая як мінімум аповесці, а то і сапраўднай рамантычнай сагі."
     },
     "coordinates": [53.85, 27.52],
     "currency": "BYN",
@@ -130,6 +135,11 @@
       "original": "./img/country-images/original/canada.jpg",
       "card": "./img/country-images/card/canada.jpg"
     },
+    "description": {
+      "en": "Canada is one of the largest states in the world, second only in territory to Russia and crowning the North American continent. The country is a symbiosis of virgin nature and modern urban life: in the south of Canada there are industrial zones, and in the north there are boundless forests, deep rivers, numerous lakes and mountain ranges reaching the Arctic zone. Along with the capital - Ottawa, the largest metropolitan areas are Montreal, Calgary, Winnipeg and Toronto. Canada is a constitutional monarchy with strong democratic traditions. The Queen of Great Britain is recognized as the head of state, she is represented by the Governor-General. All power belongs to the government headed by the prime minister.",
+      "ru": "Канада относится к числу крупнейших государств мира, уступая по территории только России и венчая собой североамериканский континент. Страна представляет собой симбиоз девственной природы и современной городской жизни: на юге Канады расположены промышленные зоны, а на севере – безграничные леса, полноводные реки, многочисленные озёра и горные цепи, доходящие до арктической зоны. Наряду со столицей – Оттавой, крупнейшими мегаполисами являются Монреаль, Калгари, Виннипег и Торонто. Канада – это конституционная монархия с сильными демократическими традициями. В качестве главы государства признаётся королева Великобритании, ее представляет генерал-губернатор. Вся полнота власти принадлежит правительству, возглавляемому премьер-министром.",
+      "be": "Канада адносіцца да ліку найбуйнейшых дзяржаў свету, саступаючы па тэрыторыі толькі Расіі і венчая сабой паўночнаамерыканскі кантынент. Краіна ўяўляе сабой сімбіёз цнатлівай прыроды і сучаснай гарадской жыцця: на поўдні Канады размешчаны прамысловыя зоны, а на поўначы - бязмежныя лесу, паўнаводныя рэкі, шматлікія азёры і горныя ланцугі, якія даходзяць да арктычнай зоны. Нароўні са сталіцай - Атавай, найбуйнейшымі мегаполісамі з'яўляюцца Манрэаль, Калгары, Вініпег і Таронта. Канада - гэта канстытуцыйная манархія з моцнымі дэмакратычнымі традыцыямі. У якасці кіраўніка дзяржавы прызнаецца каралева Вялікабрытаніі, яе прадстаўляе генерал-губернатар. Уся паўната ўлады належыць ураду, узначаленаму прэм'ер-міністрам."
+    },
     "coordinates": [45.41, -75.69],
     "currency": "CAD",
     "gallery": {
@@ -250,6 +260,11 @@
     "img": {
       "original": "./img/country-images/original/germany.jpg",
       "card": "./img/country-images/card/germany.jpg"
+    },
+    "description": {
+      "en": "Germany is an amazing country with a thousand-year history and centuries-old traditions, in the chronicle of which victories and defeats, periods of prosperity and truly tragic pages are written. Located in Western Europe, it occupies a relatively small area of 357,021 km², which corresponds to 62nd place in the world. In terms of population - 81,197,537 people as of January 1, 2015 - Germany is on the second line of the rating among the countries of the Old World and is second only to Russia in this indicator.",
+      "ru": "Германия – удивительная страна с тысячелетней историей и вековыми традициями, в летопись которой вписаны победы и поражения, периоды расцвета и поистине трагические страницы. Расположенная в Западной Европе, она занимает относительно небольшую территорию в 357 021 км², что соответствует 62 месту в мире. По численности же населения – 81 197 537 человек по состоянию на 1 января 2015 года – Германия находится на второй строчке рейтинга среди стран Старого Света и уступает по этому показателю только России.",
+      "be": "Германія - дзіўная краіна з тысячагадовай гісторыяй і векавымі традыцыямі, у летапіс якой ўпісаны перамогі і паразы, перыяды росквіту і сапраўды трагічныя старонкі. Размешчаная ў Заходняй Еўропе, яна займае адносна невялікую тэрыторыю у 357 021 км², што адпавядае 62 месцы ў свеце. Па колькасці ж насельніцтва - 81 197 537 чалавек па стане на 1 студзеня 2015 г. - Германія знаходзіцца на другім радку рэйтынгу сярод краін Старога Свету і саступае па гэтым паказчыку толькі Расіі."
     },
     "coordinates": [52.52, 13.41],
     "currency": "EUR",
@@ -372,6 +387,11 @@
       "original": "./img/country-images/original/france.jpg",
       "card": "./img/country-images/card/france.jpg"
     },
+    "description": {
+      "en": "France is an exquisite and piquant country that never ceases to amaze and delight. Whoever has visited France at least once, felt its unique spirit and aroma, got acquainted with its culture and history, plunged into the carefree French way of life, tasted the delights of local cuisine melting in the language, he will strive here again and again, each time discovering that something new. People come here to get in touch with perfection, because the French were able to raise the reputation of everything French to unattainable heights - fashion, culinary, lifestyle, culture and exquisite entertainment.",
+      "ru": "Франция — изысканная и пикантная страна, не перестающая удивлять и восхищать. Кто хоть однажды побывал во Франции, почувствовал её неповторимый дух и аромат, познакомился с её культурой и историей, окунулся в беспечный французский образ жизни, попробовал тающие на языке изыски местной кулинарии, тот будет стремиться сюда вновь и вновь, каждый раз открывая для себя что-то новое. Сюда приезжают, чтобы соприкоснуться с совершенством, ведь французы смогли до недостижимых высот поднять репутацию всего французского — моды, кулинарии, образа жизни, культуры и изысканных развлечений.",
+      "be": "Францыя - вытанчаная і пікантная краіна, не перастае здзіўляць і захапляць. Хто хоць аднойчы пабываў у Францыі, адчуў яе непаўторны дух і водар, пазнаёміўся з яе культурай і гісторыяй, акунуўся ў бестурботны французскі лад жыцця, паспрабаваў раставаў на мове вынаходствы мясцовай кулінарыі, той будзе імкнуцца сюды зноў і зноў, кожны раз адкрываючы для сябе што Што новае. Сюды прыязджаюць, каб дакрануцца да дасканаласцю, бо французы змаглі да недасяжных вышынь падняць рэпутацыю ўсяго французскага - моды, кулінарыі, ладу жыцця, культуры і вытанчаных забавак."
+    },
     "coordinates": [48.85, 2.34],
     "currency": "EUR",
     "gallery": {
@@ -492,6 +512,11 @@
     "img": {
       "original": "./img/country-images/original/italy.jpeg",
       "card": "./img/country-images/card/italy.jpeg"
+    },
+    "description": {
+      "en": "Italy is an amazing country in which history and modernity, different eras and a rich cultural heritage, traditions and identity are intertwined. Monuments of antiquity from the times of Rome, the enchanting romance of Venice, the hilly panorama of Tuscany, the southern slopes of the Alps, wonderful nature, sun, sea, air - all this is Italy! With a unique geographic location in the central Mediterranean, it has become the cradle of European civilization. Here, in the Apennines, the ancient Roman Empire was born, which gave the world famous scientists, talented artists and the largest number of attractions that made up the golden fund of the UNESCO World Heritage Site.",
+      "ru": "Италия – удивительная страна, в которой переплелись история и современность, различные эпохи и богатое культурное наследие, традиции и самобытность. Памятники старины времен Рима, очаровывающая романтика Венеции, холмистая панорама Тосканы, южные склоны Альп, чудесная природа, солнце, море, воздух – всё это Италия! Имеющая уникальное географическое расположение в центральной части Средиземноморья, она стала колыбелью европейской цивилизации. Здесь, на Апеннинах, зародилась древняя Римская империя, давшая миру знаменитых ученых, талантливых художников и самое большое число достопримечательностей, составивших золотой фонд Всемирного наследия ЮНЕСКО.",
+      "be": "Італія - ​​дзіўная краіна, у якой перапляліся гісторыя і сучаснасць, розныя эпохі і багатую культурную спадчыну, традыцыі і самабытнасць. Помнікі даўніны часоў Рыма, зачароўваць рамантыка Венецыі, узгорыстая панорама Тасканы, паўднёвыя схілы Альп, цудоўная прырода, сонца, мора, паветра - усё гэта Італія! Якая мае унікальнае геаграфічнае размяшчэнне ў цэнтральнай частцы Міжземнамор'я, яна стала калыскай еўрапейскай цывілізацыі. Тут, на Апенінах, зарадзілася старажытная Рымская імперыя, якая дала свету знакамітых навукоўцаў, таленавітых мастакоў і самая вялікая колькасць славутасцяў, якія склалі залаты фонд Сусветнай спадчыны ЮНЕСКА."
     },
     "coordinates": [41.89, 12.51],
     "currency": "EUR",
@@ -614,6 +639,11 @@
       "original": "./img/country-images/original/australia.jpg",
       "card": "./img/country-images/card/australia.jpg"
     },
+    "description": {
+      "en": "Australia is a state in the Southern Hemisphere, located on the continent of the same name, as well as the nearby islands of the Pacific and Indian Oceans. When describing Australia, people often talk about the uniqueness of this or that fact. Even the very location of this country is unique - Australia is the only state in the world that occupies the territory of the entire continent. The largest island of Tasmania lies south of the continent. The official name of the country is the Australian Union. The fauna and flora of Australia is so amazing that it will leave you an unforgettable experience!",
+      "ru": "Австралия — государство в Южном полушарии, расположенное на одноимённом материке, а также близлежащих островах Тихого и Индийского океанов. При описании Австралии люди часто говорят об уникальности того или иного факта. Даже само расположение этой страны уникально — Австралия единственное в мире государство, занимающее территорию всего материка. Самый крупный остров Тасмания лежит к югу от континента. Официальное название страны — Австралийский союз. Животный мир и растительный мир Австралии настолько удивителен, что оставит у вас незабываемые впечатления!",
+      "be": "Аўстралія - ​​дзяржава ў Паўднёвым паўшар'і, размешчанае на аднайменным мацерыку, а таксама бліжэйшых астравах Ціхага і Індыйскага акіянаў. Пры апісанні Аўстраліі людзі часта кажуць пра ўнікальнасць таго ці іншага факту. Нават само размяшчэнне гэтай краіны ўнікальна - Аўстралія адзінае ў свеце дзяржава, якое займае тэрыторыю ўсяго мацерыка. Самы буйны востраў Тасманія ляжыць на поўдзень ад кантынента. Афіцыйная назва краіны - Аўстралійскі саюз. Жывёльны свет і раслінны свет Аўстраліі настолькі дзіўны, што пакіне ў вас незабыўныя ўражанні!"
+    },
     "coordinates": [-35.28, 149.12],
     "currency": "AUD",
     "gallery": {
@@ -734,6 +764,11 @@
     "img": {
       "original": "./img/country-images/original/great-britain.jpg",
       "card": "./img/country-images/card/great-britain.jpg"
+    },
+    "description": {
+      "en": "Great Britain is a small state in the northwest of Europe. The full name of the country is the United Kingdom of Great Britain and Northern Ireland. In just a day, you can drive 1,440 km, separating the Lands End on the southwestern coast of Cornwall from the town of John O'Groats in the north-east of Scotland. However, this small group of islands to the northwest of Europe has had a huge impact on the development of world culture. And now, despite its size, Great Britain is one of the most authoritative states in the world, a nuclear power, a permanent member of the UN Security Council. Heir to the British Empire, the largest in history, and existed in the XIX - early XX centuries.",
+      "ru": "Великобритания — небольшое государство на северо-западе Европы. Полное название страны — Соединённое Королевство Великобритании и Северной Ирландии. Всего за сутки можно проехать 1440 км, отделяющих мыс Лендс-Энд на юго-западном побережье Корнуолла от городка Джон-о'Гротс на северо-востоке Шотландии. Однако это небольшая группа островов к северо-западу от Европы оказала огромное влияние на развитие мировой культуры. И сейчас, несмотря на свой размер, Великобритания — одно из авторитетнейших государств в мире, ядерная держава, постоянный член Совета Безопасности ООН. Наследница Британской империи, крупнейшей в истории, и существовавшей в XIX — начале XX веков.",
+      "be": "Вялікабрытанія - невялікая дзяржава на паўночным захадзе Еўропы. Поўная назва краіны - Вялікая Брытанія. Усяго за суткі можна праехаць 1440 км, што аддзяляюць мыс Лендс-Энд на паўднёва-заходнім узбярэжжы Карнуола ад мястэчка Джон-о'Гротс на паўночным усходзе Шатландыі. Аднак гэта невялікая група астравоў на паўночны захад ад Еўропы аказала велізарны ўплыў на развіццё сусветнай культуры. І цяпер, нягледзячы на ​​свой памер, Вялікабрытанія - адно з самых аўтарытэтных дзяржаў у свеце, ядзерная дзяржава, пастаянны член Савета Бяспекі ААН. Спадчынніца Брытанскай імперыі, найбуйнейшай у гісторыі, і якая існавала ў XIX - пачатку XX стагоддзяў."
     },
     "coordinates": [51.505, -0.09],
     "currency": "GBP",
@@ -856,6 +891,11 @@
       "original": "./img/country-images/original/india.jpg",
       "card": "./img/country-images/card/india.jpg"
     },
+    "description": {
+      "en": "India is no place for a coward. Presenting a constant challenge to the mind and body, it deeply shakes your entire body. It excites, drains and infuriates. You will soon discover that this is a land where the realities of everyday life prevail over the mysteries of popular myth. Instead of the widely known and often misunderstood mysticism of ancient religions, India actually offers a very different miracle: the wealth of its peoples and landscapes.",
+      "ru": "Индия не место для труса. Представляя собой постоянный вызов для ума и тела, она основательно потрясает весь ваш организм. Она волнует, истощает и приводит в ярость. Вы скоро обнаружите, что это земля, где реалии повседневной жизни преобладают над тайнами популярного мифа. Вместо широко известного и часто неправильно понимаемого мистицизма древних религий Индия в действительности может предложить совсем другое чудо: богатство ее народов и ландшафтов.",
+      "be": "Індыя не месца для баязліўца. Прадстаўляючы сабой пастаянны выклік для розуму і цела, яна грунтоўна трасе увесь ваш арганізм. Яна хвалюе, высільвае і прыводзіць у лютасць. Вы хутка выявіце, што гэта зямля, дзе рэаліі паўсядзённага жыцця пераважаюць над таямніцамі папулярнага міфа. Замест шырока вядомага і часта няправільна разумеецца містыцызму старажытных рэлігій Індыя ў рэчаіснасці можа прапанаваць зусім іншы цуд: багацце яе народаў і ландшафтаў."
+    },
     "coordinates": [28.63, 77.22],
     "currency": "INR",
     "gallery": {
@@ -976,6 +1016,11 @@
     "img": {
       "original": "./img/country-images/original/china.jpg",
       "card": "./img/country-images/card/china.jpg"
+    },
+    "description": {
+      "en": "China or Zhong Guo, as the Chinese themselves call it, is one of the most amazing and mysterious countries in the world. Homeland of paper and printing, gunpowder and compass, silk, porcelain and many other useful inventions and discoveries, it invariably attracts the attention of historians, researchers and travelers. Located in the southeast of the Asian continent and with its outlines resembling a huge bird soaring in the sky, modern China is the heir to a great civilization, the chronicle of which is about five millennia.",
+      "ru": "Китай или Чжун Го (Zhōngguó), как его называют сами китайцы, является одной из самых удивительных и загадочных стран мира. Родина бумаги и книгопечатания, пороха и компаса, шелка, фарфора и многих других полезных изобретений и открытий, он неизменно приковывает к себе внимание историков, исследователей, путешественников. Расположенный на юго-востоке азиатского континента и своими очертаниями напоминающий парящую в небе огромную птицу, современный Китай – наследник великой цивилизации, летопись которой насчитывает около пяти тысячелетий.",
+      "be": "Кітай або Чжун Го (Zhōngguó), як яго называюць самі кітайцы, з'яўляецца адной з самых дзіўных і загадкавых краін свету. Радзіма паперы і кнігадрукавання, пораху і компаса, шоўку, фарфору і многіх іншых карысных вынаходстваў і адкрыццяў, ён нязменна прыкоўвае да сябе ўвагу гісторыкаў, даследчыкаў, падарожнікаў. Размешчаны на паўднёвым усходзе азіяцкага кантынента і сваімі абрысамі нагадвае якая лунала ў небе велізарную птушку, сучасны Кітай - спадчыннік вялікай цывілізацыі, летапіс якой налічвае каля пяці тысячагоддзяў."
     },
     "coordinates": [39.9, 116.39],
     "currency": "CNY",
@@ -1098,6 +1143,11 @@
       "original": "./img/country-images/original/brazil.jpg",
       "card": "./img/country-images/card/brazil.jpg"
     },
+    "description": {
+      "en": "Brazil is one of the most attractive countries in the South American continent in terms of tourism. Luxurious beaches with the purest golden sand and transparent ocean water, impenetrable jungle of the mysterious Amazon, the roar of waterfalls, the world famous Brazilian carnival - hardly any other country can boast of such a set of wonders. And if you add the subtle aroma of local coffee to this list and imagine a passionate Brazilian woman performing samba, it becomes clear why every year millions of guests from all over the world strive to visit these amazing places.",
+      "ru": "Бразилия – одно из самых привлекательных с точки зрения туризма государств южноамериканского континента. Роскошные пляжи с чистейшим золотым песком и прозрачной океанской водой, непроходимые дебри таинственной Амазонки, рокот водопадов, знаменитый на весь мир бразильский карнавал — таким набором чудес вряд ли может похвастаться какая-либо другая страна. А если к этому перечню добавить тонкий аромат местного кофе и представить себе страстную бразильянку, исполняющую самбу, становится понятно, почему ежегодно миллионы гостей со всего мира стремятся побывать в этих удивительных местах.",
+      "be": "Бразілія - ​​адно з самых прывабных з пункту гледжання турызму дзяржаў паўднёваамерыканскага кантынента. Раскошныя пляжы з найчыстым залатым пяском і празрыстай акіянскай вадой, непраходныя нетры таямнічай Амазонкі, вуркатанне вадаспадаў, знакаміты на ўвесь свет бразільскі карнавал - такім наборам цудаў наўрад ці можа пахваліцца якая-небудзь іншая краіна. А калі да гэтага пераліку дадаць тонкі водар мясцовага кавы і ўявіць сабе гарачую Бразільянка, якая выконвае самбу, становіцца зразумела, чаму штогод мільёны гасцей з усяго свету імкнуцца пабываць у гэтых дзіўных месцах."
+    },
     "coordinates": [-15.779, -47.929],
     "currency": "BRL",
     "gallery": {
@@ -1218,6 +1268,11 @@
     "img": {
       "original": "./img/country-images/original/egypt.jpg",
       "card": "./img/country-images/card/egypt.jpg"
+    },
+    "description": {
+      "en": "Egypt is a state in North Africa and on the Sinai Peninsula of Asia, occupies 1 million km² of land, and its population is mainly concentrated along the banks of the Nile. This is a country of seaside resorts and ancient sights, which enjoys special love among our people despite all the troubles that shock it from time to time.",
+      "ru": "Египет — государство в Северной Африке и на Синайском полуострове Азии, занимает 1 млн км² суши, а его население в основном сосредоточено по берегам Нила. Это страна морских курортов и древних достопримечательностей, пользуется у нашего народа особой любовью несмотря на все неурядицы, которые время от времени ее потрясают.",
+      "be": "Егіпет - дзяржава ў Паўночнай Афрыцы і на Сінайскім паўвостраве Азіі, займае за 1 млн км² сушы, а яго насельніцтва ў асноўным засяроджана па берагах Ніла. Гэта краіна марскіх курортаў і старажытных славутасцяў, карыстаецца ў нашага народа асаблівай любоўю нягледзячы на ўсе бязладзіца, якія час ад часу яе трасуць."
     },
     "coordinates": [30.06, 31.2496],
     "currency": "EGP",

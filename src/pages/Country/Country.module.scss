@@ -1,24 +1,141 @@
 .container-country {
-  .content {
+  .wrapper {
     display: flex;
-    justify-content: space-between;
-
-    .components {
+    flex-wrap: wrap;
+    .content {
       display: flex;
+      justify-content: space-between;
       flex-wrap: wrap;
-      .gallery {
+      margin: 14px 30px 14px 0;
+      width: calc(100% - 270px);
+      min-width: 280px;
+      .head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+        width: 100%;
+        min-height: 360px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 7px;
+        .block-text {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          .title {
+            font-size: 50px;
+            font-weight: bold;
+            text-shadow: 2px 1px #000000a3;
+            color: #fff;
+          }
+          .capital {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 18px;
+            text-shadow: 1px 1px #000000a3;
+            color: #fff;
+          }
+        }
       }
-      .video-and-map {
+      .block-description {
+        width: 100%;
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+        .description {
+          max-width: 1024px;
+          text-align: center;
+          font-size: 17px;
+          color: #000;
+        }
+      }
+      .components {
         display: flex;
         justify-content: space-between;
-        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        .gallery {
+          width: calc(55% - 30px);
+          min-width: 280px;
+          margin-right: 30px;
+        }
+        .video-and-map {
+          width: 45%;
+          min-width: 280px;
+          min-height: 600px;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+        }
       }
     }
     .widget {
+      width: 240px;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .container-country {
+    .wrapper {
+      .content {
+        .block-description {
+          .description {
+            font-size: 16px;
+          }
+        }
+        .components {
+          .gallery {
+            width: 100%;
+            margin-right: 0;
+          }
+          .video-and-map {
+            width: 100%;
+            min-height: 800px;
+          }
+        }
+      }
+      .widget {
+        width: 200px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .container-country {
+    .wrapper {
+      .content {
+        margin: 0;
+        width: 100%;
+        .block-description {
+          .description {
+            font-size: 15px;
+          }
+        }
+      }
+      .widget {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .container-country {
+    .wrapper {
+      .content {
+        .components {
+          .video-and-map {
+            min-height: 600px;
+          }
+        }
+      }
     }
   }
 }
