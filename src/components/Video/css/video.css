@@ -1,4 +1,6 @@
 .video {
-  width: 360px;
-  height: 240px;
+  height: calc(53% - 30px);
+  margin-bottom: 30px;
+  border-radius: 7px;
+  overflow: hidden;
 }
