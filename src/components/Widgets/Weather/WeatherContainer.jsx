@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import TranslatableText from '../../TranslatableText';
 import '../css/owfont-regular.css';
 
@@ -25,9 +26,14 @@ const WeatherContainer = ({ data, country }) => {
                     `${main.temp.toFixed(0)}°C`
                 }
             </h4>
-            <di className="card-text">{weather[0].description}</di>           
+            <p className="card-text">{weather[0].description}</p>           
         </div>
     );
+}
+
+WeatherContainer.propTypes = {
+    data: PropTypes.object.isRequired,
+    country: PropTypes.object.isRequired
 }
 
 export default WeatherContainer;

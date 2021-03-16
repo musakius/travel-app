@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import TranslatableText from '../../TranslatableText/TranslatableText';
 import days from './JSON/days.json';
 import months from './JSON/months.json';
@@ -36,6 +37,10 @@ const DateContainer = ({ offset }) => {
             </h6>
         </div>
     );
+}
+
+DateContainer.propTypes = {
+    offset: PropTypes.string.isRequired
 }
 
 export default DateContainer;

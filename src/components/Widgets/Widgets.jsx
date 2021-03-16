@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Weather from './Weather/Weather';
 import DateTime from './Date/DateTime';
 import Rate from './Rate/Rate';
@@ -22,6 +23,10 @@ const Widgets = ({ country }) => {
         )}
       </LanguageConsumer>
     );
+}
+
+Widgets.propTypes = {
+    country: PropTypes.object.isRequired
 }
 
 export default Widgets;

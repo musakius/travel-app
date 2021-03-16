@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './Footer.module.scss';
+import PropTypes from 'prop-types';
 
 const Footer = () => {
   return (
@@ -35,5 +36,9 @@ const Developer = ({name}) => {
     </div>
   );
 };
+
+Developer.propTypes = {
+  name: PropTypes.string.isRequired
+}
 
 export default Footer;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './css/map.css';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import TranslatableText from '../TranslatableText/TranslatableText';
@@ -47,6 +48,10 @@ const Map = ({coordinates}) => {
     
   </>
 )  
+}
+
+Map.propTypes = {
+  coordinates: PropTypes.arrayOf(PropTypes.number)
 }
 
 export default Map;
