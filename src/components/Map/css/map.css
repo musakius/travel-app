@@ -1,13 +1,16 @@
-.leaflet-container {  
+.container-map {
+  height: 47%;
+}
+
+.leaflet-container,
+.fullscreen,
+.map-wrapper {
   height: 100%;
   width: 100%;
 }
 
 .map-wrapper {
-  height: 47%;
   position: relative;
-  height: 300px;
-  width: 500px;
 }
 
 .map-button {
