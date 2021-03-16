@@ -12,7 +12,7 @@ const DateTime = ({ country, language }) => {
     const locale = `${language.substring(0,2)}-${dateInfo.code}`;
 
     return (
-        <div className="card border-info mb-3">
+        <div className="card mb-3">
             <div className="card-header">
                 <DateContainer offset={ dateInfo.offset } />
             </div>

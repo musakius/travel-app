@@ -12,10 +12,10 @@ const Widgets = ({ country }) => {
     return (
         <LanguageConsumer>
         {({language}) => (
-            <div className="card mb-3">
+            <div className="card border-light mb-3">
                 <div className="card-body">
-                    <Weather country={ country } capital={ capital } language={ language } />
                     <DateTime country={ country } language={ language } />
+                    <Weather country={ country } capital={ capital } language={ language } />
                     <Rate currency={country.currency} language={ language } />
                 </div>
             </div>
