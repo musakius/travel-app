@@ -1,13 +1,13 @@
-.leaflet-container {
+.leaflet-container {  
   height: 100%;
   width: 100%;
-  transition: 0.3s;
 }
 
 .map-wrapper {
   height: 47%;
   position: relative;
-  transition: 0.3s;
+  height: 300px;
+  width: 500px;
 }
 
 .map-button {
@@ -33,11 +33,6 @@
 }
 
 .full-size {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: calc(100vw - 18px);
-  height: calc(100vh - 18px);
-  z-index: 1000;
+  width: 100%;
+  height: 100%;
 }

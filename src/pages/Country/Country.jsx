@@ -74,6 +74,10 @@ const Country = ({countries, countryName, setShowSearch}) => {
           </div>
         </div>
       </div>
+      <div className={classes.map}>
+        <Map country={country}/>
+      </div>
+      <Gallery gallery={country.gallery} />
     </main>
   );
 };
