@@ -11,7 +11,6 @@ const Map = ({country}) => {
   const handle = useFullScreenHandle();
 
   const polyline = country.border;
-  console.log(polyline)
 
   const limeOptions = { color: 'lime' }
   
@@ -74,7 +73,7 @@ const Map = ({country}) => {
 }
 
 Map.propTypes = {
-  coordinates: PropTypes.arrayOf(PropTypes.number)
+  country: PropTypes.object.isRequired
 }
 
 export default Map;
