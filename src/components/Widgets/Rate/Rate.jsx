@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 import Select from '../../Select';
 import TranslatableText from '../../TranslatableText';
 import classes from './Rate.module.scss';
@@ -150,6 +151,11 @@ const Rate = ({ currency, language }) => {
             </div>            
         </div>
     );
+}
+
+Rate.propTypes = {
+    currency: PropTypes.objectOf(PropTypes.string).isRequired,
+    language: PropTypes.string.isRequired
 }
 
 export default Rate;

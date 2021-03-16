@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import TranslatableText from '../../TranslatableText';
 import '../css/owfont-regular.css';
 
@@ -24,5 +25,10 @@ const WeatherContainer = ({data, country}) => {
     </div>
   );
 };
+
+WeatherContainer.propTypes = {
+    data: PropTypes.object.isRequired,
+    country: PropTypes.object.isRequired
+}
 
 export default WeatherContainer;

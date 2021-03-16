@@ -1,6 +1,7 @@
 import React from 'react';
 import TranslatableText from '../TranslatableText';
 import {Link} from 'react-router-dom';
+import PropTypes from 'prop-types';
 import classes from './Card.module.scss';
 
 const Card = ({country}) => {
@@ -36,5 +37,9 @@ const Card = ({country}) => {
     </li>
   );
 };
+
+Card.propTypes = {
+  country: PropTypes.object.isRequired
+}
 
 export default Card;

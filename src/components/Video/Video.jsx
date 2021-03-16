@@ -2,6 +2,7 @@ import React from 'react';
 import ReactPlayer from 'react-player';
 import './css/video.css';
 import TranslatableText from '../TranslatableText/TranslatableText';
+import PropTypes from 'prop-types';
 
 const Video = ({video}) => {
   return (
@@ -21,5 +22,9 @@ const Video = ({video}) => {
     </>
   );
 };
+
+Video.propTypes = {
+  video: PropTypes.string.isRequired
+}
 
 export default Video;
