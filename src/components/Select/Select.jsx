@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import classes from './Select.module.scss';
 
@@ -24,5 +25,16 @@ const Select = ({ func, selected, options, type }) => {
     </select>
   );
 };
+
+Select.propTypes = {
+  func: PropTypes.func.isRequired,
+  selected: PropTypes.string.isRequired,
+  options: PropTypes.array.isRequired,
+  type: PropTypes.string
+}
+
+Select.defaultProps = {
+  type: ""
+}
 
 export default Select;

@@ -1,4 +1,5 @@
 import React, {useEffect, useRef} from 'react';
+import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {setShowSearch} from '../../redux/actions';
 import TranslatableText from '../../components/TranslatableText';
@@ -84,5 +85,11 @@ const mapStateToProps = ({countries}) => {
 const mapDispatchToProps = {
   setShowSearch
 };
+
+Country.propTypes = {
+  countries: PropTypes.array.isRequired,
+  countryName: PropTypes.string.isRequired,
+  setShowSearch: PropTypes.func.isRequired
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(Country);
