@@ -1,6 +1,7 @@
 import React, {useRef, useState, useEffect} from 'react';
 import TranslatableText from '../TranslatableText/';
 import ImageGallery from 'react-image-gallery';
+import PropTypes from 'prop-types';
 import './image-gallery.scss';
 
 import classes from './Gallery.module.scss';
@@ -49,5 +50,9 @@ const Gallery = ({gallery}) => {
     </div>
   );
 };
+
+Gallery.propTypes = {
+  gallery: PropTypes.object.isRequired
+}
 
 export default Gallery;

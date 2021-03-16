@@ -1,5 +1,6 @@
 import React from 'react';
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
+import PropTypes from 'prop-types';
 import './css/map.css';
 import { MapContainer, TileLayer, Marker, Polygon } from 'react-leaflet';
 import TranslatableText from '../TranslatableText/TranslatableText';
@@ -70,6 +71,10 @@ const Map = ({country}) => {
     </div> 
   </>
 )  
+}
+
+Map.propTypes = {
+  coordinates: PropTypes.arrayOf(PropTypes.number)
 }
 
 export default Map;

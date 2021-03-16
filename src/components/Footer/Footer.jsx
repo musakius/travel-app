@@ -1,10 +1,11 @@
 import React from 'react';
 import classes from './Footer.module.scss';
+import PropTypes from 'prop-types';
 
 const Footer = () => {
   return (
     <footer className={classes.footer}>
-      <div className={`${classes.content} center`}>
+      <div className={`${classes.content} container-center`}>
         <span className={classes.year}>&#169; 2021</span>
         <div className={classes['block-github']}>
           <Developer name="musakius" />
@@ -35,5 +36,9 @@ const Developer = ({name}) => {
     </div>
   );
 };
+
+Developer.propTypes = {
+  name: PropTypes.string.isRequired
+}
 
 export default Footer;

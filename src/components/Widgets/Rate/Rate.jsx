@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 import Select from '../../Select';
 import TranslatableText from '../../TranslatableText';
 import classes from './Rate.module.scss';
@@ -106,8 +107,8 @@ const Rate = ({ currency, language }) => {
     }
 
     return (
-        <div className="card  border-info mb-3">
-            <h3 className="card-header">
+        <div className="card mb-3">
+            <h6 className="card-header">
                 <TranslatableText
                 dictionary={{
                     russian: `Курс валюты`,
@@ -115,19 +116,20 @@ const Rate = ({ currency, language }) => {
                     english: `Currancy rate`
                 }}
                 />
-            </h3>
+            </h6>
             <div className="card-body">
                 <form>
                     <fieldset>
                         <div className="form-group">
-                            <p className="form-text text-muted">{text.value}</p>
+                            <small className="form-text text-muted">{text.value}</small>
                             <input 
                                 type="text" 
-                                className="form-control" 
+                                className={`${classes.input} form-control`} 
                                 readOnly={true}
                                 value={currency.value}
                             />
                             <small className="form-text text-muted">
+                                *
                                 <TranslatableText
                                     dictionary={{
                                         russian: currency.ru,
@@ -138,17 +140,22 @@ const Rate = ({ currency, language }) => {
                             </small>
                         </div>
                         <div className="form-group">
-                            <p className="form-text text-muted">{text.WantValue}</p>
-                            <Select func={updateCurrency} selected={selectedCurrency} options={options} />
+                            <small className="form-text text-muted">{text.WantValue}</small>
+                            <Select func={updateCurrency} selected={selectedCurrency} options={options} type={"rate"} />
                         </div>
                             <div className="form-group">
-                            <input type="text" className="form-control" id="resultValue" value={resultValue} readOnly={true} />
+                            <input type="text" className="form-control"  id="resultValue" value={resultValue} readOnly={true} />
                         </div>
                     </fieldset>
                 </form>
             </div>            
         </div>
     );
+}
+
+Rate.propTypes = {
+    currency: PropTypes.objectOf(PropTypes.string).isRequired,
+    language: PropTypes.string.isRequired
 }
 
 export default Rate;

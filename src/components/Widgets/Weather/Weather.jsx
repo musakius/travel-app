@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import WeatherContainer from './WeatherContainer';
 import TranslatableText from '../../TranslatableText/TranslatableText';
+import PropTypes from 'prop-types';
 import config from './config.json';
 import classes from './Weather.module.scss';
 
@@ -60,8 +61,9 @@ const Weather = ({ country, capital, language }) => {
     }
 
     return (
-        <div className="card border-info mb-3 weather">
-            <h3 className="card-header mb-3">
+      
+        <div className="card weather mb-3">
+            <h6 className="card-header">
                 <TranslatableText
                 dictionary={{
                     russian: 'Погода',
@@ -69,15 +71,19 @@ const Weather = ({ country, capital, language }) => {
                     english: 'Weather'
                 }}
                 />
-            </h3>
-            <div className="card-body">
-                    { result
-                        ? <WeatherContainer data={ result } country={ country } />
-                        : null
-                    }
-            </div>
+            </h6>
+            { result
+                ? <WeatherContainer data={ result } country={ country } />
+                : null
+            }
         </div>
     );
+}
+
+Weather.propTypes = {
+    country: PropTypes.object.isRequired,
+    capital: PropTypes.string.isRequired,
+    language: PropTypes.string.isRequired
 }
 
 export default Weather;

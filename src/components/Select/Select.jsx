@@ -1,11 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import classes from './Select.module.scss';
 
-const Select = ({ func, selected, options }) => {
+const Select = ({ func, selected, options, type }) => {
+  let style = classes.select;
+  if (type === "rate") {
+    style = classes.selectRate;
+  }
   return (
     <select
-      className={`${classes.select} form-control ml-5`}
+      className={`${style} form-control ml-5`}
       value={selected}
       onChange={(e) => func(e)}
     >
@@ -20,5 +25,16 @@ const Select = ({ func, selected, options }) => {
     </select>
   );
 };
+
+Select.propTypes = {
+  func: PropTypes.func.isRequired,
+  selected: PropTypes.string.isRequired,
+  options: PropTypes.array.isRequired,
+  type: PropTypes.string
+}
+
+Select.defaultProps = {
+  type: ""
+}
 
 export default Select;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import TranslatableText from '../../TranslatableText/TranslatableText';
 import days from './JSON/days.json';
 import months from './JSON/months.json';
@@ -14,7 +15,7 @@ const DateContainer = ({ offset }) => {
 
     return (
         <div>
-            <h3 className="card-text">
+            <h6 className="card-text">
             <TranslatableText
                 dictionary={{
                     russian: days[day].ru,
@@ -22,8 +23,8 @@ const DateContainer = ({ offset }) => {
                     english: days[day].en
                 }}
             />
-            </h3>
-            <h5 className="card-text">
+            </h6>
+            <h6 className="card-text">
                 { `${current} ` }
                 <TranslatableText
                     dictionary={{
@@ -33,9 +34,13 @@ const DateContainer = ({ offset }) => {
                     }}
                 />
                 { `, ${year} ` }
-            </h5>
+            </h6>
         </div>
     );
+}
+
+DateContainer.propTypes = {
+    offset: PropTypes.string.isRequired
 }
 
 export default DateContainer;

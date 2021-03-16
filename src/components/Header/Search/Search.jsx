@@ -1,4 +1,5 @@
 import React, {useState, useEffect, useRef} from 'react';
+import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {filterCountries} from '../../../redux/actions';
 import classes from './Search.module.scss';
@@ -30,7 +31,7 @@ const Search = ({filterCountries, language}) => {
     filterCountries({value: '', language});
   };
 
-  const setPlaceholder = (language) => {
+  const setLanguagePlaceholder = (language) => {
     if (language === 'russian') return 'Поиск';
     if (language === 'belarusian') return 'Пошук';
     if (language === 'english') return 'Search';
@@ -46,7 +47,7 @@ const Search = ({filterCountries, language}) => {
         autoComplete="off"
         value={valueSearch}
         onChange={(e) => setValueSearch(e.target.value)}
-        placeholder={setPlaceholder(language)}
+        placeholder={setLanguagePlaceholder(language)}
       />
       <span className={classes.close} onClick={clearFieldSearch}>
         &#10006;
@@ -56,7 +57,7 @@ const Search = ({filterCountries, language}) => {
         type="button"
         onClick={() => filterCountries({value: valueSearch, language})}
       >
-        {setPlaceholder(language)}
+        {setLanguagePlaceholder(language)}
       </button>
     </div>
   );
@@ -69,5 +70,10 @@ const mapStateToProps = ({countries}) => {
 const mapDispatchToProps = {
   filterCountries
 };
+
+Search.propTypes = {
+  filterCountries: PropTypes.func,
+  language: PropTypes.string.isRequired
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(Search);

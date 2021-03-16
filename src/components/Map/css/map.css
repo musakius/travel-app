@@ -4,6 +4,7 @@
 }
 
 .map-wrapper {
+  height: 47%;
   position: relative;
   height: 300px;
   width: 500px;

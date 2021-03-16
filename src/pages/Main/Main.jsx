@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import PropTypes from 'prop-types';
 import Card from '../../components/Card';
 import {connect} from 'react-redux';
 import {setShowSearch} from '../../redux/actions';
@@ -18,7 +19,7 @@ const Main = ({countries, setShowSearch}) => {
 
   return (
     <main className={`${classes['container-main']} main`}>
-      <div className="center">
+      <div className="container-center">
         <ul className={classes['list-countries']}>{renderListCountries(countries)}</ul>
       </div>
     </main>
@@ -32,5 +33,10 @@ const mapStateToProps = ({countries}) => {
 const mapDispatchToProps = {
   setShowSearch
 };
+
+Main.propTypes = {
+  countries: PropTypes.array.isRequired,
+  setShowSearch: PropTypes.func.isRequired
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(Main);
