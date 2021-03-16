@@ -4,6 +4,7 @@ import Search from './Search';
 import Select from '../Select';
 import {LanguageConsumer} from '../../context';
 import {Link} from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import classes from './Header.module.scss';
 
@@ -35,5 +36,9 @@ const Header = ({showSearch}) => {
 const mapStateToProps = ({showSearch}) => {
   return {showSearch};
 };
+
+Header.propTypes = {
+  showSearch: PropTypes.bool.isRequired
+}
 
 export default connect(mapStateToProps)(Header);

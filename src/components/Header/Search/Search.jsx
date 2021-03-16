@@ -1,4 +1,5 @@
 import React, {useState, useEffect, useRef} from 'react';
+import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {filterCountries} from '../../../redux/actions';
 import classes from './Search.module.scss';
@@ -69,5 +70,10 @@ const mapStateToProps = ({countries}) => {
 const mapDispatchToProps = {
   filterCountries
 };
+
+Search.propTypes = {
+  filterCountries: PropTypes.func,
+  language: PropTypes.string.isRequired
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(Search);
