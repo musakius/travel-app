@@ -33,7 +33,7 @@ const Country = ({countries, countryName, setShowSearch}) => {
         <Video video={country.video} />
       </div>
       <div className={classes.map}>
-        <Map coordinates={country.coordinates} />
+        <Map country={country}/>
       </div>
       <Gallery gallery={country.gallery} />
     </main>

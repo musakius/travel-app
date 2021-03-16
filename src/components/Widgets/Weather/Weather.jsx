@@ -61,7 +61,7 @@ const Weather = ({ country, capital, language }) => {
 
     return (
         <div className="card border-info mb-3 weather">
-            <h3 className="card-header">
+            <h3 className="card-header mb-3">
                 <TranslatableText
                 dictionary={{
                     russian: 'Погода',

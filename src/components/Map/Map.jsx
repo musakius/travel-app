@@ -1,16 +1,19 @@
-import React, {useCallback} from 'react';
+import React from 'react';
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
 import './css/map.css';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Polygon } from 'react-leaflet';
 import TranslatableText from '../TranslatableText/TranslatableText';
-
-document.addEventListener('keyDown', (e) => {
-  console.log(e.key);
-}) 
-
-const Map = ({coordinates}) => {
-  const position = coordinates;
+  
+const Map = ({country}) => {
+  
+  const position = country.coordinates;
   const handle = useFullScreenHandle();
+
+  const polyline = country.border;
+  console.log(polyline)
+
+  const limeOptions = { color: 'lime' }
+  
  
   function mapChangeSize() {
     const mapWrapper = document.querySelector('.map-wrapper');
@@ -54,24 +57,17 @@ const Map = ({coordinates}) => {
       <FullScreen handle={handle}>
         <button className="map-button" onClick={mapChangeSize}></button>
         <div className="map-wrapper">
-        <MapContainer center={position} zoom={4} scrollWheelZoom={false}>
+        <MapContainer center={position} zoom={3} scrollWheelZoom={false}>
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-          <Marker position={position}>
-            <Popup>
-              A pretty CSS3 popup. <br /> Easily customizable.
-            </Popup>
-          </Marker>
+          <Marker position={position} />
+          <Polygon pathOptions={limeOptions} positions={polyline} /> 
         </MapContainer>
         </div>
-      </FullScreen>
-      
-      
-    </div>
-    
-    
+      </FullScreen>      
+    </div> 
   </>
 )  
 }
