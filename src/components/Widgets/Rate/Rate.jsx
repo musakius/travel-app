@@ -107,7 +107,7 @@ const Rate = ({ currency, language }) => {
     }
 
     return (
-        <div className="card mb-3">
+        <div className="card">
             <h6 className="card-header">
                 <TranslatableText
                 dictionary={{
