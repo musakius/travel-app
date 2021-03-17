@@ -26,14 +26,23 @@
 
 @media (max-width: 767px) {
   .block-search {
+    justify-content: space-between;
     margin-top: 10px;
+    .close {
+      left: 214px;
+      right: auto;
+    }
   }
 }
 
 @media (max-width: 420px) {
   .block-search {
     .field {
-      width: calc(100% - 90px);
+      width: calc(100% - 100px);
+    }
+    .close {
+      left: auto;
+      right: 105px;
     }
   }
 }
